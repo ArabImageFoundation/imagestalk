@@ -4,6 +4,7 @@
 - var isCurrent = function(path,currentPath){return (path==currentPath.replace(/\/index$/,'')) ? 'active' : false;}
 - var findKey = function(root,tail,head){head = root; while(head && tail.length){if(head[tail[0]]){head=head[tail.shift()]}};return head;}
 - var setSymbols = function(text){return text.replace(/\((.)\)/g,function(a,s){var t=fontIcons[s] || 'default';return '<i class="fa fa-'+t+'"></i>'});}
+- var asset = function(_asset){return current.path.join('/').replace(/\/?index$/,'').split('/').map(function(){return '..'}).join('/')+'/'+_asset}
 
 mixin title(current,mainTitle)
 	- if(current.path[current.path.length-1] == 'index'){current.path.pop();}
