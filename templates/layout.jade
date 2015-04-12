@@ -13,7 +13,7 @@ html
 					block TITLE
 						+title(current,'Images Talk')
 					block BODY
-						!= yield
+						!=setSymbols(yield)
 			#Footer
 				block FOOTER
 					p content copyrighted (c) Arab Image Foundation

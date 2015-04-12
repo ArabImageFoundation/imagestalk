@@ -19,7 +19,7 @@ mixin section(name)
 	section
 		h2
 			a(href='./#{name}')=formatName(name.split('/').pop())
-		.page!=setSymbols(partial(name))
+		.page!=partial(name)
 
 - var filter = /(\.html$)/;
 - var replace = /(\.html$)|(^index\.html$)/;
@@ -51,7 +51,7 @@ mixin sidebar(base,basePath,current,home)
 	.sidebar
 		ul
 			li
-				a(href="/" class="home") Home
+				a(href="../" class="home") Home
 			li
 				a(href=basePath class=isCurrent(basePath.replace(/^\/|\/$/g,''),current.path.join('/')))=formatName(basePath)
 				ul

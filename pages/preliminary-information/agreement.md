@@ -4,11 +4,15 @@ The project aims to develop a database solution for FAI. The goal of the project
  1. Create a comfortable, extensible interface for FAI archivists to store, search, and manipulate their collection.
  2. Create a user-facing website where people can XXXXXXXXX(goal?)
 
+---
+
 The project should have the following properties:
 
  - **Future-proof**: FAI should be able to be confident the product will last, and will be easily changed if need be. For that purpose, it is important to either use technologies that are so widely used that any developer can work with them, or provide good documentation.
  - **Extensible**: FAI might need to add keywords or new object types at any moment; thus, the system should allow administrators to manipulate, create, and edit object types.
  - **Cost efficient**: FAI does not dispose of unlimited funds, and as such, solutions that require recurrent payments (specially if the payments are high)will be less favored than pay-and-forget solutions. This means an effort has to be undertaken to keep server requirements on the low-end, as well as minimize the use of any technology that requires a subscription.
+
+---
 
 There are three paths we can take to achieve this project:
  
@@ -28,6 +32,8 @@ There are three paths we can take to achieve this project:
     - (+) Performance
     - (-) Re-inventing the wheel and re-encountering problems that have already been solved
     - (-) Need to be documented thoroughly if someone else is to maintain the product after
+
+---
 
 **Yelostudio**'s duties:
 

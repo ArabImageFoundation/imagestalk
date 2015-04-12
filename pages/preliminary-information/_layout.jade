@@ -1,0 +1,7 @@
+extends ../_layout
+
+block BODY
+	!=setSymbols(yield)
+
+block SIDEBAR
+	+sidebar(public['preliminary-information'], "/preliminary-information/",current)

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><link rel="stylesheet" href="../../../style.css"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><title>Arab Image Foundation</title></head><body class="research documentation hierarchical-data-in-SQL"><div id="Wrapper"><div id="Content"><div class="sidebar"><ul><li><a href="/" class="home">Home</a></li><li><a href="/research/" class="false">Research</a><ul><li><a href="/research/agreement" class="false">Agreement</a></li><li><a href="/research/documentation" class="false">Documentation</a><ul><li><a href="/research/documentation/hierarchical-data-in-SQL" class="active">Hierarchical Data In SQL</a></li><li><a href="/research/documentation/other-references-of-interest" class="false">Other References Of Interest</a></li><li><a href="/research/documentation/vocabulary-and-quick-definitions" class="false">Vocabulary &amp; Quick Definitions</a><ul><li><a href="/research/documentation/vocabulary-and-quick-definitions/databases" class="false">Databases</a></li><li><a href="/research/documentation/vocabulary-and-quick-definitions/hosting-platforms" class="false">Hosting Platforms</a></li><li><a href="/research/documentation/vocabulary-and-quick-definitions/server-side-technologies" class="false">Server Side Technologies</a></li></ul></li></ul></li><li><a href="/research/planning" class="false">Planning</a><ul><li><a href="/research/planning/tentative-specification-sheet" class="false">Tentative Specification Sheet</a></li><li><a href="/research/planning/tentative-team-structure" class="false">Tentative Team Structure</a></li><li><a href="/research/planning/timeline" class="false">Timeline</a></li></ul></li></ul></li></ul></div><div class="content"><h1><a href="/research/documentation/hierarchical-data-in-SQL">Hierarchical Data In SQL</a></h1><p>Two main models allow to describe hierarchical data in SQL: </p>
+<!DOCTYPE html><html><head><link rel="stylesheet" href="../../../style.css"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><title>Arab Image Foundation</title></head><body class="preliminary-information documentation hierarchical-data-in-SQL"><div id="Wrapper"><div id="Content"><div class="sidebar"><ul><li><a href="../" class="home">Home</a></li><li><a href="/preliminary-information/" class="false">Preliminary Information</a><ul><li><a href="/preliminary-information/agreement" class="false">Agreement</a></li><li><a href="/preliminary-information/documentation" class="false">Documentation</a><ul><li><a href="/preliminary-information/documentation/hierarchical-data-in-SQL" class="active">Hierarchical Data In SQL</a></li><li><a href="/preliminary-information/documentation/other-references-of-interest" class="false">Other References Of Interest</a></li><li><a href="/preliminary-information/documentation/vocabulary-and-quick-definitions" class="false">Vocabulary &amp; Quick Definitions</a><ul><li><a href="/preliminary-information/documentation/vocabulary-and-quick-definitions/databases" class="false">Databases</a></li><li><a href="/preliminary-information/documentation/vocabulary-and-quick-definitions/hosting-platforms" class="false">Hosting Platforms</a></li><li><a href="/preliminary-information/documentation/vocabulary-and-quick-definitions/server-side-technologies" class="false">Server Side Technologies</a></li></ul></li></ul></li><li><a href="/preliminary-information/planning" class="false">Planning</a><ul><li><a href="/preliminary-information/planning/tentative-specification-sheet" class="false">Tentative Specification Sheet</a></li><li><a href="/preliminary-information/planning/tentative-team-structure" class="false">Tentative Team Structure</a></li><li><a href="/preliminary-information/planning/timeline" class="false">Timeline</a></li></ul></li></ul></li></ul></div><div class="content"><h1><a href="/preliminary-information/documentation/hierarchical-data-in-SQL">Hierarchical Data In SQL</a></h1><p>Two main models allow to describe hierarchical data in SQL: </p>
 <ul>
 <li><em>Adjacency Lists</em>: Each node keeps a reference to it&#39;s parent, or, more uncommonly, each parent keeps a list of children (or both, but data is then de-normalized and should be maintained at the application level).</li>
 <li><em>Nested Sets</em>: each node sets &quot;left&quot; and &quot;right&quot; value to nodes to describe its &quot;spatial limits&quot; (using the term very liberally here). Thus a node that has &quot;left:1&quot; and &quot;right:20&quot; contains a node that has &quot;left:2&quot; and &quot;right:4&quot;.</li>
@@ -32,56 +32,56 @@
 <tr>
 <td>  <a href="http://propelorm.org/">Propel</a></td>
 <td>PHP</td>
-<td><a href="http://propelorm.org/documentation/behaviors/nested-set.html">(✓)</a></td>
-<td>(x)</td>
-<td>(x)</td>
-<td>(x)</td>
-<td>(✓)       </td>
+<td><a href="http://propelorm.org/documentation/behaviors/nested-set.html"><i class="fa fa-check"></i></a></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i>       </td>
 </tr>
 <tr>
 <td>  <a href="http://datamapper.wanwizard.eu/">DataMapper</a></td>
 <td>PHP</td>
-<td><a href="http://datamapper.wanwizard.eu/pages/extensions/nestedsets.html">(✓)</a></td>
-<td>(x)</td>
-<td>(x)</td>
-<td>(x)</td>
-<td>(✓)      </td>
+<td><a href="http://datamapper.wanwizard.eu/pages/extensions/nestedsets.html"><i class="fa fa-check"></i></a></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i>      </td>
 </tr>
 <tr>
 <td>  <a href="http://doctrine.readthedocs.org">Doctrine</a></td>
 <td>PHP</td>
-<td><a href="http://doctrine.readthedocs.org/en/latest/en/manual/hierarchical-data.html">(✓)</a></td>
-<td>(x)</td>
-<td>(x)</td>
-<td>(x)</td>
-<td>(✓)    </td>
+<td><a href="http://doctrine.readthedocs.org/en/latest/en/manual/hierarchical-data.html"><i class="fa fa-check"></i></a></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i>    </td>
 </tr>
 <tr>
 <td>  <a href="http://www.yiiframework.com/">Yii2</a></td>
 <td>PHP</td>
 <td><a href="http://www.yiiframework.com/extensions/?tag=nested+set">plugin</a></td>
-<td>(x)</td>
-<td>(x)</td>
-<td>(x)</td>
-<td>(x)</td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
 </tr>
 <tr>
 <td>  <a href="http://fuelphp.com">FuelPHP</a></td>
 <td>PHP</td>
-<td><a href="http://fuelphp.com/docs/packages/orm/model/nestedset.html">(✓)</a></td>
-<td>(x)</td>
-<td>(x)</td>
-<td><a href="http://fuelphp.com/docs/packages/orm/eav.html">(✓)</a></td>
+<td><a href="http://fuelphp.com/docs/packages/orm/model/nestedset.html"><i class="fa fa-check"></i></a></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><a href="http://fuelphp.com/docs/packages/orm/eav.html"><i class="fa fa-check"></i></a></td>
 <td>no        </td>
 </tr>
 <tr>
 <td>  <a href="http://laravel.com/">Laravel</a></td>
 <td>PHP</td>
 <td><a href="http://etrepat.com/baum/">plugin</a></td>
-<td>(x)</td>
-<td>(x)</td>
-<td>(x)</td>
-<td>(x)</td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
 </tr>
 </tbody>
 </table></div></div><div id="Footer"><p>content copyrighted (c) Arab Image Foundation</p></div></div></body></html>
