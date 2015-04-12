@@ -27,6 +27,7 @@ mixin section(name)
 
 mixin tree(head,tail,current)
 	- var path;
+	- var rootPath = (environment == "production") ? '/imagestalk':''
 	for val, key in head
 		- var active = false;
 		if key == '.git' && key == '_data'
@@ -37,23 +38,24 @@ mixin tree(head,tail,current)
 				if filter.test(file) && !filter404.test(file)
 					- file = file.replace(replace, "");
 					if file !== '' && file !== '/'
-						- path = tail+file
+						- path = rootPath+tail+file
 						li
 							a(href="#{path}" class=isCurrent(path,current))=formatName(file)
 		else
 			li
-				- path = tail+key
+				- path = rootPath+tail+key
 				a(href="#{path}" class=isCurrent(path,current))=formatName(key)
 				ul
 					mixin tree(val, tail + key + "/",current)
 
 mixin sidebar(base,basePath,current,home)
+	- var rootPath = (environment == "production") ? '/imagestalk':''
 	.sidebar
 		ul
 			li
-				a(href="../" class="home") Home
+				a(href="../"+rootPath class="home") Home
 			li
-				a(href=basePath class=isCurrent(basePath.replace(/^\/|\/$/g,''),current.path.join('/')))=formatName(basePath)
+				a(href=rootPath+basePath class=isCurrent(basePath.replace(/^\/|\/$/g,''),current.path.join('/')))=formatName(basePath)
 				ul
 					+tree(base,basePath,'/'+current.path.join('/'))
 
