@@ -1,0 +1,51 @@
+body
+	font-family "Helvetica"
+	background backgroundColor
+	color #444
+	font-size 1em
+
+h1
+	font-size 3em
+	line-height 1.2em
+	padding .2em 0
+
+h2
+	font-size 1.3em
+	line-height 1.2em
+	padding .2em 0	
+
+h3
+	font-size 1.2em
+	line-height 1.2em
+	font-weight 300
+	
+h1 a, h2 a, h3 a,h4 a
+	&:link,&:visited,&:active
+		text-decoration none
+		color darken(highlightColor,50)
+	&:hover
+		text-decoration underline
+		
+em
+	font-style italic
+	
+p
+	margin-bottom 1em
+	
+hr
+	padding 0
+	border none
+	border-top medium double highlightColor
+	color highlightColor
+	text-align center
+	width 50%
+	margin 2em auto
+	font-family Georgia,​serif
+	:after
+		content "*"
+		display inline-block
+		position relative
+		top -0.4em
+		font-size 1.4em
+		padding 0 0.25em
+		background backgroundColor

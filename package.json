@@ -1,0 +1,26 @@
+{
+  "name": "AIF",
+  "version": "0.0.1",
+  "description": "Website for Arab Image Foundation pre-planning",
+  "main": "index.js",
+  "dependencies": {
+    "harp": "^0.15.2",
+    "nib": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "run":"harp server ./pages ",
+    "build":"harp compile ./pages ./public && git subtree push --prefix public origin gh-pages",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArabImageFoundation/imagestalk.git"
+  },
+  "author": "xananax@yelostudio.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArabImageFoundation/imagestalk/issues"
+  },
+  "homepage": "https://github.com/ArabImageFoundation/imagestalk"
+}

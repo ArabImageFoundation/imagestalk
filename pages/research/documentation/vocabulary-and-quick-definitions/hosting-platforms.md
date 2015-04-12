@@ -1,0 +1,8 @@
+Hosting platforms (where the website will reside) can be roughly categorized as follows:
+ 
+  - Shared Hosting: This is the least costly solution. Server is shared between many users. There is a terrible loss in performance, but as most websites don't require much, in a lot of cases, this is enough. However, special solutions cannot be installed on shared hosts (typically), which means losing quite a good amount of flexibility
+  - Private Dedicated Managed Server: This is the most costly solution, but the most flexible too. As the name implies, a machine is dedicated to your website only.
+  - Private Dedicated Self-Managed Server: This is the same as above, but slightly less costly, as you are supposed to manage the server yourself. Any problem that arises is yours to fix (unless it's a hardware problem). Which means you have to hire your own IT, but having someone on a retainer fee might be enough
+  - Private Virtual Managed Server: This is a mid-way between shared hosting and private servers. It's a private server, but in the cloud, and distributed over multiple PCs. The cost is also in the middle between a shared host and a private server
+  - Private Virtual Self-Managed server: As you can guess, this is a virtual private server you manage yourself
+  - Cloud Platform: This is the equivalent of a VPS (Virtual Private Server), but it scales up automatically with your requirements, so it can end up being much stronger than a dedicated server. However, the pricing scheme is often complex, very low as long when your requirements are low, but climbing up exponentially as your requirements grow.

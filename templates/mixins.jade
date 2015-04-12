@@ -1,0 +1,75 @@
+- var fontIcons = {'+':'plus-circle','-':'minus-circle','#':'check','x':'times','✓':'check'}
+- var formatName = function(name){return name.replace(/\.html$/,'').replace(/^\/|\/$/g,'').split(/-|\//g).map(function(w){return w.charAt(0).toUpperCase()+w.slice(1);}).join(' ').replace(/\sAnd\s/g,' & ');}
+- var formatTitle = function(current){return formatName(current.path[current.path.length-1]=='index' ? current.path[current.path.length-2] : current.path[current.path.length-1]);}
+- var isCurrent = function(path,currentPath){return (path==currentPath.replace(/\/index$/,'')) ? 'active' : false;}
+- var findKey = function(root,tail,head){head = root; while(head && tail.length){if(head[tail[0]]){head=head[tail.shift()]}};return head;}
+- var setSymbols = function(text){return text.replace(/\((.)\)/g,function(a,s){var t=fontIcons[s] || 'default';return '<i class="fa fa-'+t+'"></i>'});}
+
+mixin title(current,mainTitle)
+	- if(current.path[current.path.length-1] == 'index'){current.path.pop();}
+	if !current.path.length
+		h1
+			a(href='/')=mainTitle
+	else
+		h1
+			a(href='/'+current.path.join('/'))=formatTitle(current)
+
+mixin section(name)
+	section
+		h2
+			a(href='./#{name}')=formatName(name.split('/').pop())
+		.page!=setSymbols(partial(name))
+
+- var filter = /(\.html$)/;
+- var replace = /(\.html$)|(^index\.html$)/;
+- var filter404 = /(404)/;
+
+mixin tree(head,tail,current)
+	- var path;
+	for val, key in head
+		- var active = false;
+		if key == '.git' && key == '_data'
+			- continue
+		if key == '_contents'
+			each file in val
+				- active = false;
+				if filter.test(file) && !filter404.test(file)
+					- file = file.replace(replace, "");
+					if file !== '' && file !== '/'
+						- path = tail+file
+						li
+							a(href="#{path}" class=isCurrent(path,current))=formatName(file)
+		else
+			li
+				- path = tail+key
+				a(href="#{path}" class=isCurrent(path,current))=formatName(key)
+				ul
+					mixin tree(val, tail + key + "/",current)
+
+mixin sidebar(base,basePath,current,home)
+	.sidebar
+		ul
+			li
+				a(href="/" class="home") Home
+			li
+				a(href=basePath class=isCurrent(basePath.replace(/^\/|\/$/g,''),current.path.join('/')))=formatName(basePath)
+				ul
+					+tree(base,basePath,'/'+current.path.join('/'))
+
+
+mixin listDir(inc)
+	- var head = public
+	- var tail = current.path
+	- tail = (tail[tail.length-1]=='index') ? tail.slice(0,-1) : tail.slice()
+	- var rootPath = tail.join('/')+'/'
+	- var root = findKey(head,tail)
+	- if(!root){return;}
+	- root = root._contents
+	for val in root
+		- val = val.replace(/\.html$/,'')
+		if val == 'index'
+			- continue
+		if !inc
+			a(href="/#{rootPath+val}")=formatName(val)
+		else
+			+section(val)

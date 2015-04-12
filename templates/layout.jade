@@ -1,0 +1,20 @@
+include mixins
+doctype
+html
+	head
+		link(rel='stylesheet' href='/style.css')
+		link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+		title Arab Image Foundation
+	body(class=current.path)
+		#Wrapper
+			#Content
+				block SIDEBAR
+				.content
+					block TITLE
+						+title(current,'Images Talk')
+					block BODY
+						!= yield
+			#Footer
+				block FOOTER
+					p content copyrighted (c) Arab Image Foundation
+

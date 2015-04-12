@@ -1,0 +1,36 @@
+.sidebar
+	display block
+	float left
+	height 100%
+	width 20em
+	overflow hidden
+	box-sizing border-box
+	padding 1em
+	ul, li
+		list-style none
+		padding 0
+		margin-left 0
+	li
+		margin-left .6em
+	a
+		text-decoration none
+		color #4E4E4E
+		display inline-block
+		padding-bottom .2em
+		padding-top .2em
+		&:link,&:visited,&:active
+			color #4E4E4E
+		&:before
+			content:''
+			display inline-block
+			width 8px
+			height 8px
+			background #bbb
+			border-radius 4px
+			margin-right .2em
+			margin-bottom .1em
+		&.active
+			color black
+		&.active, &:hover
+			&:before
+				background highlightColor
