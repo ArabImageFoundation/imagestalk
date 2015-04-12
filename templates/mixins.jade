@@ -38,13 +38,13 @@ mixin tree(head,tail,current)
 				if filter.test(file) && !filter404.test(file)
 					- file = file.replace(replace, "");
 					if file !== '' && file !== '/'
-						- path = rootPath+tail+file
+						- path = tail+file
 						li
-							a(href="#{path}" class=isCurrent(path,current))=formatName(file)
+							a(href="#{rootPath+path}" class=isCurrent(path,current))=formatName(file)
 		else
 			li
-				- path = rootPath+tail+key
-				a(href="#{path}" class=isCurrent(path,current))=formatName(key)
+				- path = tail+key
+				a(href="#{rootPath+path}" class=isCurrent(path,current))=formatName(key)
 				ul
 					mixin tree(val, tail + key + "/",current)
 
