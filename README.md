@@ -1,15 +1,16 @@
 # imagestalk
 
+install dependencies:
+```
+npm install
+```
+
 watch:
 ```
 npm start
 ```
 
-build & send to github-pages:
+build, commit & send to github-pages:
 ```
-git checkout master
-git add -A
-git commit -m "some commit message"
-git push
 npm run compile
 ```

@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "start":"harp server ./pages ",
-    "compile":"harp compile ./pages ./public && git subtree push --prefix public origin gh-pages",
+    "compile":"harp compile ./pages ./public && git checkout master && git add -A && git commit && git subtree push --prefix public origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
