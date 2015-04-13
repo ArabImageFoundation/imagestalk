@@ -1,0 +1,60 @@
+#Wrapper
+	max-width 1096px
+	min-width 500px
+.preliminary-information .content
+	margin-left 20em
+.sidebar
+	width 20em
+	
+
+@media only screen and (max-width: 1024px)
+	#Wrapper
+		max-width 800px
+	.preliminary-information .content
+		margin-left 15em
+	.sidebar
+		width 15em
+	
+@media only screen and (max-width: 750px)
+	#Wrapper
+		max-width 700px
+	.preliminary-information .content
+		margin-left 0
+	.sidebar
+		width 20em
+		position absolute
+		top 0
+		left -20em
+		background #ccc
+		transition all .4s ease-out
+		&:hover
+			left 0
+		&:after
+			content ''
+			display inline-block
+			position absolute
+			top .3em
+			right -1.4em
+			padding .3em
+			font-size 1.5em
+			background #ccc
+			display: inline-block;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			font-size-adjust: none;
+			font-stretch: normal;
+			font-feature-settings: normal;
+			font-language-override: normal;
+			font-kerning: auto;
+			font-synthesis: weight style;
+			font-variant: normal;
+			text-rendering: auto;
+			transform: translate(0px, 0px);
+			
+
+
+
+.preliminary-information.tasks .content
+	margin-left 0
