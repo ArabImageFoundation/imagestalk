@@ -35,7 +35,7 @@ There are three paths we can take to achieve this project:
 
 ---
 
-**Yelostudio**'s duties:
+**Synclop**'s duties:
 
  - Counsel on strategic decisions, specially tied to the project
  - Counsel on User Interface/User Experience decisions
@@ -48,9 +48,9 @@ There are three paths we can take to achieve this project:
 **FAI**'s duties:
 
  - Answer questions in a timely manner
- - Provide clear specifications (will be helped in this by Yelostudio)
+ - Provide clear specifications (will be helped in this by Synclop)
  - Sign on requirements and specifications (and once agreed, not change them later)
- - Provide any documentation Yelostudio might need
+ - Provide any documentation Synclop might need
  - Pay as agreed by both parties
 
 --------

@@ -29,15 +29,39 @@
 			border-radius 4px
 			margin-right .2em
 			margin-bottom .1em
+			transition all .5s ease-out
 		i
 			margin-right .2em
+			transition all .5s ease-out
 		&.home
 			&:before
 				content none
 		&.active
 			color black
 		&.active, &:hover
+			text-decoration none
 			&:before
 				background highlightColor
+				transition all .2s ease-out
 			i
 				color highlightColor
+				transition all .2s ease-out
+				
+.folder
+	>a
+		i
+			&:before
+				content '+'
+				background transparent
+				font-size 1.2em
+				font-weight bold
+			&.open
+				&:before
+					content '-'
+		&:before
+			content none
+	ul
+		display none
+	
+	ul.open
+		display block

@@ -1,4 +1,4 @@
-This is the engine that will power the website and FAI interface. The options are too numerous to list even in a book, but the technologies that yelostudio is considering are:
+This is the engine that will power the website and FAI interface. The options are too numerous to list even in a book, but the technologies that Synclop is considering are:
 
  - PHP: One of the oldest, most widely used technologies of the web. Powers more or less half the websites, if not much more.
      + (+) Veteran. Everyone knows how to use it, countless examples for any situation you might think of

@@ -1,7 +1,7 @@
 - var fontIcons = {'+':'plus-circle','-':'minus-circle','#':'check','x':'times','✓':'check'}
 - var formatName = function(name){return name.replace(/\.html$/,'').replace(/^\/|\/$/g,'').split(/-|\//g).map(function(w){return w.charAt(0).toUpperCase()+w.slice(1);}).join(' ').replace(/\sAnd\s/g,' & ');}
 - var formatTitle = function(current){return formatName(current.path[current.path.length-1]=='index' ? current.path[current.path.length-2] : current.path[current.path.length-1]);}
-- var isCurrent = function(path,currentPath){return (path==currentPath.replace(/\/index$/,'')) ? 'active' : false;}
+- var isCurrent = function(path,currentPath){return (path==currentPath.replace(/\/index$/,'')) ? 'active' : '';}
 - var findKey = function(root,tail,head){head = root; while(head && tail.length){if(head[tail[0]]){head=head[tail.shift()]}};return head;}
 - var setSymbols = function(text){return text.replace(/\((.)\)/g,function(a,s){var t=fontIcons[s] || 'default';return '<i class="fa fa-'+t+'"></i>'});}
 - var asset = function(_asset){var path = current.path.join('/').replace(/^\/|\/$/g,'').replace(/\/?index$/,'').split('/').map(function(n){return n?'..':''}).join('/'); return ((path?path+'/':'') +_asset);}
@@ -16,10 +16,17 @@ mixin title(current,mainTitle)
 		h1
 			a(href='/'+current.path.join('/'))=formatTitle(current)
 
-mixin section(name)
+mixin section(name,title,url)
 	section
-		h2
-			a(href='./#{name}')=formatName(name.split('/').pop())
+		if title
+			h2
+				if url
+					a(href=rootPath+url)=title
+				else
+					| title
+		else if !/index\.md/.test(name)
+			h2
+				a(href='./')=formatName(name.split('/').pop())
 		.page!=partial(name)
 
 - var filter = /(\.html$)/;
@@ -45,6 +52,10 @@ mixin tree(head,tail,current)
 			li
 				- path = tail+key
 				a(href="#{rootPath+path}" class=isCurrent(path,current))=formatName(key)
+				- var valKeys = Object.keys(val)
+				if !valKeys.length || valKeys.length==1 && valKeys[0] == '_contents'
+					if val._contents[0] == 'index.html' && val._contents.length == 1
+						- return
 				ul
 					mixin tree(val, tail + key + "/",current)
 
@@ -52,7 +63,7 @@ mixin sidebar(base,basePath,current,home)
 	.sidebar
 		ul
 			li
-				a(href=rootPath class="home")
+				a(href=rootPath?rootPath:'/' class="home")
 					i.fa.fa-home
 					| Home
 			li

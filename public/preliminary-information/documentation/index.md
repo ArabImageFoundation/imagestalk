@@ -1,0 +1,1 @@
+The following presents some technical concepts to aid and guide the discussion between synclop and AIF
