@@ -19,4 +19,6 @@ $(function() {
             return false;
         }
     });
+
+    $('table').tablesorter().addClass('sortable')
 });
