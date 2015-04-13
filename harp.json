@@ -1,8 +1,0 @@
-{
-  "globals": {
-    "title": "Acme Site",
-    "name"  : "John Doe",
-    "uri": "http://example.com",
-    "envs":"$NODE_ENV"
-  }
-}

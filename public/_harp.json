@@ -1,0 +1,6 @@
+{
+  "globals": {
+    "title": "Arab Image Foundation",
+    "envs":"$NODE_ENV"
+  }
+}
