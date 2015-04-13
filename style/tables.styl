@@ -1,9 +1,46 @@
 table
-	width 100%
 	margin-top 1em
-	
+	font-size .7em
+	//max-width 100%
+	table-layout fixed
+	//width 100%
+	//white-space nowrap
+
 td,th
-	padding .3em
+	padding .4em
+	//overflow hidden
+	//text-overflow ellipsis
+
+.sortable
+	th
+		&:after
+			content ''
+			margin-left .5em
+			display inline-block
+			color white
+			font-family: FontAwesome;
+			font-feature-settings: normal;
+			font-kerning: auto;
+			font-language-override: normal;
+			font-size: inherit;
+			font-size-adjust: none;
+			font-stretch: normal;
+			font-style: normal;
+			font-synthesis: weight style;
+			font-variant: normal;
+			font-weight: normal;
+			line-height: 1;
+			text-rendering: auto;
+			transform: translate(0px, 0px);
+			
+th
+	padding .4em 
+	&.headerSortUp:after
+		content ''
+		color black
+	&.headerSortDown:after
+		color black
+
 thead
 	tr
 		background #999

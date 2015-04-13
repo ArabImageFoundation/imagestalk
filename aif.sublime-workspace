@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"list",
+				"listDir"
+			],
+			[
 				"val",
 				"valKeys"
 			],
@@ -510,10 +514,6 @@
 			[
 				"co",
 				"combs"
-			],
-			[
-				"id",
-				"identifier"
 			]
 		]
 	},
@@ -633,31 +633,47 @@
 	},
 	"expanded_folders":
 	[
+		"/home/xananax/projects/AIF",
+		"/home/xananax/projects/AIF/templates"
 	],
 	"file_history":
 	[
-		"/home/xananax/projects/AIF/package.json",
-		"/home/xananax/projects/AIF/public/preliminary-information/index.jade",
-		"/home/xananax/projects/AIF/public/preliminary-information/documentation/index.jade",
+		"/home/xananax/projects/AIF/templates/functions.jade",
 		"/home/xananax/projects/AIF/templates/mixins.jade",
+		"/home/xananax/projects/AIF/test.jade",
+		"/home/xananax/projects/AIF/test.js",
+		"/home/xananax/projects/AIF/public/_harp.json",
+		"/home/xananax/projects/AIF/public/preliminary-information/_layout.jade",
+		"/home/xananax/projects/AIF/templates/layout.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/index.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/tasks/_layout.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/_index.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/index.md",
+		"/home/xananax/projects/AIF/public/_layout.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/_index.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/index.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/index.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/_data.json",
+		"/home/xananax/projects/AIF/public/_data.json",
+		"/home/xananax/projects/AIF/style/responsive.styl",
+		"/home/xananax/projects/AIF/public/preliminary-information/a_data.json",
+		"/home/xananax/projects/AIF/templates/preliminary-information_layout.jade",
+		"/home/xananax/projects/AIF/templates/debugger.jade",
+		"/home/xananax/projects/AIF/style/sidebar.styl",
+		"/home/xananax/projects/AIF/style/index.styl",
+		"/home/xananax/projects/AIF/package.json",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/index.jade",
 		"/home/xananax/projects/AIF/public/main.js",
 		"/home/xananax/projects/AIF/www/main.js",
 		"/home/xananax/projects/AIF/www/index.html",
-		"/home/xananax/projects/AIF/templates/layout.jade",
-		"/home/xananax/projects/AIF/style/sidebar.styl",
 		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/index.jade",
 		"/home/xananax/projects/AIF/public/preliminary-information/documentation/index.md",
-		"/home/xananax/projects/AIF/public/preliminary-information/index.md",
-		"/home/xananax/projects/AIF/public/preliminary-information/planning/tasks/_layout.jade",
-		"/home/xananax/projects/AIF/public/preliminary-information/_layout.jade",
-		"/home/xananax/projects/AIF/style/index.styl",
 		"/home/xananax/projects/AIF/public/preliminary-information/agreement.md",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/timeline.md",
 		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/server-side-technologies.md",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/tasks/index.jade",
 		"/home/xananax/projects/AIF/www/preliminary-information/index.html",
 		"/home/xananax/projects/AIF/www/preliminary-information/planning/index.html",
-		"/home/xananax/projects/AIF/public/_harp.json",
 		"/home/xananax/projects/AIF/README.md",
 		"/home/xananax/projects/AIF/www/style.css",
 		"/home/xananax/projects/AIF/style/tables.styl",
@@ -749,21 +765,7 @@
 		"/home/xananax/projects/ntoes8/data.io/data.io.js",
 		"/home/xananax/projects/ntoes8/data.io/examples/middleware/session.js",
 		"/home/xananax/projects/ntoes8/data.io/examples/auth/server.js",
-		"/home/xananax/projects/AIF-Wiki/_Sidebar.md",
-		"/home/xananax/projects/AIF-Wiki/_Footer.md",
-		"/home/xananax/projects/AIF-Wiki/Research/Vocabulary-and-Quick-Definitions.md",
-		"/home/xananax/projects/AIF-Wiki/Research/Technologies.md",
-		"/home/xananax/projects/AIF-Wiki/Research/index.md",
-		"/home/xananax/projects/AIF-Wiki/040-Annex1.md",
-		"/home/xananax/projects/AIF-Wiki/Documentation-&-References.md",
-		"/home/xananax/projects/AIF-Wiki/050-Annex2.md",
-		"/home/xananax/dwhelper/movies.txt",
-		"/home/xananax/dwhelper/Casey Calvert/movies.txt",
-		"/home/xananax/projects/puppeteer/views/layout.jade",
-		"/home/xananax/projects/puppeteer/views/home.jade",
-		"/home/xananax/projects/puppeteer/views/parts/hero.jade",
-		"/home/xananax/projects/puppeteer/views/parts/contact.jade",
-		"/home/xananax/projects/puppeteer2/synclop/views/parts/swag.jade"
+		"/home/xananax/projects/AIF-Wiki/_Sidebar.md"
 	],
 	"find":
 	{
@@ -797,6 +799,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"consol",
 			"yelo",
 			"pages",
 			"orange",
@@ -923,8 +926,7 @@
 			"id(",
 			"_comingUp",
 			"_current",
-			"resiz",
-			"each"
+			"resiz"
 		],
 		"highlight": true,
 		"in_selection": false,

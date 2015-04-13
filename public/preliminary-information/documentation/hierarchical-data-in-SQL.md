@@ -30,12 +30,12 @@ Since manipulating DGs and DAGs by hand would be complex, I've been looking for 
 
   Name             | Technology  | Nested Sets  | AG  | DAG  | EAV      | Pure ORM  
   ---------------- | ----------- | ------------ | --- | ---- | -------- | --------- 
-  [Propel][1]      | PHP         | [(✓)][2]     | (x)  | (x)   | (x)        | (✓)       
-  [DataMapper][3]  | PHP         | [(✓)][4]     | (x)  | (x)   | (x)        | (✓)      
-  [Doctrine][10]   | PHP         | [(✓)][11]    | (x)  | (x)   | (x)       | (✓)    
-  [Yii2][12]       | PHP         | [plugin][13] | (x)  | (x)   | (x)       | (x)
-  [FuelPHP][5]     | PHP         | [(✓)][6]     | (x)  | (x)   | [(✓)][7] | no        
-  [Laravel][8]     | PHP         | [plugin][9]  | (x)   | (x)    | (x)        | (x)
+  [Propel][1]      | PHP         | [(✓)][2]     | (x) | (x)  | (x)      | (✓)       
+  [DataMapper][3]  | PHP         | [(✓)][4]     | (x) | (x)  | (x)      | (✓)      
+  [Doctrine][10]   | PHP         | [(✓)][11]    | (x) | (x)  | (x)      | (✓)    
+  [Yii2][12]       | PHP         | [plugin][13] | (x) | (x)  | (x)      | (x)
+  [FuelPHP][5]     | PHP         | [(✓)][6]     | (x) | (x)  | [(✓)][7] | no        
+  [Laravel][8]     | PHP         | [plugin][9]  | (x) | (x)  | (x)      | (x)
  
 [1]:http://propelorm.org/
 [2]:http://propelorm.org/documentation/behaviors/nested-set.html
