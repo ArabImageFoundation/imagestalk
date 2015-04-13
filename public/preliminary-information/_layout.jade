@@ -1,7 +1,4 @@
-extends ../_layout
-
-block BODY
-	!=setSymbols(yield)
+extends ../../templates/layout
 
 block SIDEBAR
 	+sidebar(public['preliminary-information'], "/preliminary-information/",current)

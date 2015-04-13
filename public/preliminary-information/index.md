@@ -3,3 +3,7 @@ The document roughs up:
 
 - Requirements of both parties
 - Technical vocabulary (to help establish a few bases for future discussions)
+
+----
+
+[[sitemap("/",'/')]]

@@ -2,6 +2,8 @@ include mixins
 doctype
 html
 	head
+		if isDev
+			include debugger
 		link(rel='stylesheet' href=rootPath+'/style.css')
 		link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
 		meta(content="width=device-width, initial-scale=1.0" name="viewport")
@@ -16,7 +18,7 @@ html
 					block TITLE
 						+title(current,'Images Talk')
 					block BODY
-						!=setSymbols(yield)
+						+body()
 			#Footer
 				block FOOTER
 					p &copy; Arab Image Foundation
