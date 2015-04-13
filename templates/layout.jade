@@ -2,9 +2,9 @@ include mixins
 doctype
 html
 	head
-		link(rel='stylesheet' href=(environment='production')?'/imagestalk/style.css':asset('style.css'))
+		link(rel='stylesheet' href=(environment=='production')?'/imagestalk/style.css':'/style.css')
 		link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
-		title Arab Image Foundation
+		title=title
 	body(class=current.path.join(' ')+' '+environment)
 		#Wrapper
 			#Content

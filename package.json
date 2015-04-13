@@ -9,8 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start":"harp server ./pages ",
-    "compile":"NODE_ENV=production harp compile ./pages ./public && git checkout master && git add -A && git commit && git subtree push --prefix public origin gh-pages",
+    "start":"NODE_ENV=development harp server",
+    "compile":"NODE_ENV=production harp compile ./public ./www && git checkout master && git add -A && git commit && git subtree push --prefix www origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

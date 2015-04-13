@@ -27,7 +27,7 @@ mixin section(name)
 
 mixin tree(head,tail,current)
 	- var path;
-	- var rootPath = (environment == "production") ? '/imagestalk':''
+	- var rootPath = (env == "production") ? '/imagestalk':''
 	for val, key in head
 		- var active = false;
 		if key == '.git' && key == '_data'
@@ -49,7 +49,7 @@ mixin tree(head,tail,current)
 					mixin tree(val, tail + key + "/",current)
 
 mixin sidebar(base,basePath,current,home)
-	- var rootPath = (environment == "production") ? '/imagestalk':''
+	- var rootPath = (env == "production") ? '/imagestalk':''
 	.sidebar
 		ul
 			li
