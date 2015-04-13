@@ -10,7 +10,12 @@ watch:
 npm start
 ```
 
-build, commit & send to github-pages:
+build
 ```
 npm run compile
+```
+
+commit & send to github-pages
+```
+npm run update
 ```

@@ -5,6 +5,7 @@
 - var findKey = function(root,tail,head){head = root; while(head && tail.length){if(head[tail[0]]){head=head[tail.shift()]}};return head;}
 - var setSymbols = function(text){return text.replace(/\((.)\)/g,function(a,s){var t=fontIcons[s] || 'default';return '<i class="fa fa-'+t+'"></i>'});}
 - var asset = function(_asset){var path = current.path.join('/').replace(/^\/|\/$/g,'').replace(/\/?index$/,'').split('/').map(function(n){return n?'..':''}).join('/'); return ((path?path+'/':'') +_asset);}
+- var rootPath = (env == "production" || environment == "production") ? '/imagestalk':''
 
 mixin title(current,mainTitle)
 	- if(current.path[current.path.length-1] == 'index'){current.path.pop();}
@@ -27,7 +28,6 @@ mixin section(name)
 
 mixin tree(head,tail,current)
 	- var path;
-	- var rootPath = (env == "production") ? '/imagestalk':''
 	for val, key in head
 		- var active = false;
 		if key == '.git' && key == '_data'
@@ -49,7 +49,6 @@ mixin tree(head,tail,current)
 					mixin tree(val, tail + key + "/",current)
 
 mixin sidebar(base,basePath,current,home)
-	- var rootPath = (env == "production") ? '/imagestalk':'/'
 	.sidebar
 		ul
 			li
@@ -66,7 +65,7 @@ mixin listDir(inc)
 	- var head = public
 	- var tail = current.path
 	- tail = (tail[tail.length-1]=='index') ? tail.slice(0,-1) : tail.slice()
-	- var rootPath = tail.join('/')+'/'
+	- var basePath = rootPath+tail.join('/')+'/'
 	- var root = findKey(head,tail)
 	- if(!root){return;}
 	- root = root._contents
@@ -75,6 +74,6 @@ mixin listDir(inc)
 		if val == 'index'
 			- continue
 		if !inc
-			a(href="/#{rootPath+val}")=formatName(val)
+			a(href="/#{basePath+val}")=formatName(val)
 		else
 			+section(val)
