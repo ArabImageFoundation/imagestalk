@@ -1,23 +1,14 @@
 #Wrapper
 	max-width 1096px
-	min-width 500px
 .preliminary-information .content
 	margin-left 20em
 .sidebar
 	width 20em
-	
 
-@media only screen and (max-width: 1024px)
-	#Wrapper
-		max-width 800px
-	.preliminary-information .content
-		margin-left 15em
-	.sidebar
-		width 15em
 	
-@media only screen and (max-width: 750px)
+@media only screen and (max-width: 64em)
 	#Wrapper
-		max-width 700px
+		max-width 55em
 	.preliminary-information .content
 		margin-left 0
 	.sidebar
@@ -27,10 +18,10 @@
 		left -20em
 		background #ccc
 		transition all .4s ease-out
-		&:hover
-			left 0
-		&:after
-			content ''
+		box-shadow 7px 0px 13px -3px rgba(0,0,0,0.3)
+		a
+			font-size 1.3em
+		label
 			display inline-block
 			position absolute
 			top .3em
@@ -38,21 +29,13 @@
 			padding .3em
 			font-size 1.5em
 			background #ccc
-			display: inline-block;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			line-height: 1;
-			font-size-adjust: none;
-			font-stretch: normal;
-			font-feature-settings: normal;
-			font-language-override: normal;
-			font-kerning: auto;
-			font-synthesis: weight style;
-			font-variant: normal;
-			text-rendering: auto;
-			transform: translate(0px, 0px);
-			
+			box-shadow 7px 0px 13px -3px rgba(0,0,0,0.3)
+	#DrawerToggle:checked + .sidebar
+		left 0
+	
+@media only screen and (max-width: 30em)
+	.content
+		font-size 1em
 
 
 

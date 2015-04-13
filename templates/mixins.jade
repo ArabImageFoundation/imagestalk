@@ -60,7 +60,10 @@ mixin tree(head,tail,current)
 					mixin tree(val, tail + key + "/",current)
 
 mixin sidebar(base,basePath,current,home)
+	input#DrawerToggle(type="checkbox" name="drawer-toggle")
 	.sidebar
+		label(for="DrawerToggle" id="drawer-toggle-label")
+			i.fa.fa-bars
 		ul
 			li
 				a(href=rootPath?rootPath:'/' class="home")
