@@ -49,11 +49,13 @@ mixin tree(head,tail,current)
 					mixin tree(val, tail + key + "/",current)
 
 mixin sidebar(base,basePath,current,home)
-	- var rootPath = (env == "production") ? '/imagestalk':''
+	- var rootPath = (env == "production") ? '/imagestalk':'/'
 	.sidebar
 		ul
 			li
-				a(href="../"+rootPath class="home") Home
+				a(href=rootPath class="home")
+					i.fa.fa-home
+					| Home
 			li
 				a(href=rootPath+basePath class=isCurrent(basePath.replace(/^\/|\/$/g,''),current.path.join('/')))=formatName(basePath)
 				ul

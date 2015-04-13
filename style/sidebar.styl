@@ -29,8 +29,15 @@
 			border-radius 4px
 			margin-right .2em
 			margin-bottom .1em
+		i
+			margin-right .2em
+		&.home
+			&:before
+				content none
 		&.active
 			color black
 		&.active, &:hover
 			&:before
 				background highlightColor
+			i
+				color highlightColor
