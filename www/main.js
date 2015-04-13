@@ -1,5 +1,5 @@
 $(function() {
-    $('li > ul').each(function(i) {
+    $('.sidebar li > ul').each(function(i) {
         var $ul = $(this);
         var $a = $ul.siblings('a');
         var $parent = $ul.parent();

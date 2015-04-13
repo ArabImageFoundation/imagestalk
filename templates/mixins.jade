@@ -66,9 +66,9 @@ mixin sidebar(base,basePath,current,home)
 				a(href=rootPath?rootPath:'/' class="home")
 					i.fa.fa-home
 					| Home
-			li
+			li.open
 				a(href=rootPath+basePath class=isCurrent(basePath.replace(/^\/|\/$/g,''),current.path.join('/')))=formatName(basePath)
-				ul
+				ul.open
 					+tree(base,basePath,'/'+current.path.join('/'))
 
 
@@ -76,7 +76,7 @@ mixin listDir(inc)
 	- var head = public
 	- var tail = current.path
 	- tail = (tail[tail.length-1]=='index') ? tail.slice(0,-1) : tail.slice()
-	- var basePath = rootPath+tail.join('/')+'/'
+	- var basePath = tail.join('/')+'/'
 	- var root = findKey(head,tail)
 	- if(!root){return;}
 	- root = root._contents
@@ -85,6 +85,6 @@ mixin listDir(inc)
 		if val == 'index'
 			- continue
 		if !inc
-			a(href="/#{basePath+val}")=formatName(val)
+			a(href="/#{rootPath+basePath+val}")=formatName(val)
 		else
 			+section(val)
