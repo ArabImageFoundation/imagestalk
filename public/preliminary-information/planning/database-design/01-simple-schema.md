@@ -34,7 +34,7 @@ zoomable representation
 ---------- TABLE STRUCTURE FOR ARAB IMAGE FOUNDATION -----------------
 ---- the following describes the different tables and their usage ----
 ----------------------------------------------------------------------
-----  This version of the database schema is the COMPLEX version  ----
+----  This version of the database schema is the SIMPLE version   ----
 ----              Highly denormalized and rigid                   ----
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
