@@ -1,1 +1,246 @@
-<!DOCTYPE html><html><head><link rel="stylesheet" href="/imagestalk/style.css"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>Arab Image Foundation</title><script src="https://code.jquery.com/jquery-2.1.3.min.js"></script><script src="/imagestalk/jquery.tablesorter.min.js"></script><script src="/imagestalk/main.js"></script></head><body class="preliminary-information documentation comparison-of-graph-databases production"><div id="Wrapper"><div id="Content"><input id="DrawerToggle" type="checkbox" name="drawer-toggle"/><div class="sidebar"><label for="DrawerToggle" id="drawer-toggle-label"><i class="fa fa-bars"></i></label><ul><li><a href="/imagestalk" class="home"><i class="fa fa-home"></i>Home</a></li><li class="open"><a href="/imagestalk/preliminary-information/">Preliminary Information</a><ul class="open"><li><a href="/imagestalk/preliminary-information/agreement">Agreement</a></li><li><a href="/imagestalk/preliminary-information/documentation">Documentation</a><ul><li><a href="/imagestalk/preliminary-information/documentation/comparison-of-graph-databases" class="active">Comparison Of Graph Databases</a></li><li><a href="/imagestalk/preliminary-information/documentation/hierarchical-data-in-SQL">Hierarchical Data In SQL</a></li><li><a href="/imagestalk/preliminary-information/documentation/other-references-of-interest">Other References Of Interest</a></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions">Vocabulary &amp; Quick Definitions</a><ul><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/databases">Databases</a></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/hosting-platforms">Hosting Platforms</a></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/server-side-technologies">Server Side Technologies</a></li></ul></li></ul></li><li><a href="/imagestalk/preliminary-information/planning">Planning</a><ul><li><a href="/imagestalk/preliminary-information/planning/tentative-specification-sheet">Tentative Specification Sheet</a></li><li><a href="/imagestalk/preliminary-information/planning/tentative-team-structure">Tentative Team Structure</a></li><li><a href="/imagestalk/preliminary-information/planning/timeline">Timeline</a></li><li><a href="/imagestalk/preliminary-information/planning/tasks">Tasks</a></ul></li></ul></li></ul></div><div class="content"><h1><a href="/preliminary-information/documentation/comparison-of-graph-databases">Comparison Of Graph Databases</a></h1><p>The below presents quickly some graph databases</p><table><thead><tr><th>name</th><th>Company</th><th>Language</th><th>License</th><th>Graph Model</th><th>Backend</th><th>API</th><th>Query Methods</th><th>Consistency</th><th>Visualizer</th><th>Scaling</th><th>Latest Version                            </th></tr></thead><tbody><tr><td>  <a href="https://www.arangodb.com/">ArangoDB</a></td><td>ArangoDB GmbH</td><td>C/C++</td><td>Apache 2</td><td>Property Graph</td><td>native C/C++</td><td>Java, Ruby, JavaScript, Perl, .NET, LINQ, WebServices / REST</td><td>Graph Traversals via JavaScript, Gremlin, AQL</td><td>MVCC/ACID</td><td>Builtin Graph Explorer</td><td></td><td>2.4.4 (2015)                              </td></tr><tr><td>  <a href="http://franz.com/agraph/allegrograph/">AllegroGraph</a></td><td>Franz Inc.</td><td>C++/Lisp</td><td>commercial &amp; Free Edition</td><td>RDF, XML</td><td>native C++/Common Lisp</td><td>Java, Python, Lisp, Ruby, Perl, C#, WebServices / Rest</td><td>SPARQL, Prolog</td><td>ACID</td><td>Gruff</td><td>Benchmarks</td><td>4.13 (Feb 2014)                           </td></tr><tr><td>  <a href="http://giraph.apache.org/">Apache Giraph</a></td><td>Apache</td><td>Java</td><td>Apache 2</td><td>Vertex centric. Supports directed, weighted, multigraph</td><td>Based on Google Pregel&#39;s paper</td><td>Java</td><td>Java with map reduce/hadoop jobs</td><td></td><td></td><td>Distributed. Trillion of nodes possible</td><td></td></tr><tr><td>  <a href="http://www.sparsity-technologies.com/">Sparksee(DEX)</a></td><td>Sparsity Technologies</td><td>Java, Core C++</td><td>commercial &amp; free for Research and development</td><td>Labeled and directed attributed multigraph</td><td>bitmap based highly compressed native graph storage, native C++ query engine</td><td>Java, C++, .NET</td><td>Blueprints, Java, C++, .NET native APIs</td><td>ACID<a href="http://sparsity-technologies.com/dex_releases">g17</a></td><td></td><td>Throughput scaling through Horizontal replication and High Availability</td><td>4.7 (2012)                                </td></tr><tr><td>  <a href="https://github.com/twitter/flockdb">FlockDB</a></td><td>Twitter</td><td>Java</td><td>Apache 2</td><td>adjacency list of a directed graph</td><td></td><td>Java, Ruby via Thrift</td><td></td><td></td><td></td><td></td><td>1.8.15 (2012) but last commit at 04/2012  </td></tr><tr><td>  <a href="http://graphbase.net/">GraphBase</a></td><td>FactNexus Pty Ltd</td><td>Java</td><td>commercial</td><td>property-graph</td><td></td><td>Java</td><td></td><td></td><td>GraphPad, BoundsPad, ...</td><td></td><td></td></tr><tr><td>  <a href="https://code.google.com/p/graphpack/">GraphPack</a></td><td>Amit Portnoy</td><td>Java</td><td>Apache 2</td><td>property-graph</td><td>In-memory, JDO</td><td>Java</td><td>PackCypher (Inspired by Cypher)</td><td></td><td></td><td>Completely decentralized (no central authority- infinite scale- limited functionality)</td><td>Experimental (2012)                       </td></tr><tr><td>  <a href="http://www.hypergraphdb.org/index">HyperGraphDB</a></td><td>kobrix.com</td><td>Java</td><td>LGPL</td><td>Object-oriented multi-relational labeled hypergraph</td><td>custom</td><td>Java</td><td></td><td>MVCC/STM</td><td></td><td></td><td>1.2 (2012)                                </td></tr><tr><td>  <a href="http://www.objectivity.com/infinitegraph">InfiniteGraph</a></td><td>Objectivity Inc.</td><td>Java, Core C++</td><td>commercial</td><td>Labeled and directed multi-property-graph</td><td>Objectivity/DB</td><td>Java</td><td>Java, Blueprints</td><td>ACID. There is also a parallel, loosely synchronized batch loader.</td><td>Graph browser for developers. Plugins to allow use of external libraries.</td><td>Distributed. Petabytes possible</td><td>3.0 (2012?)                              </td></tr><tr><td>  <a href="http://infogrid.org">InfoGrid</a></td><td>NetMesh Inc.</td><td>Java</td><td>AGPL, commercial</td><td>dynamically typed, object-oriented graph. multigraphs, semantic models</td><td></td><td></td><td></td><td></td><td></td><td></td><td>2.9.5 (2011)                              </td></tr><tr><td>  <a href="http://neo4j.com/">Neo4j</a></td><td>Neo Technology, Inc</td><td>Java</td><td>GPL, AGPL, commercial</td><td>property-graph</td><td>native graph storage with native graph processing engine</td><td>Java, REST, JavaScript (Node.js), PHP, .NET, Django, Clojure</td><td>Cypher query language, Native Java APIs, Traverser API, REST, Blueprints, Gremlin</td><td>ACID</td><td></td><td>MySQL style master/slave replication</td><td>1.8.2 (2013/02/27)                        </td></tr><tr><td>  <a href="http://www.oracle.com/technetwork/database/options/spatialandgraph/overview/index.html">Oracle Spatial and Graph</a></td><td>Oracle</td><td>Java, PL/SQL</td><td>Oracle</td><td>RDF graph; Network Data Model property graph</td><td>Oracle Database</td><td>Apache  Jena, PL/SQL; Java</td><td>SPARQL, SQL with graph extensions; Java API</td><td>ACID</td><td>all tools which are SPARQL-compliant; Apache Jena-based; XML &amp; JSON-based or SQL-based</td><td>Scales from PC to Oracle Exadata; Supports Oracle Real Application Clusters</td><td>11.2 (2012)                               </td></tr><tr><td>  <a href="http://www.oracle.com/us/products/database/nosql/overview/index.html">Oracle NoSQL Database EE</a></td><td>Oracle</td><td>Java</td><td>Oracle</td><td>RDF graph</td><td>Oracle NoSQL Database</td><td>Java (Apache Jena)</td><td>SPARQL</td><td>ACID; Configurable consistency &amp; durability</td><td>SPARQL-compliant tools; Apache Jena-based tools; XML &amp; JSON-based tools</td><td></td><td>2.0.39 (2013)                             </td></tr><tr><td>  <a href="http://www.orientechnologies.com">OrientDB</a></td><td>NuvolaBase Ltd</td><td>Java</td><td>Apache 2</td><td>multi property-graph</td><td>custom on disk or in memory</td><td>Java, JS, .NET, PHP, REST, Python</td><td>Traverser API, Blueprints, Rexster, Gremlin, Own SQL-like Query Language</td><td>ACID, MVCC</td><td>OrientDB Studio</td><td>Multi Master</td><td>1.3 (2012)                                </td></tr><tr><td>  <a href="http://steffi.io">Steffi DB</a></td><td>EURA NOVA</td><td>Java</td><td>Apache 2</td><td></td><td>In Memory</td><td></td><td></td><td></td><td></td><td></td><td>??                                           </td></tr><tr><td>  <a href="http://thinkaurelius.github.io/titan/">Titan</a></td><td>thinkaurelius.com</td><td>Java</td><td>Apache 2</td><td>property-graph</td><td>Cassandra, HBase, Berkeley DB</td><td>Java, Gremlin</td><td>Blueprints, Rexster, Gremlin, SPARQL</td><td>ACID or Eventually Consistent</td><td></td><td>Multi-master</td><td>0.2 (2012)                                </td></tr></tbody></table></div></div><div id="Footer"><p>&copy; Arab Image Foundation</p></div></div></body></html>
+<!DOCTYPE html><html><head><link rel="stylesheet" href="/imagestalk/style.css"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>Arab Image Foundation</title><script src="https://code.jquery.com/jquery-2.1.3.min.js"></script><script src="/imagestalk/jquery.tablesorter.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script><script src="/imagestalk/main.js"></script></head><body class="preliminary-information documentation comparison-of-graph-databases production"><div id="Wrapper"><div id="Content"><input id="DrawerToggle" type="checkbox" name="drawer-toggle"/><div class="sidebar"><label for="DrawerToggle" id="drawer-toggle-label"><i class="fa fa-bars"></i></label><ul><li><a href="/imagestalk" class="home"><i class="fa fa-home"></i>Home</a></li><li class="open"><a href="/imagestalk/preliminary-information/">Preliminary Information</a><ul class="open"><li><a href="/imagestalk/preliminary-information/agreement">Agreement</a></li><li><a href="/imagestalk/preliminary-information/documentation">Documentation</a><ul><li><a href="/imagestalk/preliminary-information/documentation/comparison-of-graph-databases" class="active">Comparison Of Graph Databases</a></li><li><a href="/imagestalk/preliminary-information/documentation/hierarchical-data-in-SQL">Hierarchical Data In SQL</a></li><li><a href="/imagestalk/preliminary-information/documentation/other-references-of-interest">Other References Of Interest</a></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions">Vocabulary &amp; Quick Definitions</a><ul><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/databases">Databases</a></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/hosting-platforms">Hosting Platforms</a></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/server-side-technologies">Server Side Technologies</a></li></ul></li></ul></li><li><a href="/imagestalk/preliminary-information/planning">Planning</a><ul><li><a href="/imagestalk/preliminary-information/planning/tentative-specification-sheet">Tentative Specification Sheet</a></li><li><a href="/imagestalk/preliminary-information/planning/tentative-team-structure">Tentative Team Structure</a></li><li><a href="/imagestalk/preliminary-information/planning/timeline">Timeline</a></li><li><a href="/imagestalk/preliminary-information/planning/database-design">Database Design</a><ul><li><a href="/imagestalk/preliminary-information/planning/database-design/01-simple-schema">Simple Schema</a></li><li><a href="/imagestalk/preliminary-information/planning/database-design/02-complex-schema">Complex Schema</a></li></ul></li><li><a href="/imagestalk/preliminary-information/planning/tasks">Tasks</a></ul></li></ul></li></ul></div><div class="content"><h1><a href="/preliminary-information/documentation/comparison-of-graph-databases">Comparison Of Graph Databases</a></h1><p>The below presents quickly some graph databases</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>Company</th>
+<th>Language</th>
+<th>License</th>
+<th>Graph Model</th>
+<th>Backend</th>
+<th>API</th>
+<th>Query Methods</th>
+<th>Consistency</th>
+<th>Visualizer</th>
+<th>Scaling</th>
+<th>Latest Version                            </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>  <a href="https://www.arangodb.com/">ArangoDB</a></td>
+<td>ArangoDB GmbH</td>
+<td>C/C++</td>
+<td>Apache 2</td>
+<td>Property Graph</td>
+<td>native C/C++</td>
+<td>Java, Ruby, JavaScript, Perl, .NET, LINQ, WebServices / REST</td>
+<td>Graph Traversals via JavaScript, Gremlin, AQL</td>
+<td>MVCC/ACID</td>
+<td>Builtin Graph Explorer</td>
+<td></td>
+<td>2.4.4 (2015)                              </td>
+</tr>
+<tr>
+<td>  <a href="http://franz.com/agraph/allegrograph/">AllegroGraph</a></td>
+<td>Franz Inc.</td>
+<td>C++/Lisp</td>
+<td>commercial &amp; Free Edition</td>
+<td>RDF, XML</td>
+<td>native C++/Common Lisp</td>
+<td>Java, Python, Lisp, Ruby, Perl, C#, WebServices / Rest</td>
+<td>SPARQL, Prolog</td>
+<td>ACID</td>
+<td>Gruff</td>
+<td>Benchmarks</td>
+<td>4.13 (Feb 2014)                           </td>
+</tr>
+<tr>
+<td>  <a href="http://giraph.apache.org/">Apache Giraph</a></td>
+<td>Apache</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td>Vertex centric. Supports directed, weighted, multigraph</td>
+<td>Based on Google Pregel&#39;s paper</td>
+<td>Java</td>
+<td>Java with map reduce/hadoop jobs</td>
+<td></td>
+<td></td>
+<td>Distributed. Trillion of nodes possible</td>
+<td></td>
+</tr>
+<tr>
+<td>  <a href="http://www.sparsity-technologies.com/">Sparksee(DEX)</a></td>
+<td>Sparsity Technologies</td>
+<td>Java, Core C++</td>
+<td>commercial &amp; free for Research and development</td>
+<td>Labeled and directed attributed multigraph</td>
+<td>bitmap based highly compressed native graph storage, native C++ query engine</td>
+<td>Java, C++, .NET</td>
+<td>Blueprints, Java, C++, .NET native APIs</td>
+<td>ACID<a href="http://sparsity-technologies.com/dex_releases">g17</a></td>
+<td></td>
+<td>Throughput scaling through Horizontal replication and High Availability</td>
+<td>4.7 (2012)                                </td>
+</tr>
+<tr>
+<td>  <a href="https://github.com/twitter/flockdb">FlockDB</a></td>
+<td>Twitter</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td>adjacency list of a directed graph</td>
+<td></td>
+<td>Java, Ruby via Thrift</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.8.15 (2012) but last commit at 04/2012  </td>
+</tr>
+<tr>
+<td>  <a href="http://graphbase.net/">GraphBase</a></td>
+<td>FactNexus Pty Ltd</td>
+<td>Java</td>
+<td>commercial</td>
+<td>property-graph</td>
+<td></td>
+<td>Java</td>
+<td></td>
+<td></td>
+<td>GraphPad, BoundsPad, ...</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>  <a href="https://code.google.com/p/graphpack/">GraphPack</a></td>
+<td>Amit Portnoy</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td>property-graph</td>
+<td>In-memory, JDO</td>
+<td>Java</td>
+<td>PackCypher (Inspired by Cypher)</td>
+<td></td>
+<td></td>
+<td>Completely decentralized (no central authority- infinite scale- limited functionality)</td>
+<td>Experimental (2012)                       </td>
+</tr>
+<tr>
+<td>  <a href="http://www.hypergraphdb.org/index">HyperGraphDB</a></td>
+<td>kobrix.com</td>
+<td>Java</td>
+<td>LGPL</td>
+<td>Object-oriented multi-relational labeled hypergraph</td>
+<td>custom</td>
+<td>Java</td>
+<td></td>
+<td>MVCC/STM</td>
+<td></td>
+<td></td>
+<td>1.2 (2012)                                </td>
+</tr>
+<tr>
+<td>  <a href="http://www.objectivity.com/infinitegraph">InfiniteGraph</a></td>
+<td>Objectivity Inc.</td>
+<td>Java, Core C++</td>
+<td>commercial</td>
+<td>Labeled and directed multi-property-graph</td>
+<td>Objectivity/DB</td>
+<td>Java</td>
+<td>Java, Blueprints</td>
+<td>ACID. There is also a parallel, loosely synchronized batch loader.</td>
+<td>Graph browser for developers. Plugins to allow use of external libraries.</td>
+<td>Distributed. Petabytes possible</td>
+<td>3.0 (2012?)                              </td>
+</tr>
+<tr>
+<td>  <a href="http://infogrid.org">InfoGrid</a></td>
+<td>NetMesh Inc.</td>
+<td>Java</td>
+<td>AGPL, commercial</td>
+<td>dynamically typed, object-oriented graph. multigraphs, semantic models</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.9.5 (2011)                              </td>
+</tr>
+<tr>
+<td>  <a href="http://neo4j.com/">Neo4j</a></td>
+<td>Neo Technology, Inc</td>
+<td>Java</td>
+<td>GPL, AGPL, commercial</td>
+<td>property-graph</td>
+<td>native graph storage with native graph processing engine</td>
+<td>Java, REST, JavaScript (Node.js), PHP, .NET, Django, Clojure</td>
+<td>Cypher query language, Native Java APIs, Traverser API, REST, Blueprints, Gremlin</td>
+<td>ACID</td>
+<td></td>
+<td>MySQL style master/slave replication</td>
+<td>1.8.2 (2013/02/27)                        </td>
+</tr>
+<tr>
+<td>  <a href="http://www.oracle.com/technetwork/database/options/spatialandgraph/overview/index.html">Oracle Spatial and Graph</a></td>
+<td>Oracle</td>
+<td>Java, PL/SQL</td>
+<td>Oracle</td>
+<td>RDF graph; Network Data Model property graph</td>
+<td>Oracle Database</td>
+<td>Apache  Jena, PL/SQL; Java</td>
+<td>SPARQL, SQL with graph extensions; Java API</td>
+<td>ACID</td>
+<td>all tools which are SPARQL-compliant; Apache Jena-based; XML &amp; JSON-based or SQL-based</td>
+<td>Scales from PC to Oracle Exadata; Supports Oracle Real Application Clusters</td>
+<td>11.2 (2012)                               </td>
+</tr>
+<tr>
+<td>  <a href="http://www.oracle.com/us/products/database/nosql/overview/index.html">Oracle NoSQL Database EE</a></td>
+<td>Oracle</td>
+<td>Java</td>
+<td>Oracle</td>
+<td>RDF graph</td>
+<td>Oracle NoSQL Database</td>
+<td>Java (Apache Jena)</td>
+<td>SPARQL</td>
+<td>ACID; Configurable consistency &amp; durability</td>
+<td>SPARQL-compliant tools; Apache Jena-based tools; XML &amp; JSON-based tools</td>
+<td></td>
+<td>2.0.39 (2013)                             </td>
+</tr>
+<tr>
+<td>  <a href="http://www.orientechnologies.com">OrientDB</a></td>
+<td>NuvolaBase Ltd</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td>multi property-graph</td>
+<td>custom on disk or in memory</td>
+<td>Java, JS, .NET, PHP, REST, Python</td>
+<td>Traverser API, Blueprints, Rexster, Gremlin, Own SQL-like Query Language</td>
+<td>ACID, MVCC</td>
+<td>OrientDB Studio</td>
+<td>Multi Master</td>
+<td>1.3 (2012)                                </td>
+</tr>
+<tr>
+<td>  <a href="http://steffi.io">Steffi DB</a></td>
+<td>EURA NOVA</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td></td>
+<td>In Memory</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>??                                           </td>
+</tr>
+<tr>
+<td>  <a href="http://thinkaurelius.github.io/titan/">Titan</a></td>
+<td>thinkaurelius.com</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td>property-graph</td>
+<td>Cassandra, HBase, Berkeley DB</td>
+<td>Java, Gremlin</td>
+<td>Blueprints, Rexster, Gremlin, SPARQL</td>
+<td>ACID or Eventually Consistent</td>
+<td></td>
+<td>Multi-master</td>
+<td>0.2 (2012)                                </td>
+</tr>
+</tbody>
+</table>
+</div></div><div id="Footer"><p>&copy; Arab Image Foundation</p></div></div></body></html>
