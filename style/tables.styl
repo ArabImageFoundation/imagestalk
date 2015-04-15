@@ -1,21 +1,32 @@
-table
+.table
+	position relative
+	max-height 600px
+	width 100%
+	overflow auto
 	margin-top 1em
-	font-size .7em
+	
+table
+	box-shadow inset 0px 0px 5px 2px rgba(0,0,0,0.75)
+	font-size .8em
 	//max-width 100%
-	table-layout fixed
+	//table-layout fixed
 	//width 100%
 	//white-space nowrap
 
 td,th
 	padding .4em
+	min-width 7em
 	//overflow hidden
 	//text-overflow ellipsis
 
 .sortable
 	th
+		position relative
+		padding-left 1.5em
 		&:after
 			content ''
-			margin-left .5em
+			position absolute
+			left .5em
 			display inline-block
 			color white
 			font-family: FontAwesome;
@@ -35,11 +46,13 @@ td,th
 			
 th
 	padding .4em 
-	&.headerSortUp:after
-		content ''
-		color black
-	&.headerSortDown:after
-		color black
+	&.headerSortUp
+		&:after
+			content ''
+			color black
+	&.headerSortDown
+		&:after
+			color black
 
 thead
 	tr

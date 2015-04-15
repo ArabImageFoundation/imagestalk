@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"bar",
+				"bar-inner"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
 				"photoR",
 				"photoReproduction_id"
 			],
@@ -502,18 +514,6 @@
 			[
 				"opti",
 				"optionsParam"
-			],
-			[
-				"opt",
-				"optionsParser"
-			],
-			[
-				"ro",
-				"route"
-			],
-			[
-				"Dyna",
-				"DynamicMiddlewareNextOption"
 			]
 		]
 	},
@@ -634,23 +634,33 @@
 	"expanded_folders":
 	[
 		"/home/xananax/projects/AIF",
-		"/home/xananax/projects/AIF/public",
-		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design",
 		"/home/xananax/projects/AIF/style"
 	],
 	"file_history":
 	[
+		"/home/xananax/projects/AIF/style/index.styl",
+		"/home/xananax/projects/AIF/style/tables.styl",
+		"/home/xananax/projects/AIF/style/sidebar.styl",
+		"/home/xananax/projects/AIF/style/responsive.styl",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/hierarchical-data-in-SQL.md",
+		"/home/xananax/projects/AIF/style/icons.styl",
+		"/home/xananax/projects/AIF/templates/functions.jade",
+		"/home/xananax/projects/AIF/style/iframe.styl",
+		"/home/xananax/projects/AIF/templates/layout.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/other-references-of-interest.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/server-side-technologies.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/hosting-platforms.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/databases.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/comparison-of-graph-databases.md",
+		"/home/xananax/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/xananax/.config/sublime-text-3/Packages/User/Markdown.sublime-settings",
+		"/home/xananax/.config/sublime-text-3/Packages/MarkdownEditing/Markdown.sublime-settings",
 		"/home/xananax/projects/AIF/style/text.styl",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/01-simple-schema.md",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/simple.sql",
-		"/home/xananax/projects/AIF/templates/functions.jade",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/_index.md",
 		"/home/xananax/projects/AIF/templates/mixins.jade",
 		"/home/xananax/projects/AIF/public/main.js",
-		"/home/xananax/projects/AIF/templates/layout.jade",
-		"/home/xananax/projects/AIF/style/iframe.styl",
-		"/home/xananax/projects/AIF/style/index.styl",
-		"/home/xananax/projects/AIF/style/sidebar.styl",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/complex-schema.md",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/index.jade",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/simple-schema.md",
@@ -661,21 +671,15 @@
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/tasks/_layout.jade",
 		"/home/xananax/projects/AIF/style/reset.styl",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/complex.sql",
-		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/server-side-technologies.md",
-		"/home/xananax/projects/AIF/public/preliminary-information/documentation/other-references-of-interest.md",
 		"/home/xananax/projects/AIF/public/preliminary-information/documentation/index.jade",
-		"/home/xananax/projects/AIF/public/preliminary-information/documentation/hierarchical-data-in-SQL.md",
-		"/home/xananax/projects/AIF/public/preliminary-information/documentation/comparison-of-graph-databases.md",
 		"/home/xananax/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
 		"/home/xananax/.config/sublime-text-3/Packages/User/Base File.sublime-settings",
 		"/home/xananax/.config/sublime-text-3/Packages/Alignment/Default (Linux).sublime-keymap",
 		"/home/xananax/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
 		"/home/xananax/.config/sublime-text-3/Packages/Alignment/Base File.sublime-settings",
-		"/home/xananax/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/xananax/Desktop/fai.sql",
 		"/home/xananax/Desktop/fai-rel.sql",
 		"/home/xananax/notes/todo.md",
-		"/home/xananax/projects/AIF/style/tables.styl",
 		"/home/xananax/projects/AIF/test.jade",
 		"/home/xananax/projects/AIF/test.js",
 		"/home/xananax/projects/AIF/public/_harp.json",
@@ -688,7 +692,6 @@
 		"/home/xananax/projects/AIF/public/preliminary-information/index.jade",
 		"/home/xananax/projects/AIF/public/preliminary-information/_data.json",
 		"/home/xananax/projects/AIF/public/_data.json",
-		"/home/xananax/projects/AIF/style/responsive.styl",
 		"/home/xananax/projects/AIF/public/preliminary-information/a_data.json",
 		"/home/xananax/projects/AIF/templates/preliminary-information_layout.jade",
 		"/home/xananax/projects/AIF/templates/debugger.jade",
@@ -706,7 +709,6 @@
 		"/home/xananax/projects/AIF/pages/_layout.jade",
 		"/home/xananax/projects/AIF/pages/preliminary-information/_layout.jade",
 		"/home/xananax/projects/AIF/pages/preliminary-information/agreement.md",
-		"/home/xananax/projects/AIF/style/icons.styl",
 		"/home/xananax/projects/AIF/pages/preliminary-information/documentation/index.jade",
 		"/home/xananax/projects/AIF/pages/preliminary-information/planning/index.jade",
 		"/home/xananax/projects/AIF/pages/preliminary-information/index.jade",
@@ -763,11 +765,7 @@
 		"/home/xananax/projects/AIF/scripts/pages",
 		"/home/xananax/.bin/bitlbee-user-daemon",
 		"/home/xananax/projects/puppeteer/processor/git.js",
-		"/home/xananax/projects/ntoes8/service.ntoes.js",
-		"/home/xananax/projects/ntoes8/client/todomvc-common/base.css",
-		"/home/xananax/projects/ntoes8/client/css/app.css",
-		"/home/xananax/projects/ntoes8/client/js/components/OnlineStatus.react.js",
-		"/home/xananax/projects/ntoes8/client/js/components/TodoItem.react.js"
+		"/home/xananax/projects/ntoes8/service.ntoes.js"
 	],
 	"find":
 	{
@@ -801,6 +799,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"(\\[)(\\*)(\\])",
+			";",
+			":",
+			"-",
 			":",
 			";",
 			"+",
@@ -924,11 +926,7 @@
 			"pages",
 			"orange",
 			";",
-			":",
-			"}",
-			"{",
-			"consol",
-			"app"
+			":"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -936,6 +934,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$1#$2",
+			"",
+			" ",
 			"",
 			"-",
 			"",

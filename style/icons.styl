@@ -3,4 +3,78 @@
 
 .fa-minus-circle, .fa-times
 	color #990000
-	
+
+
+.bar-inner
+	display inline-block
+	font-family FontAwesome
+	font-feature-settings normal
+	font-kerning auto
+	font-language-override normal
+	font-size inherit
+	font-size-adjust none
+	font-stretch normal
+	font-style normal
+	font-synthesis weight style
+	font-variant normal
+	font-weight normal
+	line-height 1
+	text-rendering auto
+	transform translate(0px, 0px)
+	color highlightColor
+	&:before
+		display inline-block
+		content ""
+
+.bar-1 .bar-inner:before
+	content ""
+
+.bar-2 .bar-inner:before
+	content ""
+
+.bar-3 .bar-inner:before
+	content ""
+
+.bar-4 .bar-inner:before
+	content ""
+
+.bar-5 .bar-inner:before
+	content ""
+
+h1
+	.bar,.bar-inner
+		background-image linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)
+		background-size 25px 25px
+	.bar
+		width 100%
+		height 1em
+		background-color #999
+		box-shadow inset 0px 0px 5px 0px rgba(0,0,0,0.75)
+		margin .3em
+		overflow hidden
+	.bar-inner
+		height 100%
+		background-color highlightColor
+		box-shadow inset 0px 0px 5px 0px rgba(0,0,0,0.75)
+		
+	.bar-0 .bar-inner
+		width 1%
+
+	.bar-1 .bar-inner
+		width 16%
+		
+	.bar-2 .bar-inner
+		width 32%
+		
+	.bar-3 .bar-inner
+		width 48%
+		
+	.bar-4 .bar-inner
+		width 64%
+		
+	.bar-5 .bar-inner
+		width 100%
+		
+	.bar-0,.bar-1,.bar-2,.bar-3,.bar-4,.bar-5
+		.bar-inner:before
+			content none

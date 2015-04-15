@@ -1,4 +1,4 @@
-- var fontIcons = {'+':'plus-circle','-':'minus-circle','#':'check','x':'times','✓':'check'}
+- var fontIcons = {'+':'plus-circle','-':'minus-circle','#':'check','x':'times','✓':'check','?':'question'}
 - var formatName = function(name){return name.replace(/(^\d+-)|\.html$/g,'').replace(/^\/|\/$/g,'').split(/-|\//g).map(function(w){return w.charAt(0).toUpperCase()+w.slice(1);}).join(' ').replace(/\sAnd\s/g,' & ');}
 - var formatTitle = function(current){return formatName(current.path[current.path.length-1]=='index' ? current.path[current.path.length-2] : current.path[current.path.length-1]);}
 - var isCurrent = function(path,currentPath){return (path==currentPath.replace(/\/index$/,'')) ? 'active' : '';}
@@ -12,6 +12,9 @@
 
 mixin body()
 	- var body = yield;
-	- body = setSymbols(body).split(/\n|\r/g)
+	- body = setSymbols(body)
+	- body = body.replace(/(<table.*?>)/g,'<div class="table">$1').replace(/<\/table>/g,'</table></div>');
+	- body = body.replace(/\[(\#+|\.)\]/g,function(t,s){return '<div class="bar bar-'+(s=='.'?'0':s.length)+'""><div class="bar-inner"></div></div>'})
+	- body = body.split(/\n|\r/g)
 	each line in body
 		!=line.replace(/\[\[(\w*?)\((.*?)\)\]\]/g,function(a,f,args){args=unescape(args);eval(f+'_mixin('+args+');');return '';})+'\n'

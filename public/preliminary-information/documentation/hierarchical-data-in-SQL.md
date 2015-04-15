@@ -5,14 +5,75 @@ Two main models allow to describe hierarchical data in SQL:
  
 Adjacency lists are more pleasing because more easily readable for a human, however it can become quickly cumbersome if the tree is deep (many requests become necessary to retrieve the tree in full). Special care must be taken at the application level because deleting a root node will not necessarily delete the children, which can lead to orphan nodes and bad references.  
 
+## Quick Recap
 
-### references
+|                       | Adjacency List                  | Materialized Path   | Nested Sets                      | Closure Table                          |
+|-----------------------|---------------------------------|---------------------|----------------------------------|----------------------------------------|
+| Summary               | parent_id=x                     | x/y/z/...           | x< id < y                        | x.parent_id,x.child_id references y.id |
+| Implementation        | [####]                          | [###]               | [#]                              | [##]                                   |
+| Create                | [####]                          | [####]              | [#]                              | [####]                                 |
+| Insert                | [####]                          | [####]              | [.]                              | [####]                                 |
+| Move                  | [####]                          | [###]               | [#]                              | [###]                                  |
+| Delete                | [####]                          | [##]                | [#]                              | [####]                                 |
+| Select one            | [####]                          | [####]              | [##]                             | [####]                                 |
+| Select Parent         | [####]                          | [##]                | [##]                             | [####]                                 |
+| Select Child          | [####]                          | [#####]             | [##]                             | [####]                                 |
+| Alter                 | [##]                            | [####]              | [.]                              | [##]                                   |
+| Node Location         | [###]                           | [##]                | [####]                           | [##]                                   |
+| Ancestors             | [###]                           | [###]               | [#####]                          | [####]                                 |
+| Descendants           | [###]                           | [#####]             | [#####]                          | [####]                                 |
+| Sorting by hierarchy  | [##]                            | [##]                | [##]                             | [#]                                    |
+| Depth                 | [####]                          | [##]                | [###]                            | [#####]                                |
+| performance           | [##]                            | [##]                | [###]                            | [####]                                 |
+| Referential Integrity | [####]                          | [#]                 | [##]                             | [#####]                                |
+| Synonyms              |                                 | Lineage Column      | Modifier Preorder Tree Traversal | Bridge Table                           |
+| Variants              | Recusive queries¹, Flat Table²  | Multiple Columns³   | Nested Intervals⁴                |                                        |
+
+
+- ¹ Recursive Queries: Allowed by some databases, and may alleviate some limitations of adjacency lists. It becomes more possible to find ancestors/descendants.  
+- ² Flat Table: A modification of the Adjacency List that adds a Level and Rank (e.g. ordering) column to each record. Move and Delete become more expensive, but ancestry and descendants become easy.   
+- ³ Multiple Lineage Columns: one column for each lineage level, refers to all the parents up to the root. Cheap ancestors, descendants, level, cheap insert, delete, move of the leaves, but expensive insert, delete, move of the internal nodes, and hierarchy becomes extremely limited of course.  
+- ⁴ left/right columns are floating point decimals. Fixes some of the problems, but adds complexity at the application level  
+
+## SUMMARY
+
+- **Adjacency List** is good at reads and writes, but not very good at deep hierarchy. Since each node only holds a reference to one parent, in order to traverse the tree in any direction, recursive queries must be used. Thus, it is better used for data sets where only one level retrieval up or down is needed. It's benefit is the schema simplicity. Usage:
+    + Organisation hierarchy
+    + Threaded discussion
+- **Materialized Path** is better at maintaining hierarchy, but only towards lower levels. It's very easy to get all the descendants of a node, but very hard to get it's ancestors. Thus it's ideal for top-down tree traversal. Usage:
+    + File System
+- **Nested Sets** is great at describing everything a parent contains, but not very good at traversing hierarchies, and pretty much sucks ass if it needs to be changed. Thus, Nested Sets are ideal for data that changes very little or never, and when you need to know what children are contained in a parent without necessarily needing the know their exact spot in the descendance. Usage:
+    + Nested Tags or categories (if the tags don't move too much)
+    + Locations
+- **Closure Table** could be considered a special case of Adjacency list and Materialized path. It is average for everything, and doesn't have a huge impact performance, wether on reads, writes or deletes. It could potentially be used to create a graph (so hierarchy is not necessarily tree-like). This flexibility comes at the cost of a more complex schema (though not much more complex than Nested Sets). Usage
+    + Nested tags or categories
+    + Graph-type data
+
+
+---
+
+## References
 
  - [the seminal "Modeling Hierarchical Data in SQL" by Mike Hillier][ns1]
  - [Adjacency Lists vs Nested Sets][ns2] 
+ - [Models for Hierarchical Data][ns3] by Bill Karwin, with a lengthy example about closure tables
+ - [Storing Hierarchical Data Materialized Path][ns4]
+ - [My Take on Trees in SQL][ns5] by Depesz, focuses on Closure Tables
+ - Frank Martinez proposes a mix of [Materialized Path + Nested Sets]. Seems like over-engineering to me, but interesting nonetheless
+ - [StackOverflow][ns8] has a comprehensive list of pros and cos in the questions ["What are the Options for Storing Hierarchical Data in a Relational Database?"][ns7].
+ - An [Essay on SQL Trees][ns9] by Vadim Tropashko
+ - A [Huge List of References][ns10]
  
 [ns1]:http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/
 [ns2]:http://explainextended.com/2009/09/25/adjacency-list-vs-nested-sets-sql-server/
+[ns3]:http://www.slideshare.net/billkarwin/models-for-hierarchical-data
+[ns4]:https://bojanz.wordpress.com/2014/04/25/storing-hierarchical-data-materialized-path/
+[ns5]:http://www.depesz.com/2008/04/11/my-take-on-trees-in-sql/
+[ns6]:http://www.ibstaff.net/fmartinez/?p=18
+[ns7]:http://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database
+[ns8]:http://stackoverflow.com
+[ns9]:https://vadimtropashko.files.wordpress.com/2011/07/ch5.pdf
+[ns10]:http://troels.arvin.dk/db/rdbms/links/#hierarchical
 
 --------
 
