@@ -1,6 +1,6 @@
 <!DOCTYPE html><html><head><link rel="stylesheet" href="/imagestalk/style.css"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>Arab Image Foundation</title><script src="https://code.jquery.com/jquery-2.1.3.min.js"></script><script src="/imagestalk/jquery.tablesorter.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script><script src="/imagestalk/main.js"></script></head><body class="preliminary-information documentation index production"><div id="Wrapper"><div id="Content"><input id="DrawerToggle" type="checkbox" name="drawer-toggle"/><div class="sidebar"><label for="DrawerToggle" id="drawer-toggle-label"><i class="fa fa-bars"></i></label><ul><li><a href="/imagestalk" class="home"><i class="fa fa-home"></i>Home</a></li><li class="open"><a href="/imagestalk/preliminary-information/">Preliminary Information</a><ul class="open"><li><a href="/imagestalk/preliminary-information/agreement">Agreement</a></li><li><a href="/imagestalk/preliminary-information/documentation" class="active">Documentation</a><ul><li><a href="/imagestalk/preliminary-information/documentation/comparison-of-graph-databases">Comparison Of Graph Databases</a></li><li><a href="/imagestalk/preliminary-information/documentation/hierarchical-data-in-SQL">Hierarchical Data In SQL</a></li><li><a href="/imagestalk/preliminary-information/documentation/other-references-of-interest">Other References Of Interest</a></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions">Vocabulary &amp; Quick Definitions</a><ul><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/databases">Databases</a></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/hosting-platforms">Hosting Platforms</a></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/server-side-technologies">Server Side Technologies</a></li></ul></li></ul></li><li><a href="/imagestalk/preliminary-information/planning">Planning</a><ul><li><a href="/imagestalk/preliminary-information/planning/tentative-specification-sheet">Tentative Specification Sheet</a></li><li><a href="/imagestalk/preliminary-information/planning/tentative-team-structure">Tentative Team Structure</a></li><li><a href="/imagestalk/preliminary-information/planning/timeline">Timeline</a></li><li><a href="/imagestalk/preliminary-information/planning/database-design">Database Design</a><ul><li><a href="/imagestalk/preliminary-information/planning/database-design/01-simple-schema">Simple Schema</a></li><li><a href="/imagestalk/preliminary-information/planning/database-design/02-complex-schema">Complex Schema</a></li></ul></li><li><a href="/imagestalk/preliminary-information/planning/tasks">Tasks</a></ul></li></ul></li></ul></div><div class="content"><h1><a href="/preliminary-information/documentation">Documentation</a></h1><section><div class="page"><p>The following presents some technical concepts to aid and guide the discussion between synclop and AIF</p>
 </div></section><section><h2 id="comparison-of-graph-databases-section"><a href="./comparison-of-graph-databases">Comparison Of Graph Databases</a></h2><div class="page"><p>The below presents quickly some graph databases</p>
-<table>
+<div class="table"><table>
 <thead>
 <tr>
 <th>name</th>
@@ -243,16 +243,196 @@
 <td>0.2 (2012)                                </td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div></section><section><h2 id="hierarchical-data-in-SQL-section"><a href="./hierarchical-data-in-SQL">Hierarchical Data In SQL</a></h2><div class="page"><p>Two main models allow to describe hierarchical data in SQL: </p>
 <ul>
 <li><em>Adjacency Lists</em>: Each node keeps a reference to it&#39;s parent, or, more uncommonly, each parent keeps a list of children (or both, but data is then de-normalized and should be maintained at the application level).</li>
 <li><em>Nested Sets</em>: each node sets &quot;left&quot; and &quot;right&quot; value to nodes to describe its &quot;spatial limits&quot; (using the term very liberally here). Thus a node that has &quot;left:1&quot; and &quot;right:20&quot; contains a node that has &quot;left:2&quot; and &quot;right:4&quot;.</li>
 </ul>
 <p>Adjacency lists are more pleasing because more easily readable for a human, however it can become quickly cumbersome if the tree is deep (many requests become necessary to retrieve the tree in full). Special care must be taken at the application level because deleting a root node will not necessarily delete the children, which can lead to orphan nodes and bad references.  </p>
-<h3>references</h3><ul>
+<h2>Quick Recap</h2><div class="table"><table>
+<thead>
+<tr>
+<th></th>
+<th>Adjacency List</th>
+<th>Materialized Path</th>
+<th>Nested Sets</th>
+<th>Closure Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Summary</td>
+<td>parent_id=x</td>
+<td>x/y/z/...</td>
+<td>x&lt; id &lt; y</td>
+<td>x.parent_id,x.child_id references y.id</td>
+</tr>
+<tr>
+<td>Implementation</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Create</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Insert</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-0""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Move</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Delete</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Select one</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Select Parent</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Select Child</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Alter</td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-0""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Node Location</td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Ancestors</td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Descendants</td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Sorting by hierarchy</td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Depth</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>performance</td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Referential Integrity</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Synonyms</td>
+<td></td>
+<td>Lineage Column</td>
+<td>Modifier Preorder Tree Traversal</td>
+<td>Bridge Table</td>
+</tr>
+<tr>
+<td>Variants</td>
+<td>Recusive queries¹, Flat Table²</td>
+<td>Multiple Columns³</td>
+<td>Nested Intervals⁴</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>¹ Recursive Queries: Allowed by some databases, and may alleviate some limitations of adjacency lists. It becomes more possible to find ancestors/descendants.  </li>
+<li>² Flat Table: A modification of the Adjacency List that adds a Level and Rank (e.g. ordering) column to each record. Move and Delete become more expensive, but ancestry and descendants become easy.   </li>
+<li>³ Multiple Lineage Columns: one column for each lineage level, refers to all the parents up to the root. Cheap ancestors, descendants, level, cheap insert, delete, move of the leaves, but expensive insert, delete, move of the internal nodes, and hierarchy becomes extremely limited of course.  </li>
+<li>⁴ left/right columns are floating point decimals. Fixes some of the problems, but adds complexity at the application level  </li>
+</ul>
+<h2>SUMMARY</h2><ul>
+<li><strong>Adjacency List</strong> is good at reads and writes, but not very good at deep hierarchy. Since each node only holds a reference to one parent, in order to traverse the tree in any direction, recursive queries must be used. Thus, it is better used for data sets where only one level retrieval up or down is needed. It&#39;s benefit is the schema simplicity. Usage:<ul>
+<li>Organisation hierarchy</li>
+<li>Threaded discussion</li>
+</ul>
+</li>
+<li><strong>Materialized Path</strong> is better at maintaining hierarchy, but only towards lower levels. It&#39;s very easy to get all the descendants of a node, but very hard to get it&#39;s ancestors. Thus it&#39;s ideal for top-down tree traversal. Usage:<ul>
+<li>File System</li>
+</ul>
+</li>
+<li><strong>Nested Sets</strong> is great at describing everything a parent contains, but not very good at traversing hierarchies, and pretty much sucks ass if it needs to be changed. Thus, Nested Sets are ideal for data that changes very little or never, and when you need to know what children are contained in a parent without necessarily needing the know their exact spot in the descendance. Usage:<ul>
+<li>Nested Tags or categories (if the tags don&#39;t move too much)</li>
+<li>Locations</li>
+</ul>
+</li>
+<li><strong>Closure Table</strong> could be considered a special case of Adjacency list and Materialized path. It is average for everything, and doesn&#39;t have a huge impact performance, wether on reads, writes or deletes. It could potentially be used to create a graph (so hierarchy is not necessarily tree-like). This flexibility comes at the cost of a more complex schema (though not much more complex than Nested Sets). Usage<ul>
+<li>Nested tags or categories</li>
+<li>Graph-type data</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>References</h2><ul>
 <li><a href="http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/">the seminal &quot;Modeling Hierarchical Data in SQL&quot; by Mike Hillier</a></li>
 <li><a href="http://explainextended.com/2009/09/25/adjacency-list-vs-nested-sets-sql-server/">Adjacency Lists vs Nested Sets</a> </li>
+<li><a href="http://www.slideshare.net/billkarwin/models-for-hierarchical-data">Models for Hierarchical Data</a> by Bill Karwin, with a lengthy example about closure tables</li>
+<li><a href="https://bojanz.wordpress.com/2014/04/25/storing-hierarchical-data-materialized-path/">Storing Hierarchical Data Materialized Path</a></li>
+<li><a href="http://www.depesz.com/2008/04/11/my-take-on-trees-in-sql/">My Take on Trees in SQL</a> by Depesz, focuses on Closure Tables</li>
+<li>Frank Martinez proposes a mix of [Materialized Path + Nested Sets]. Seems like over-engineering to me, but interesting nonetheless</li>
+<li><a href="http://stackoverflow.com">StackOverflow</a> has a comprehensive list of pros and cos in the questions <a href="http://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database">&quot;What are the Options for Storing Hierarchical Data in a Relational Database?&quot;</a>.</li>
+<li>An <a href="https://vadimtropashko.files.wordpress.com/2011/07/ch5.pdf">Essay on SQL Trees</a> by Vadim Tropashko</li>
+<li>A <a href="http://troels.arvin.dk/db/rdbms/links/#hierarchical">Huge List of References</a></li>
 </ul>
 <hr>
 <p>However, in the case of FAI, we probably cannot rely on pure tree structures. It is very likely that relationships can go in multiple ways, and so we probably need a way to model Directed Graphs or Directed Acyclic Graphs (DG and DAG). DG are cumbersome to use, because relationships (&quot;edges&quot;, in graph theory parlance) can &quot;cycle&quot;, and so special care must be taken to not fall into loops. DAG are safe from loops, which means algorithms can be simplified, but care must be taken to not create a loop (since the algorithm wouldn&#39;t cater for it and might run indefinitely). Here are some papers:</p>
@@ -262,7 +442,7 @@
 <li><a href="http://techportal.inviqa.com/2009/09/07/graphs-in-the-database-sql-meets-social-networks/">Graphs in the database: SQL meets social networks</a></li>
 </ul>
 <p>Since manipulating DGs and DAGs by hand would be complex, I&#39;ve been looking for an ORM to help alleviate the problem. An ORM does &quot;Object Relational Mapping&quot;; basically, abstracts complexity and facilitates communication with the database. Unsurprisingly, very few have tree representation, and none has graph representations.</p>
-<table>
+<div class="table"><table>
 <thead>
 <tr>
 <th>Name</th>
@@ -330,7 +510,7 @@
 <td><i class="fa fa-times"></i></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div></section><section><h2 id="other-references-of-interest-section"><a href="./other-references-of-interest">Other References Of Interest</a></h2><div class="page"><ul>
 <li><a href="http://www.joinfu.com/2005/12/managing-many-to-many-relationships-in-mysql-part-1/comment-page-1/">Managing Many to Many Relationships</a> on Join-Fu</li>
 <li><a href="http://weblogs.sqlteam.com/davidm/articles/12117.aspx">Dave&#39;s Guide to EAV</a> (and comments)</li>
@@ -383,4 +563,4 @@
 </li>
 </ul>
 </div></section>
-</div></div><div id="Footer"><p>&copy; Arab Image Foundation</p></div></div></body></html>
+</div></div><div id="Footer"><p>images and assets &copy; Arab Image Foundation, knowledge and text &copy; synclop</p></div></div></body></html>
