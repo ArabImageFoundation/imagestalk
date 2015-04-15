@@ -1,5 +1,5 @@
 - var fontIcons = {'+':'plus-circle','-':'minus-circle','#':'check','x':'times','✓':'check'}
-- var formatName = function(name){return name.replace(/\.html$/,'').replace(/^\/|\/$/g,'').split(/-|\//g).map(function(w){return w.charAt(0).toUpperCase()+w.slice(1);}).join(' ').replace(/\sAnd\s/g,' & ');}
+- var formatName = function(name){return name.replace(/(^\d+-)|\.html$/g,'').replace(/^\/|\/$/g,'').split(/-|\//g).map(function(w){return w.charAt(0).toUpperCase()+w.slice(1);}).join(' ').replace(/\sAnd\s/g,' & ');}
 - var formatTitle = function(current){return formatName(current.path[current.path.length-1]=='index' ? current.path[current.path.length-2] : current.path[current.path.length-1]);}
 - var isCurrent = function(path,currentPath){return (path==currentPath.replace(/\/index$/,'')) ? 'active' : '';}
 - var findKey = function(root,tail,head){head = root; while(head && tail.length){if(head[tail[0]]){head=head[tail.shift()]}};return head;}
@@ -14,4 +14,4 @@ mixin body()
 	- var body = yield;
 	- body = setSymbols(body).split(/\n|\r/g)
 	each line in body
-		!=line.replace(/\[\[(\w*?)\((.*?)\)\]\]/g,function(a,f,args){args=unescape(args);eval(f+'_mixin('+args+');');return '';})
+		!=line.replace(/\[\[(\w*?)\((.*?)\)\]\]/g,function(a,f,args){args=unescape(args);eval(f+'_mixin('+args+');');return '';})+'\n'

@@ -1,5 +1,9 @@
 include functions
 
+mixin vertabelo(url)
+	.iframe.vertabello
+		iframe(src="https://my.vertabelo.com/v/"+url frameborder="0" height="300px" width="400px")
+
 mixin title(current,mainTitle)
 	- if(current.path[current.path.length-1] == 'index'){current.path.pop();}
 	if !current.path.length
@@ -22,8 +26,8 @@ mixin section(name,title,url,path)
 				else
 					| title
 		else if !/index\.md/.test(name)
-			h2
-				a(href='./')=formatName(name.split('/').pop())
+			h2(id=name+"-section")
+				a(href='./'+name)=formatName(name.split('/').pop())
 		.page!=partial(name)
 
 - var filter = /(\.html$)/;
@@ -86,6 +90,7 @@ mixin listDir(inc,prepend)
 	- root = root._contents
 	- prepend = prepend || ''
 	for val in root
+		- if (!/\.html$/.test(val)){continue;}
 		- val = val.replace(/\.html$/,'')
 		if val == 'index'
 			- continue

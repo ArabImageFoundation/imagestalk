@@ -4,6 +4,130 @@
 		"selected_items":
 		[
 			[
+				"photoR",
+				"photoReproduction_id"
+			],
+			[
+				"account_",
+				"account_permissions"
+			],
+			[
+				"entity",
+				"entityfk"
+			],
+			[
+				"note",
+				"notefk"
+			],
+			[
+				"coll",
+				"collections"
+			],
+			[
+				"colle",
+				"collectionfk"
+			],
+			[
+				"ent",
+				"entityTypefk"
+			],
+			[
+				"loca",
+				"location"
+			],
+			[
+				"loc",
+				"locationfk"
+			],
+			[
+				"person",
+				"person_id"
+			],
+			[
+				"orgi",
+				"organisation"
+			],
+			[
+				"pers",
+				"person_id"
+			],
+			[
+				"entit",
+				"entity_id"
+			],
+			[
+				"acco",
+				"accounts"
+			],
+			[
+				"account",
+				"account_id"
+			],
+			[
+				"bio",
+				"biography"
+			],
+			[
+				"enti",
+				"entity_id"
+			],
+			[
+				"INH",
+				"INHERITS"
+			],
+			[
+				"obj",
+				"object"
+			],
+			[
+				"objec",
+				"object_id"
+			],
+			[
+				"ima",
+				"image"
+			],
+			[
+				"obje",
+				"objectType"
+			],
+			[
+				"ass",
+				"asset_id"
+			],
+			[
+				"IN",
+				"INHERITS"
+			],
+			[
+				"studio",
+				"studio_id"
+			],
+			[
+				"photo",
+				"photographer"
+			],
+			[
+				"en",
+				"entityType"
+			],
+			[
+				"acc",
+				"account"
+			],
+			[
+				"lo",
+				"location"
+			],
+			[
+				"image",
+				"image_id"
+			],
+			[
+				"accoun",
+				"account_id"
+			],
+			[
 				"list",
 				"listDir"
 			],
@@ -94,10 +218,6 @@
 			[
 				"curr",
 				"currComponent"
-			],
-			[
-				"lo",
-				"log"
 			],
 			[
 				"load",
@@ -248,10 +368,6 @@
 				"baseTemplate"
 			],
 			[
-				"loc",
-				"localTemplate"
-			],
-			[
 				"ba",
 				"baseTemplateDir"
 			],
@@ -286,10 +402,6 @@
 			[
 				"pci",
 				"picture_data"
-			],
-			[
-				"photo",
-				"photos"
 			],
 			[
 				"ar",
@@ -402,118 +514,6 @@
 			[
 				"Dyna",
 				"DynamicMiddlewareNextOption"
-			],
-			[
-				"options",
-				"optionsParam"
-			],
-			[
-				"mak",
-				"makeOpts"
-			],
-			[
-				"repl",
-				"replacer"
-			],
-			[
-				"dyn",
-				"dynamicRoutes"
-			],
-			[
-				"module",
-				"moduleName"
-			],
-			[
-				"optio",
-				"optionsParser"
-			],
-			[
-				"mi",
-				"middleWareOptions"
-			],
-			[
-				"option",
-				"optionsArgumentsDelimiter"
-			],
-			[
-				"mod",
-				"modulePath"
-			],
-			[
-				"next",
-				"nextOption"
-			],
-			[
-				"modu",
-				"moduleName"
-			],
-			[
-				"pub",
-				"publicPath"
-			],
-			[
-				"fav",
-				"faviconPath"
-			],
-			[
-				"vi",
-				"viewsPath"
-			],
-			[
-				"req",
-				"require"
-			],
-			[
-				"exp",
-				"expressBunyan"
-			],
-			[
-				"do",
-				"doNext"
-			],
-			[
-				"sele",
-				"selectStyles"
-			],
-			[
-				"sel",
-				"selector"
-			],
-			[
-				"link",
-				"link_hover"
-			],
-			[
-				"_se",
-				"_setMultiple"
-			],
-			[
-				"_",
-				"_meta"
-			],
-			[
-				"prop",
-				"propName"
-			],
-			[
-				"scr",
-				"scoreB"
-			],
-			[
-				"sc",
-				"scoreA"
-			],
-			[
-				"cal",
-				"calculateScore"
-			],
-			[
-				"for",
-				"forEach"
-			],
-			[
-				"co",
-				"combs"
 			]
 		]
 	},
@@ -634,17 +634,28 @@
 	"expanded_folders":
 	[
 		"/home/xananax/projects/AIF",
+		"/home/xananax/projects/AIF/public",
+		"/home/xananax/projects/AIF/public/preliminary-information",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation",
+		"/home/xananax/projects/AIF/style",
 		"/home/xananax/projects/AIF/templates"
 	],
 	"file_history":
 	[
+		"/home/xananax/Desktop/fai.sql",
+		"/home/xananax/Desktop/fai-rel.sql",
+		"/home/xananax/notes/todo.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/comparison-of-graph-databases.md",
+		"/home/xananax/projects/AIF/templates/layout.jade",
+		"/home/xananax/projects/AIF/style/tables.styl",
+		"/home/xananax/projects/AIF/public/main.js",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/hierarchical-data-in-SQL.md",
 		"/home/xananax/projects/AIF/templates/functions.jade",
 		"/home/xananax/projects/AIF/templates/mixins.jade",
 		"/home/xananax/projects/AIF/test.jade",
 		"/home/xananax/projects/AIF/test.js",
 		"/home/xananax/projects/AIF/public/_harp.json",
 		"/home/xananax/projects/AIF/public/preliminary-information/_layout.jade",
-		"/home/xananax/projects/AIF/templates/layout.jade",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/index.jade",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/tasks/_layout.jade",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/_index.md",
@@ -663,7 +674,6 @@
 		"/home/xananax/projects/AIF/style/index.styl",
 		"/home/xananax/projects/AIF/package.json",
 		"/home/xananax/projects/AIF/public/preliminary-information/documentation/index.jade",
-		"/home/xananax/projects/AIF/public/main.js",
 		"/home/xananax/projects/AIF/www/main.js",
 		"/home/xananax/projects/AIF/www/index.html",
 		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/index.jade",
@@ -676,7 +686,6 @@
 		"/home/xananax/projects/AIF/www/preliminary-information/planning/index.html",
 		"/home/xananax/projects/AIF/README.md",
 		"/home/xananax/projects/AIF/www/style.css",
-		"/home/xananax/projects/AIF/style/tables.styl",
 		"/home/xananax/projects/AIF/harp.json",
 		"/home/xananax/projects/AIF/pages/harp.json",
 		"/home/xananax/projects/AIF/pages/_layout.jade",
@@ -760,12 +769,7 @@
 		"/home/xananax/projects/ntoes8/data.io/examples/middleware/mongo-store.js",
 		"/home/xananax/projects/ntoes8/data.io/examples/server/server.js",
 		"/home/xananax/projects/ntoes8/client/package.json",
-		"/home/xananax/notes/todo.md",
-		"/home/xananax/projects/ntoes8/data.io/examples/middleware/memory-store.js",
-		"/home/xananax/projects/ntoes8/data.io/data.io.js",
-		"/home/xananax/projects/ntoes8/data.io/examples/middleware/session.js",
-		"/home/xananax/projects/ntoes8/data.io/examples/auth/server.js",
-		"/home/xananax/projects/AIF-Wiki/_Sidebar.md"
+		"/home/xananax/projects/ntoes8/data.io/examples/middleware/memory-store.js"
 	],
 	"find":
 	{
@@ -799,6 +803,103 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"(ADD CONSTR.*?\\n)",
+			" (FOREIGN KEY .*?)\\n",
+			"\\n\\n+-- #",
+			"fk",
+			"role_per",
+			"CONSTRAINT ",
+			"id SERIAL PRIMARY KEY",
+			"entityLo",
+			"account_roles",
+			"role_permissions",
+			"account_permissions",
+			"FOREIGN KEY (\\w+) REFERENCES",
+			"FOREIGN KEY (\\w) REFERENCES",
+			"CREATE TABLE (\\w+)",
+			"DROP TABLE (\\w+);",
+			" IF EXISTS CASCADE",
+			"CREATE TABLE (\\w+)",
+			"objecttype",
+			"\\sREFERENCES \\w+\\(\\w+\\)",
+			"OBJECT",
+			"REFERENCES",
+			"EXT (--|\\n)",
+			"REFERENCES",
+			"entity(",
+			"inherits",
+			"inher",
+			"^\\s+\\w+\\s\\w+(\\s\\w+),*?(\\s+)?(--[\\w\\s]+)?\\n",
+			"^\\s+\\w+\\s\\w+(\\s\\w+)*?(\\s+)?(--[\\w\\s]+)?\\n",
+			"TEXT\\s+?(--|\\n)",
+			"DATE\\s+?(--|\\n)",
+			"DATE,\\s+?(--|\\n)",
+			"EXT (--|\\n)",
+			"\\) (--|\\n)",
+			") --",
+			"\\) (--|\\n)",
+			"\\) --",
+			"\\), --",
+			"contract_id",
+			"permission_id",
+			"account_id",
+			"collection_id",
+			"location_id",
+			"organisation_id",
+			"photographer_id",
+			"person_id",
+			"entity_id",
+			"biography_id",
+			"note_id",
+			"photo_id",
+			"note_id",
+			"image_id",
+			"photo_id",
+			"object_id",
+			"asset_id",
+			"box_id",
+			"note",
+			"contract_id",
+			"album",
+			"\"",
+			"int",
+			"text",
+			"VARCHAR\\(\\d+\\)",
+			"integer",
+			"integer\\(\\d+\\)",
+			"REFER",
+			"	                              ",
+			"REFER",
+			"refer",
+			"INHERITS \"\\w+\"",
+			"INHERITS (\"\\w+\");\\n",
+			"INHERITS (\"\\w+\")\\n",
+			"inheri",
+			"\\sWITH \\(\\n\\s\\sOIDS=FALSE\\n\\)",
+			"WITH \\(\\n\\s\\sOIDS=FALSE\\n\\)\\s",
+			"--------------------------------",
+			" -- unique identifier for rows",
+			"integer(32) PRIMARY KEY",
+			"unique identifier for the table rows",
+			"CREATE TABLE (\"\\w+\") \\(",
+			",\\n\\)",
+			"\"id\" integer(32) PRIMARY KEY,",
+			"collection_ph",
+			"ALTER TABLE \"(\\w+)\" ADD CONSTRAINT \\w+ ",
+			"ALTER TABLE \"(\\w+)\" ADD CONSTRAINT \\w+  ",
+			"ALTER TABLE \"(collection_photos)\" ADD CONSTRAINT collection_photos_fk0 ",
+			"ALTER TABLE \"\\w+\" ADD CONSTRAINT \\w+ ",
+			"addres",
+			"CONSTRAINT \\w* (PRIMARY KEY \\(\\w+,\\w+\\))",
+			"REFERENCES (\\w*)\\(id\\)",
+			"(\\w*_id\" integer REFERENCES \\w*\\(id\\))\\n",
+			"(\\w*_id\" integer REFERENCES \\w*\\(id\\)\\n)",
+			"(\\w*)_id\" integer\\(32\\),",
+			"CONSTRAINT \\w* PRIMARY KEY \\(id\\)",
+			"\"id\" integer(32)",
+			"image",
+			"_",
+			"see",
 			"consol",
 			"yelo",
 			"pages",
@@ -829,111 +930,54 @@
 			"fs",
 			"include",
 			"includes",
-			"include",
-			"includes",
-			"extends",
-			"getC",
-			"cons",
-			"urlPipeOptions",
-			"source",
-			"method",
-			"filter",
-			"img",
-			"../img",
-			"plants-bg",
-			"img/",
-			"img",
-			"fileRoot+",
-			"img/",
-			"img",
-			"filter",
-			"domain",
-			"__dirname",
-			"classes",
-			"render",
-			"noStyles",
-			"render",
-			"body",
-			"style",
-			"consol",
-			"cons",
-			"classes",
-			"arr",
-			"render",
-			"cons",
-			"cons\n",
-			"cons",
-			"Fac",
-			"consol",
-			"render",
-			"Object.",
-			"_aft",
-			"_bef",
-			"render",
-			"tag",
-			"makeM",
-			"SelfCl",
-			"Float",
-			"List",
-			"\\n\"",
-			",",
-			"consol",
-			"Super",
-			"render",
-			"Unit",
-			"Uni",
-			"makeC",
-			"_subProperties",
-			"shorth",
-			"consol",
-			"url",
-			"Ulr",
-			"Class({",
-			"instanceOf",
-			".ShortHand",
-			".Unit",
-			"short",
-			"(.*?)\\n",
-			"ip",
-			"start",
-			"once",
-			"logL",
-			"consol",
-			"logLo",
-			"GoT",
-			"show",
-			"onLo",
-			"START",
-			"show",
-			"resol",
-			"resize",
-			"load",
-			"consol",
-			".vaseline-container.vaseline-no-transforms",
-			".vaseline-container.vaseline-supports-transforms",
-			" +-.*?-transform:.*?\\n",
-			"\\t+-.*?-transform:.*?\\n",
-			"-.*?-transform:.*?\\n",
-			"cover",
-			"sizing",
-			"calc",
-			"consol",
-			"position",
-			"positon",
-			"isF",
-			"free",
-			".id",
-			"id(",
-			"_comingUp",
-			"_current",
-			"resiz"
+			"include"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"\\n$1",
+			"\\n$1\\n",
+			"\\n$1\\n\\n",
+			"\\n$1\\n",
+			"\\n\\n\\n\\n\\n-- #",
+			"\\n\\n\\n\\n-- #",
+			"_fk",
+			"CONSTRAINT _",
+			"id SERIAL PRIMARY KEY NOT NULL",
+			"FOREIGN KEY ($1) REFERENCES",
+			"DROP TABLE $1 CASCADE;\\nCREATE TABLE $1",
+			"DROP TABLE $1 CASCADE;",
+			"",
+			"DROP TABLE $1 IF EXISTS CASCADE;\\nCREATE TABLE $1",
+			"",
+			"INT",
+			"TEXT",
+			"text",
+			"int",
+			"INHERITS ($1);\\n-- this table inherits all properties from the $1 table\\n",
+			"INHERITS ($1)\\n-- this table inherits all properties from the $1 table",
+			"",
+			"----------------------------------------------------------------------",
+			"  -- unique identifier for rows",
+			"     -- unique identifier for rows",
+			"SERIAL PRIMARY KEY",
+			"unique identifier for rows",
+			"-- table $1: \\nCREATE TABLE $1 (",
+			"-- table $1: \\n$1",
+			"\\n)",
+			"\"id\" integer(32) PRIMARY KEY, -- unique identifier for the table rows",
+			"$1 ",
+			"",
+			"$1",
+			"REFERENCES \"$1\"(id)",
+			"$1,\\n",
+			"$1,",
+			"$1_id\" integer REFERENCES $1(id)",
+			"",
+			"\"id\" integer(32) PRIMARY KEY",
 			"public",
 			"",
 			"$Container.",

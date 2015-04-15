@@ -20,5 +20,10 @@ $(function() {
         }
     });
 
-    $('table').tablesorter().addClass('sortable')
+    $('table').tablesorter().addClass('sortable');
+
+    $('pre code').each(function(i, block) {
+        console.log(block)
+        hljs.highlightBlock(block);
+    });
 });
