@@ -4,6 +4,210 @@
 		"selected_items":
 		[
 			[
+				"class",
+				"class_pre"
+			],
+			[
+				"wrap",
+				"wrappers"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"wr",
+				"wrapper"
+			],
+			[
+				"togg",
+				"togglee"
+			],
+			[
+				"jso",
+				"jsonMLTree"
+			],
+			[
+				"chara",
+				"characters"
+			],
+			[
+				"parse",
+				"parseJson"
+			],
+			[
+				"valid",
+				"validChars"
+			],
+			[
+				"token",
+				"tokenizer"
+			],
+			[
+				"toke",
+				"tokenizer"
+			],
+			[
+				"add",
+				"addToken"
+			],
+			[
+				"var",
+				"variable"
+			],
+			[
+				"exp",
+				"expression"
+			],
+			[
+				"varia",
+				"variableExp"
+			],
+			[
+				"chunk",
+				"chunkMap"
+			],
+			[
+				"nega",
+				"negateToken"
+			],
+			[
+				"expres",
+				"expressionToken"
+			],
+			[
+				"expr",
+				"expressionToken"
+			],
+			[
+				"ex",
+				"expressionToken"
+			],
+			[
+				"vari",
+				"variablesToken"
+			],
+			[
+				"__p",
+				"___parent"
+			],
+			[
+				"__",
+				"__p"
+			],
+			[
+				"condti",
+				"conditionalElse"
+			],
+			[
+				"index",
+				"indexName"
+			],
+			[
+				"iter",
+				"iterate"
+			],
+			[
+				"entiti",
+				"entitiesEscape"
+			],
+			[
+				"char",
+				"characters"
+			],
+			[
+				"split",
+				"splitRegExp"
+			],
+			[
+				"def",
+				"default_width"
+			],
+			[
+				"defa",
+				"default_height"
+			],
+			[
+				"comma",
+				"commandRegExp"
+			],
+			[
+				"register_s",
+				"register_json_filter"
+			],
+			[
+				"regis",
+				"register_string_filter"
+			],
+			[
+				"ch",
+				"characters"
+			],
+			[
+				"additio",
+				"additionalIcons"
+			],
+			[
+				"id_pr",
+				"id_prefix"
+			],
+			[
+				"input",
+				"input-checkbox"
+			],
+			[
+				"class_",
+				"class_prefix"
+			],
+			[
+				"symbol",
+				"symbolsRegExp"
+			],
+			[
+				"symb",
+				"symbol"
+			],
+			[
+				"symbo",
+				"symbols"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
+				"regist",
+				"register_hook"
+			],
+			[
+				"make_",
+				"make_shortcode_filter"
+			],
+			[
+				"run_",
+				"run_shortcode_filters"
+			],
+			[
+				"json",
+				"jsonml"
+			],
+			[
+				"frag",
+				"fragment"
+			],
+			[
+				"provi",
+				"provider"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"ma",
+				"markdown"
+			],
+			[
 				"bar",
 				"bar-inner"
 			],
@@ -244,10 +448,6 @@
 				"getComponent"
 			],
 			[
-				"ex",
-				"extname"
-			],
-			[
 				"re",
 				"results"
 			],
@@ -314,206 +514,6 @@
 			[
 				"init",
 				"init_or_commit"
-			],
-			[
-				"syn",
-				"syncsite"
-			],
-			[
-				"push",
-				"push_and_gh_pages"
-			],
-			[
-				"comm",
-				"commit_and_push"
-			],
-			[
-				"crea",
-				"create_and_start_repo"
-			],
-			[
-				"st",
-				"stdout"
-			],
-			[
-				"wri",
-				"writeTemplate"
-			],
-			[
-				"cac",
-				"cacheDir"
-			],
-			[
-				"ca",
-				"cacheDir"
-			],
-			[
-				"tem",
-				"templatesDir"
-			],
-			[
-				"fi",
-				"filename"
-			],
-			[
-				"cach",
-				"cacheFile"
-			],
-			[
-				"res",
-				"results"
-			],
-			[
-				"write",
-				"writeTemplateToCache"
-			],
-			[
-				"cah",
-				"cachedTemplatePath"
-			],
-			[
-				"templ",
-				"templatePath"
-			],
-			[
-				"baes",
-				"baseTemplate"
-			],
-			[
-				"ba",
-				"baseTemplateDir"
-			],
-			[
-				"loa",
-				"loadTemplate"
-			],
-			[
-				"bas",
-				"baseFiles"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"te",
-				"template"
-			],
-			[
-				"provi",
-				"provider"
-			],
-			[
-				"api",
-				"apiMap"
-			],
-			[
-				"cover",
-				"cover_data"
-			],
-			[
-				"pci",
-				"picture_data"
-			],
-			[
-				"ar",
-				"arity-1"
-			],
-			[
-				"le",
-				"length"
-			],
-			[
-				"ap",
-				"apiMap"
-			],
-			[
-				"make",
-				"makeAPIMap"
-			],
-			[
-				"me",
-				"method"
-			],
-			[
-				"path",
-				"pathToRegexp"
-			],
-			[
-				"Prov",
-				"ProviderRoute"
-			],
-			[
-				"p",
-				"providers"
-			],
-			[
-				"l",
-				"length"
-			],
-			[
-				"meh",
-				"methodName"
-			],
-			[
-				"Pro",
-				"ProviderExpressHelper"
-			],
-			[
-				"meth",
-				"methodName"
-			],
-			[
-				"prov",
-				"provider"
-			],
-			[
-				"getC",
-				"getCacheFile"
-			],
-			[
-				"provider",
-				"providerModule"
-			],
-			[
-				"c",
-				"callback"
-			],
-			[
-				"loadD",
-				"loadDataFromLocal"
-			],
-			[
-				"n",
-				"name"
-			],
-			[
-				"conf",
-				"configFileName"
-			],
-			[
-				"si",
-				"siteDir"
-			],
-			[
-				"s",
-				"siteDir"
-			],
-			[
-				"ot",
-				"optionsParam"
-			],
-			[
-				"op",
-				"optionsParser"
-			],
-			[
-				"Dyn",
-				"DynamicDirector"
-			],
-			[
-				"opti",
-				"optionsParam"
 			]
 		]
 	},
@@ -527,10 +527,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "inst",
+		"height": 151.0,
+		"last_filter": "jsh",
 		"selected_items":
 		[
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
 			[
 				"inst",
 				"Package Control: Install Package"
@@ -544,16 +556,8 @@
 				"Package Control: Install Package"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				":w",
 				":w - Save"
-			],
-			[
-				"jsh",
-				"JSHint"
 			],
 			[
 				"remo",
@@ -612,7 +616,7 @@
 				"Package Control: Add Repository"
 			]
 		],
-		"width": 449.0
+		"width": 593.0
 	},
 	"console":
 	{
@@ -633,18 +637,93 @@
 	},
 	"expanded_folders":
 	[
-		"/home/xananax/projects/AIF",
-		"/home/xananax/projects/AIF/style"
+		"/home/xananax/projects/markdown-more/example/public"
 	],
 	"file_history":
 	[
+		"/home/xananax/chadi.txt",
+		"/media/AswadMaf3ouss/Chadi Videos/chadi",
+		"/home/xananax/projects/markdown-more/README.md",
+		"/home/xananax/projects/markdown-more/package.json",
+		"/home/xananax/projects/markdown-more/example/page.js",
+		"/home/xananax/projects/markdown-more/example/public/main.css",
+		"/home/xananax/projects/AIF/package.json",
+		"/home/xananax/projects/markdown-more/dist/markdown-more-filters.js",
+		"/home/xananax/projects/markdown-more/dist/markdown-more.js",
+		"/home/xananax/projects/markdown-more/dist/markdown-more.min.js",
+		"/home/xananax/projects/markdown-more/.gitignore",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/src/dialects/gruber.js",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/Gruntfile.js",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/README.md",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/src/parser.js",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/src/markdown.js",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/lib/index.js",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/package.json",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/lib/markdown.js",
+		"/home/xananax/projects/markdown-more/lib/markdown.js",
+		"/home/xananax/projects/markdown-more/filters/templating.js",
+		"/home/xananax/projects/markdown-more/filters/embed.js",
+		"/home/xananax/projects/markdown-more/filters/checkboxes.js",
+		"/home/xananax/projects/markdown-more/lib/index.js",
+		"/home/xananax/projects/markdown-more/index.js",
+		"/home/xananax/projects/markdown-more/markdown.js",
+		"/home/xananax/projects/markdown-more/example/locals.js",
+		"/home/xananax/projects/markdown-more/example/options.js",
+		"/home/xananax/projects/markdown-more/filters/toc/index.js",
+		"/home/xananax/projects/markdown-more/lib/dialect.js",
+		"/home/xananax/projects/markdown-more/filters/wrap.js",
+		"/home/xananax/projects/markdown-more/example/index.js",
+		"/home/xananax/projects/markdown-more/filters/index.js",
+		"/home/xananax/projects/markdown-more/example/filters.js",
+		"/home/xananax/projects/markdown-more/filters/calculus/index.js",
+		"/home/xananax/projects/markdown-more/filters/mentions-hashtags.js",
+		"/home/xananax/projects/markdown-more/filters/linebreaks.js",
+		"/home/xananax/projects/markdown-more/filters/iframes.js",
+		"/home/xananax/projects/markdown-more/filters/icons.js",
+		"/home/xananax/projects/markdown-more/filters/entities.js",
+		"/home/xananax/projects/markdown-more/example/public/main.js",
+		"/home/xananax/projects/markdown-more/filters/headers.js",
+		"/home/xananax/projects/markdown-more/example/server.js",
+		"/home/xananax/projects/markdown-more/example/public/checkboxes.js",
+		"/home/xananax/projects/markdown-more/filters/page/index.js",
+		"/home/xananax/projects/markdown-more/filters/toc/first.js",
+		"/home/xananax/projects/markdown-more/filters/modifiers.js",
+		"/home/xananax/projects/markdown-more/temp.js",
+		"/home/xananax/projects/markdown-more/filters/selflink.js",
+		"/home/xananax/projects/markdown-more/filters/calculus.js",
+		"/home/xananax/projects/markdown-more/filters/calculus/tests.js",
+		"/home/xananax/projects/markdown-more/filters/calculus/tokens.js",
+		"/home/xananax/projects/markdown-more/filters/calculus/tokenizer.js",
+		"/home/xananax/dwhelper/movies.txt",
+		"/home/xananax/projects/markdown-more/filters/toc/last.js",
+		"/home/xananax/projects/markdown-more/README_old.md",
+		"/home/xananax/projects/markdown-more/filters/arrows.js",
+		"/home/xananax/projects/markdown-more/filters/wrap/index.js",
+		"/home/xananax/projects/AIF/templates/mixins.jade",
+		"/home/xananax/projects/AIF/templates/functions.jade",
+		"/home/xananax/.config/sublime-text-3/Packages/User/Markdown.sublime-settings",
+		"/home/xananax/.config/sublime-text-3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/home/xananax/projects/markdown-more/lib/filters/toc.js",
+		"/home/xananax/projects/markdown-more/lib/filters/toc-insert.js",
+		"/home/xananax/projects/markdown-more/lib/filters/index.js",
+		"/home/xananax/projects/markdown-more/example/checkboxes.js",
+		"/home/xananax/projects/markdown-more/lib/filters/templating.js",
+		"/home/xananax/projects/markdown-more/lib/filters/mentions-hashtags.js",
+		"/home/xananax/projects/markdown-more/lib/filters/selflink.js",
+		"/home/xananax/projects/markdown-more/lib/filters/arrows.js",
+		"/home/xananax/projects/markdown-more/lib/filters/maths.js",
+		"/home/xananax/projects/markdown-more/lib/filters/checkboxes.js",
+		"/home/xananax/projects/markdown-more/lib/filters/checkboxes/client.js",
+		"/home/xananax/projects/markdown-more/lib/filters/filters.js",
+		"/home/xananax/projects/AIF/testbed/semantic/src/site/globals/site.variables",
+		"/home/xananax/projects/AIF/testbed/semantic/src/semantic.less",
+		"/home/xananax/projects/AIF/testbed/semantic/src/theme.config",
 		"/home/xananax/projects/AIF/style/index.styl",
 		"/home/xananax/projects/AIF/style/tables.styl",
 		"/home/xananax/projects/AIF/style/sidebar.styl",
 		"/home/xananax/projects/AIF/style/responsive.styl",
 		"/home/xananax/projects/AIF/public/preliminary-information/documentation/hierarchical-data-in-SQL.md",
 		"/home/xananax/projects/AIF/style/icons.styl",
-		"/home/xananax/projects/AIF/templates/functions.jade",
 		"/home/xananax/projects/AIF/style/iframe.styl",
 		"/home/xananax/projects/AIF/templates/layout.jade",
 		"/home/xananax/projects/AIF/public/preliminary-information/documentation/other-references-of-interest.md",
@@ -653,13 +732,10 @@
 		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/databases.md",
 		"/home/xananax/projects/AIF/public/preliminary-information/documentation/comparison-of-graph-databases.md",
 		"/home/xananax/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-		"/home/xananax/.config/sublime-text-3/Packages/User/Markdown.sublime-settings",
-		"/home/xananax/.config/sublime-text-3/Packages/MarkdownEditing/Markdown.sublime-settings",
 		"/home/xananax/projects/AIF/style/text.styl",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/01-simple-schema.md",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/simple.sql",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/_index.md",
-		"/home/xananax/projects/AIF/templates/mixins.jade",
 		"/home/xananax/projects/AIF/public/main.js",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/complex-schema.md",
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/index.jade",
@@ -692,80 +768,7 @@
 		"/home/xananax/projects/AIF/public/preliminary-information/index.jade",
 		"/home/xananax/projects/AIF/public/preliminary-information/_data.json",
 		"/home/xananax/projects/AIF/public/_data.json",
-		"/home/xananax/projects/AIF/public/preliminary-information/a_data.json",
-		"/home/xananax/projects/AIF/templates/preliminary-information_layout.jade",
-		"/home/xananax/projects/AIF/templates/debugger.jade",
-		"/home/xananax/projects/AIF/package.json",
-		"/home/xananax/projects/AIF/www/main.js",
-		"/home/xananax/projects/AIF/www/index.html",
-		"/home/xananax/projects/AIF/public/preliminary-information/documentation/index.md",
-		"/home/xananax/projects/AIF/public/preliminary-information/agreement.md",
-		"/home/xananax/projects/AIF/www/preliminary-information/index.html",
-		"/home/xananax/projects/AIF/www/preliminary-information/planning/index.html",
-		"/home/xananax/projects/AIF/README.md",
-		"/home/xananax/projects/AIF/www/style.css",
-		"/home/xananax/projects/AIF/harp.json",
-		"/home/xananax/projects/AIF/pages/harp.json",
-		"/home/xananax/projects/AIF/pages/_layout.jade",
-		"/home/xananax/projects/AIF/pages/preliminary-information/_layout.jade",
-		"/home/xananax/projects/AIF/pages/preliminary-information/agreement.md",
-		"/home/xananax/projects/AIF/pages/preliminary-information/documentation/index.jade",
-		"/home/xananax/projects/AIF/pages/preliminary-information/planning/index.jade",
-		"/home/xananax/projects/AIF/pages/preliminary-information/index.jade",
-		"/home/xananax/projects/AIF/pages/index.md",
-		"/home/xananax/projects/AIF/public/index.html",
-		"/home/xananax/projects/AIF/public/style.css",
-		"/home/xananax/projects/AIF/public/research/index.html",
-		"/home/xananax/projects/AIF/.gitignore",
-		"/home/xananax/projects/AIF/pages/research/index.jade",
-		"/home/xananax/projects/AIF/pages/research/documentation/index.jade",
-		"/home/xananax/projects/AIF/pages/research/documentation/vocabulary-and-quick-definitions/index.jade",
-		"/home/xananax/projects/AIF/pages/research/planning/index.jade",
-		"/home/xananax/projects/AIF/pages/research/_layout.jade",
-		"/home/xananax/projects/AIF/pages/style.styl",
-		"/home/xananax/projects/AIF/pages/_style/index.styl",
-		"/home/xananax/projects/AIF/pages/research/documentation/hierarchical-data-in-SQL.md",
-		"/home/xananax/projects/AIF/pages/_style/text.styl",
-		"/home/xananax/projects/AIF/pages/_mixins.jade",
-		"/home/xananax/projects/AIF/pages/_style/links.styl",
-		"/home/xananax/projects/AIF/pages/_style/reset.styl",
-		"/home/xananax/projects/AIF/pages/_style/sidebar.styl",
-		"/home/xananax/projects/AIF/pages/_style/tables.styl",
-		"/home/xananax/projects/AIF/pages/research/documentation/vocabulary-and-quick-definitions/server-side-technologies.md",
-		"/home/xananax/projects/AIF/scripts/test.js",
-		"/home/xananax/projects/AIF/pages/research/planning/index.md",
-		"/home/xananax/projects/AIF/pages/research/planning/tentative-specification-sheet.md",
-		"/home/xananax/projects/AIF/pages/research/planning/tentative-team-structure.md",
-		"/home/xananax/projects/AIF/pages/research/planning/timeline.md",
-		"/home/xananax/projects/AIF/pages/404.md",
-		"/home/xananax/projects/AIF/pages/research/index.md",
-		"/home/xananax/projects/AIF/pages/_footer.md",
-		"/home/xananax/projects/AIF/pages/research/documentation/vocabulary/index.jade",
-		"/home/xananax/projects/AIF/pages/research/agreement.md",
-		"/home/xananax/projects/AIF-Wiki/Research/Research-&-Outline.md",
-		"/home/xananax/projects/AIF/pages/research/documentation/index.md",
-		"/home/xananax/projects/AIF/pages/research/documentation/references.md",
-		"/home/xananax/projects/AIF/pages/research/_sidebar.jade",
-		"/home/xananax/projects/AIF/pages/research/documentation/vocabulary/server-side-technologies.md",
-		"/home/xananax/projects/AIF/pages/research/documentation/vocabulary/hosting-platforms.md",
-		"/home/xananax/projects/AIF/pages/research/documentation/vocabulary/databases.md",
-		"/home/xananax/projects/AIF/pages/research/planning.md",
-		"/home/xananax/projects/AIF/pages/style/index.styl",
-		"/home/xananax/projects/AIF-Wiki/Research/Planning.md",
-		"/home/xananax/projects/AIF-Wiki/Research/Vocabulary-&-Quick-Definitions.md",
-		"/home/xananax/projects/AIF/pages/research/documentation/vocabulary.md",
-		"/home/xananax/projects/AIF/pages/research/documentation/vocabulary/server-side-technologies",
-		"/home/xananax/projects/AIF-Wiki/Research/Documentation-&-References.md",
-		"/home/xananax/projects/AIF-Wiki/Research/Agreement.md",
-		"/home/xananax/projects/AIF/pages/_sidebar.jade",
-		"/home/xananax/projects/AIF/pages/index.jade",
-		"/home/xananax/projects/AIF-Wiki/Home.md",
-		"/home/xananax/projects/AIF/pages/main.less",
-		"/home/xananax/projects/puppeteer2/modules/upload/index.js",
-		"/home/xananax/projects/AIF/scripts/pages",
-		"/home/xananax/.bin/bitlbee-user-daemon",
-		"/home/xananax/projects/puppeteer/processor/git.js",
-		"/home/xananax/projects/ntoes8/service.ntoes.js"
+		"/home/xananax/projects/AIF/public/preliminary-information/a_data.json"
 	],
 	"find":
 	{
@@ -776,6 +779,8 @@
 		"height": 96.0,
 		"where_history":
 		[
+			"/home/xananax/projects/markdown-more/node_modules/markdown/src",
+			"/home/xananax/projects/markdown-more/filters",
 			"/home/xananax/projects/AIF/public",
 			"/home/xananax/projects/puppeteer2/node_modules/jade",
 			"/home/xananax/projects/puppeteer2/node_modules/jade/lib",
@@ -799,6 +804,57 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"checkb",
+			"check",
+			"var check = this[state_slot].shift();",
+			"check",
+			"geto",
+			"escape",
+			"rule",
+			"\"hr",
+			"horiz",
+			"hr(\"|')",
+			"hr\"",
+			"-+",
+			"horizr",
+			"hr",
+			"./filters",
+			"```js",
+			"dialec",
+			"consol",
+			"null",
+			"register_json",
+			"this.map",
+			"addToken",
+			"args.map(chunkMap",
+			"repeat",
+			"space",
+			"express",
+			"locals.markdown._m_stash",
+			"data",
+			"locals",
+			"cons",
+			"consol",
+			"!",
+			"settings",
+			"icons",
+			"consol",
+			"code_bl",
+			"icons",
+			"symbols",
+			"code_blo",
+			"patterns_or_",
+			"inlinecode",
+			"inline",
+			"`",
+			"find_link_refs",
+			"consol",
+			"consol\n",
+			"consol",
+			"embed",
+			"./",
+			"diale",
+			"maruku",
 			"(\\[)(\\*)(\\])",
 			";",
 			":",
@@ -875,58 +931,7 @@
 			"photo_id",
 			"note_id",
 			"image_id",
-			"photo_id",
-			"object_id",
-			"asset_id",
-			"box_id",
-			"note",
-			"contract_id",
-			"album",
-			"\"",
-			"int",
-			"text",
-			"VARCHAR\\(\\d+\\)",
-			"integer",
-			"integer\\(\\d+\\)",
-			"REFER",
-			"	                              ",
-			"REFER",
-			"refer",
-			"INHERITS \"\\w+\"",
-			"INHERITS (\"\\w+\");\\n",
-			"INHERITS (\"\\w+\")\\n",
-			"inheri",
-			"\\sWITH \\(\\n\\s\\sOIDS=FALSE\\n\\)",
-			"WITH \\(\\n\\s\\sOIDS=FALSE\\n\\)\\s",
-			"--------------------------------",
-			" -- unique identifier for rows",
-			"integer(32) PRIMARY KEY",
-			"unique identifier for the table rows",
-			"CREATE TABLE (\"\\w+\") \\(",
-			",\\n\\)",
-			"\"id\" integer(32) PRIMARY KEY,",
-			"collection_ph",
-			"ALTER TABLE \"(\\w+)\" ADD CONSTRAINT \\w+ ",
-			"ALTER TABLE \"(\\w+)\" ADD CONSTRAINT \\w+  ",
-			"ALTER TABLE \"(collection_photos)\" ADD CONSTRAINT collection_photos_fk0 ",
-			"ALTER TABLE \"\\w+\" ADD CONSTRAINT \\w+ ",
-			"addres",
-			"CONSTRAINT \\w* (PRIMARY KEY \\(\\w+,\\w+\\))",
-			"REFERENCES (\\w*)\\(id\\)",
-			"(\\w*_id\" integer REFERENCES \\w*\\(id\\))\\n",
-			"(\\w*_id\" integer REFERENCES \\w*\\(id\\)\\n)",
-			"(\\w*)_id\" integer\\(32\\),",
-			"CONSTRAINT \\w* PRIMARY KEY \\(id\\)",
-			"\"id\" integer(32)",
-			"image",
-			"_",
-			"see",
-			"consol",
-			"yelo",
-			"pages",
-			"orange",
-			";",
-			":"
+			"photo_id"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -934,6 +939,19 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"```javascript",
+			"this._map",
+			"add",
+			"args.map(this.chunkMap",
+			"_stash",
+			"locals",
+			"options",
+			"modifiers",
+			"entities",
+			"icons",
+			"parseJson",
+			"../filters/",
 			"$1#$2",
 			"",
 			" ",

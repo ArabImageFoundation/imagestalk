@@ -1,0 +1,95 @@
+include ../../templates/mixins
+
+section(id="/2")
+	:markdown
+		# Research Timeline
+		The research will need approximately four weeks. Each week is a *phase*.
+
+		- week 1: [gathering requirements](#/2/2)
+		- week 2: [computing requirements](#/2/3)
+		- week 3: [benchmarking](#/2/4)
+		- week 4: [production](#/2/5)
+
+		[↓](#/1/1)
+
+Y = 2015
+M = 5
+timelineOptions = JSON.stringify({end:new Date(Y,M,20)})
+section(id="/2/1")
+	:markdown
+		# Research Timeline
+
+	.timeline(data-options=timelineOptions)
+		+timelinePoint(Y,M,1)
+			:markdown
+				start
+
+		+timelineSpan(Y,M,1,Y,M,7)
+			:markdown
+				## [Gathering Requirements](#/2/2)
+
+				- Discussions with AIF
+				- Internal AIF decision process
+
+		+timelineSpan(Y,M,7,Y,M,14)
+			:markdown
+				## [Computing Requirements](#/2/3)
+
+				- Take high-flight decisions on technical requirements
+
+		+timelineSpan(Y,M,14,Y,M,21)
+			:markdown
+				## [Benchmarking](#/2/4)
+
+				- Testing the different technologies
+
+
+		+timelineSpan(Y,M,21,Y,M,30)
+			:markdown
+				## [Production](#/2/5)
+
+				- Production of the actual document
+
+		+timelinePoint(Y,M,30)
+			:markdown
+				end
+
+	p: small The different phases dates are set tentatively and should not be considered final
+
+section(id="/2/2")
+	:markdown
+		# Phase 1
+		## Gathering Requirements
+
+		In close collaboration with AIF, all imperatives are gathered.
+		During this phase, it is *mandatory* that members of AIF are available and responsive.  
+		> All subsequent phases depend on the answers found during this process.
+
+section(id="/2/3")
+	:markdown
+		# Phase 2
+		## Computing Requirements
+
+		In accordance with the findings of phase 1, a research is conducted and solution(s) found and documented
+
+section(id="/2/4")
+	:markdown
+		# Phase 3
+		## Benchmarking
+
+		The different methods to reach our goals are tested for performance and compliance with the requirements.
+
+section(id="/2/5")
+	:markdown
+		# Phase 4
+		## Production
+
+		A document detailing the planning for the production of the AIF archiving system & website is produced.
+
+section(id="#/2/6")
+	:markdown
+		# Communication
+
+		Particularly during phases [1](#/2/1) and [4](#/2/4), it is mandatory, 
+		for the success of the research in the imparted time, that members of AIF
+		are available to answer questions.

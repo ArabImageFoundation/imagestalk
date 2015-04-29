@@ -1,0 +1,1163 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"class",
+				"class_pre"
+			],
+			[
+				"wrap",
+				"wrappers"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"wr",
+				"wrapper"
+			],
+			[
+				"togg",
+				"togglee"
+			],
+			[
+				"jso",
+				"jsonMLTree"
+			],
+			[
+				"chara",
+				"characters"
+			],
+			[
+				"parse",
+				"parseJson"
+			],
+			[
+				"valid",
+				"validChars"
+			],
+			[
+				"token",
+				"tokenizer"
+			],
+			[
+				"toke",
+				"tokenizer"
+			],
+			[
+				"add",
+				"addToken"
+			],
+			[
+				"var",
+				"variable"
+			],
+			[
+				"exp",
+				"expression"
+			],
+			[
+				"varia",
+				"variableExp"
+			],
+			[
+				"chunk",
+				"chunkMap"
+			],
+			[
+				"nega",
+				"negateToken"
+			],
+			[
+				"expres",
+				"expressionToken"
+			],
+			[
+				"expr",
+				"expressionToken"
+			],
+			[
+				"ex",
+				"expressionToken"
+			],
+			[
+				"vari",
+				"variablesToken"
+			],
+			[
+				"__p",
+				"___parent"
+			],
+			[
+				"__",
+				"__p"
+			],
+			[
+				"condti",
+				"conditionalElse"
+			],
+			[
+				"index",
+				"indexName"
+			],
+			[
+				"iter",
+				"iterate"
+			],
+			[
+				"entiti",
+				"entitiesEscape"
+			],
+			[
+				"char",
+				"characters"
+			],
+			[
+				"split",
+				"splitRegExp"
+			],
+			[
+				"def",
+				"default_width"
+			],
+			[
+				"defa",
+				"default_height"
+			],
+			[
+				"comma",
+				"commandRegExp"
+			],
+			[
+				"register_s",
+				"register_json_filter"
+			],
+			[
+				"regis",
+				"register_string_filter"
+			],
+			[
+				"ch",
+				"characters"
+			],
+			[
+				"additio",
+				"additionalIcons"
+			],
+			[
+				"id_pr",
+				"id_prefix"
+			],
+			[
+				"input",
+				"input-checkbox"
+			],
+			[
+				"class_",
+				"class_prefix"
+			],
+			[
+				"symbol",
+				"symbolsRegExp"
+			],
+			[
+				"symb",
+				"symbol"
+			],
+			[
+				"symbo",
+				"symbols"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
+				"regist",
+				"register_hook"
+			],
+			[
+				"make_",
+				"make_shortcode_filter"
+			],
+			[
+				"run_",
+				"run_shortcode_filters"
+			],
+			[
+				"json",
+				"jsonml"
+			],
+			[
+				"frag",
+				"fragment"
+			],
+			[
+				"provi",
+				"provider"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"ma",
+				"markdown"
+			],
+			[
+				"bar",
+				"bar-inner"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"photoR",
+				"photoReproduction_id"
+			],
+			[
+				"account_",
+				"account_permissions"
+			],
+			[
+				"entity",
+				"entityfk"
+			],
+			[
+				"note",
+				"notefk"
+			],
+			[
+				"coll",
+				"collections"
+			],
+			[
+				"colle",
+				"collectionfk"
+			],
+			[
+				"ent",
+				"entityTypefk"
+			],
+			[
+				"loca",
+				"location"
+			],
+			[
+				"loc",
+				"locationfk"
+			],
+			[
+				"person",
+				"person_id"
+			],
+			[
+				"orgi",
+				"organisation"
+			],
+			[
+				"pers",
+				"person_id"
+			],
+			[
+				"entit",
+				"entity_id"
+			],
+			[
+				"acco",
+				"accounts"
+			],
+			[
+				"account",
+				"account_id"
+			],
+			[
+				"bio",
+				"biography"
+			],
+			[
+				"enti",
+				"entity_id"
+			],
+			[
+				"INH",
+				"INHERITS"
+			],
+			[
+				"obj",
+				"object"
+			],
+			[
+				"objec",
+				"object_id"
+			],
+			[
+				"ima",
+				"image"
+			],
+			[
+				"obje",
+				"objectType"
+			],
+			[
+				"ass",
+				"asset_id"
+			],
+			[
+				"IN",
+				"INHERITS"
+			],
+			[
+				"studio",
+				"studio_id"
+			],
+			[
+				"photo",
+				"photographer"
+			],
+			[
+				"en",
+				"entityType"
+			],
+			[
+				"acc",
+				"account"
+			],
+			[
+				"lo",
+				"location"
+			],
+			[
+				"image",
+				"image_id"
+			],
+			[
+				"accoun",
+				"account_id"
+			],
+			[
+				"list",
+				"listDir"
+			],
+			[
+				"val",
+				"valKeys"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"parent",
+				"parent_li"
+			],
+			[
+				"root",
+				"rootPath"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"hi",
+				"highlightColor"
+			],
+			[
+				"roo",
+				"rootPath"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"forma",
+				"formatName"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"base",
+				"basePath"
+			],
+			[
+				"filter",
+				"filter404"
+			],
+			[
+				"fom",
+				"formatName"
+			],
+			[
+				"getOne",
+				"getOneByKey"
+			],
+			[
+				"_on",
+				"_onlineStatus"
+			],
+			[
+				"connec",
+				"connecting"
+			],
+			[
+				"socke",
+				"socketError"
+			],
+			[
+				"clien",
+				"clientDir"
+			],
+			[
+				"connect",
+				"connected"
+			],
+			[
+				"UPD",
+				"UPDATED"
+			],
+			[
+				"curr",
+				"currComponent"
+			],
+			[
+				"load",
+				"loadComponent"
+			],
+			[
+				"cu",
+				"currComponent"
+			],
+			[
+				"get",
+				"getComponent"
+			],
+			[
+				"re",
+				"results"
+			],
+			[
+				"read",
+				"readFileSync"
+			],
+			[
+				"rep",
+				"relativePath"
+			],
+			[
+				"file",
+				"fileTypes"
+			],
+			[
+				"fil",
+				"fileTypes"
+			],
+			[
+				"con",
+				"context"
+			],
+			[
+				"cont",
+				"context"
+			],
+			[
+				"conte",
+				"context"
+			],
+			[
+				"com",
+				"compileJS"
+			],
+			[
+				"pro",
+				"processFile"
+			],
+			[
+				"process",
+				"processFile"
+			],
+			[
+				"exis",
+				"exists"
+			],
+			[
+				"u",
+				"urlPipe"
+			],
+			[
+				"cache",
+				"cacheFile"
+			],
+			[
+				"site",
+				"sitesDir"
+			],
+			[
+				"m",
+				"message"
+			],
+			[
+				"init",
+				"init_or_commit"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 151.0,
+		"last_filter": "jsh",
+		"selected_items":
+		[
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"com",
+				"Coffee: Compile File"
+			],
+			[
+				"comp",
+				"Coffee: Compile File"
+			],
+			[
+				"iden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"js",
+				"JSHint"
+			],
+			[
+				"jshi",
+				"JSHint"
+			],
+			[
+				"compi",
+				"Coffee: Compile File"
+			],
+			[
+				"co",
+				"Coffee: Compile File"
+			],
+			[
+				"compil",
+				"Coffee: Compile File"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"jshin",
+				"JSHint"
+			],
+			[
+				"hint",
+				"JSHint"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"repos",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 165.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/xananax/projects/markdown-more/README.md",
+		"/home/xananax/projects/markdown-more/dist/markdown-more-filters.js",
+		"/home/xananax/projects/markdown-more/dist/markdown-more.js",
+		"/home/xananax/projects/markdown-more/dist/markdown-more.min.js",
+		"/home/xananax/projects/markdown-more/.gitignore",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/src/dialects/gruber.js",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/Gruntfile.js",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/README.md",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/src/parser.js",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/src/markdown.js",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/lib/index.js",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/package.json",
+		"/home/xananax/projects/markdown-more/package.json",
+		"/home/xananax/projects/markdown-more/node_modules/markdown/lib/markdown.js",
+		"/home/xananax/projects/markdown-more/lib/markdown.js",
+		"/home/xananax/projects/markdown-more/filters/templating.js",
+		"/home/xananax/projects/markdown-more/filters/embed.js",
+		"/home/xananax/projects/markdown-more/filters/checkboxes.js",
+		"/home/xananax/projects/markdown-more/lib/index.js",
+		"/home/xananax/projects/markdown-more/index.js",
+		"/home/xananax/projects/markdown-more/markdown.js",
+		"/home/xananax/projects/markdown-more/example/public/main.css",
+		"/home/xananax/projects/markdown-more/example/page.js",
+		"/home/xananax/projects/markdown-more/example/locals.js",
+		"/home/xananax/projects/markdown-more/example/options.js",
+		"/home/xananax/projects/markdown-more/filters/toc/index.js",
+		"/home/xananax/projects/markdown-more/lib/dialect.js",
+		"/home/xananax/projects/markdown-more/filters/wrap.js",
+		"/home/xananax/projects/markdown-more/example/index.js",
+		"/home/xananax/projects/markdown-more/filters/index.js",
+		"/home/xananax/projects/markdown-more/example/filters.js",
+		"/home/xananax/projects/markdown-more/filters/calculus/index.js",
+		"/home/xananax/projects/markdown-more/filters/mentions-hashtags.js",
+		"/home/xananax/projects/markdown-more/filters/linebreaks.js",
+		"/home/xananax/projects/markdown-more/filters/iframes.js",
+		"/home/xananax/projects/markdown-more/filters/icons.js",
+		"/home/xananax/projects/markdown-more/filters/entities.js",
+		"/home/xananax/projects/markdown-more/example/public/main.js",
+		"/home/xananax/projects/markdown-more/filters/headers.js",
+		"/home/xananax/projects/markdown-more/example/server.js",
+		"/home/xananax/projects/markdown-more/example/public/checkboxes.js",
+		"/home/xananax/projects/markdown-more/filters/page/index.js",
+		"/home/xananax/projects/markdown-more/filters/toc/first.js",
+		"/home/xananax/projects/markdown-more/filters/modifiers.js",
+		"/home/xananax/projects/markdown-more/temp.js",
+		"/home/xananax/projects/markdown-more/filters/selflink.js",
+		"/home/xananax/projects/markdown-more/filters/calculus.js",
+		"/home/xananax/projects/markdown-more/filters/calculus/tests.js",
+		"/home/xananax/projects/markdown-more/filters/calculus/tokens.js",
+		"/home/xananax/projects/markdown-more/filters/calculus/tokenizer.js",
+		"/home/xananax/dwhelper/movies.txt",
+		"/home/xananax/projects/markdown-more/filters/toc/last.js",
+		"/home/xananax/projects/markdown-more/README_old.md",
+		"/home/xananax/projects/markdown-more/filters/arrows.js",
+		"/home/xananax/projects/markdown-more/filters/wrap/index.js",
+		"/home/xananax/projects/AIF/templates/mixins.jade",
+		"/home/xananax/projects/AIF/templates/functions.jade",
+		"/home/xananax/.config/sublime-text-3/Packages/User/Markdown.sublime-settings",
+		"/home/xananax/.config/sublime-text-3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/home/xananax/projects/markdown-more/lib/filters/toc.js",
+		"/home/xananax/projects/markdown-more/lib/filters/toc-insert.js",
+		"/home/xananax/projects/markdown-more/lib/filters/index.js",
+		"/home/xananax/projects/markdown-more/example/checkboxes.js",
+		"/home/xananax/projects/markdown-more/lib/filters/templating.js",
+		"/home/xananax/projects/markdown-more/lib/filters/mentions-hashtags.js",
+		"/home/xananax/projects/markdown-more/lib/filters/selflink.js",
+		"/home/xananax/projects/markdown-more/lib/filters/arrows.js",
+		"/home/xananax/projects/markdown-more/lib/filters/maths.js",
+		"/home/xananax/projects/markdown-more/lib/filters/checkboxes.js",
+		"/home/xananax/projects/markdown-more/lib/filters/checkboxes/client.js",
+		"/home/xananax/projects/markdown-more/lib/filters/filters.js",
+		"/home/xananax/projects/AIF/testbed/semantic/src/site/globals/site.variables",
+		"/home/xananax/projects/AIF/testbed/semantic/src/semantic.less",
+		"/home/xananax/projects/AIF/testbed/semantic/src/theme.config",
+		"/home/xananax/projects/AIF/style/index.styl",
+		"/home/xananax/projects/AIF/style/tables.styl",
+		"/home/xananax/projects/AIF/style/sidebar.styl",
+		"/home/xananax/projects/AIF/style/responsive.styl",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/hierarchical-data-in-SQL.md",
+		"/home/xananax/projects/AIF/style/icons.styl",
+		"/home/xananax/projects/AIF/style/iframe.styl",
+		"/home/xananax/projects/AIF/templates/layout.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/other-references-of-interest.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/server-side-technologies.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/hosting-platforms.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/databases.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/comparison-of-graph-databases.md",
+		"/home/xananax/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/xananax/projects/AIF/style/text.styl",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/01-simple-schema.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/simple.sql",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/_index.md",
+		"/home/xananax/projects/AIF/public/main.js",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/complex-schema.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/index.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/simple-schema.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/vocabulary-and-quick-definitions/index.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/timeline.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/index.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/tasks/index.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/tasks/_layout.jade",
+		"/home/xananax/projects/AIF/style/reset.styl",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/database-design/complex.sql",
+		"/home/xananax/projects/AIF/public/preliminary-information/documentation/index.jade",
+		"/home/xananax/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/xananax/.config/sublime-text-3/Packages/User/Base File.sublime-settings",
+		"/home/xananax/.config/sublime-text-3/Packages/Alignment/Default (Linux).sublime-keymap",
+		"/home/xananax/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
+		"/home/xananax/.config/sublime-text-3/Packages/Alignment/Base File.sublime-settings",
+		"/home/xananax/Desktop/fai.sql",
+		"/home/xananax/Desktop/fai-rel.sql",
+		"/home/xananax/notes/todo.md",
+		"/home/xananax/projects/AIF/test.jade",
+		"/home/xananax/projects/AIF/test.js",
+		"/home/xananax/projects/AIF/public/_harp.json",
+		"/home/xananax/projects/AIF/public/preliminary-information/_layout.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/_index.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/index.md",
+		"/home/xananax/projects/AIF/public/_layout.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/planning/_index.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/index.md",
+		"/home/xananax/projects/AIF/public/preliminary-information/index.jade",
+		"/home/xananax/projects/AIF/public/preliminary-information/_data.json",
+		"/home/xananax/projects/AIF/public/_data.json",
+		"/home/xananax/projects/AIF/public/preliminary-information/a_data.json",
+		"/home/xananax/projects/AIF/templates/preliminary-information_layout.jade",
+		"/home/xananax/projects/AIF/templates/debugger.jade",
+		"/home/xananax/projects/AIF/package.json"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"/home/xananax/projects/markdown-more/node_modules/markdown/src",
+			"/home/xananax/projects/markdown-more/filters",
+			"/home/xananax/projects/AIF/public",
+			"/home/xananax/projects/puppeteer2/node_modules/jade",
+			"/home/xananax/projects/puppeteer2/node_modules/jade/lib",
+			"/home/xananax/projects/puppeteer2/sites/synclop/templates",
+			"/home/xananax/projects/puppeteer2/sites/synclop/css",
+			"/home/xananax/projects/puppeteer2/sites/synclop",
+			"/home/xananax/projects/puppeteer2/sites/synclop/css",
+			"/home/xananax/projects/puppeteer2/sites/synclop/templates",
+			"/home/xananax/projects/puppeteer2/sites/synclop",
+			"/home/xananax/projects/puppeteer2/sites/synclop/templates",
+			"/home/xananax/projects/omelet/styles",
+			"/home/xananax/projects/meteor-sharejs/sharejs-codemirror",
+			"/home/xananax/Resources/meteor/meteor-sharejs/demo",
+			"/home/xananax/Resources/meteor/meteor-sharejs/sharejs-base",
+			"/home/xananax/projects/simple-todos/.meteor",
+			"/home/xananax/projects/simple-todos/.meteor/local/build"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"check",
+			"var check = this[state_slot].shift();",
+			"check",
+			"geto",
+			"escape",
+			"rule",
+			"\"hr",
+			"horiz",
+			"hr(\"|')",
+			"hr\"",
+			"-+",
+			"horizr",
+			"hr",
+			"./filters",
+			"```js",
+			"dialec",
+			"consol",
+			"null",
+			"register_json",
+			"this.map",
+			"addToken",
+			"args.map(chunkMap",
+			"repeat",
+			"space",
+			"express",
+			"locals.markdown._m_stash",
+			"data",
+			"locals",
+			"cons",
+			"consol",
+			"!",
+			"settings",
+			"icons",
+			"consol",
+			"code_bl",
+			"icons",
+			"symbols",
+			"code_blo",
+			"patterns_or_",
+			"inlinecode",
+			"inline",
+			"`",
+			"find_link_refs",
+			"consol",
+			"consol\n",
+			"consol",
+			"embed",
+			"./",
+			"diale",
+			"maruku",
+			"(\\[)(\\*)(\\])",
+			";",
+			":",
+			"-",
+			":",
+			";",
+			"+",
+			"studio_id",
+			"photographer_id",
+			"able pho",
+			"deposit",
+			"collect",
+			"box_",
+			"CONSTRAINT \\w+ PRIMARY KEY \\(id\\)\\n",
+			"able bio",
+			",\\n",
+			"^id int,",
+			"id int,",
+			"  NOT NULL",
+			"-- Table: (\\w+)",
+			"contract",
+			"ABLE collection",
+			"accou",
+			" (REFERENCES \\w+\\(id\\))",
+			"process",
+			"(ADD CONSTR.*?\\n)",
+			" (FOREIGN KEY .*?)\\n",
+			"\\n\\n+-- #",
+			"fk",
+			"role_per",
+			"CONSTRAINT ",
+			"id SERIAL PRIMARY KEY",
+			"entityLo",
+			"account_roles",
+			"role_permissions",
+			"account_permissions",
+			"FOREIGN KEY (\\w+) REFERENCES",
+			"FOREIGN KEY (\\w) REFERENCES",
+			"CREATE TABLE (\\w+)",
+			"DROP TABLE (\\w+);",
+			" IF EXISTS CASCADE",
+			"CREATE TABLE (\\w+)",
+			"objecttype",
+			"\\sREFERENCES \\w+\\(\\w+\\)",
+			"OBJECT",
+			"REFERENCES",
+			"EXT (--|\\n)",
+			"REFERENCES",
+			"entity(",
+			"inherits",
+			"inher",
+			"^\\s+\\w+\\s\\w+(\\s\\w+),*?(\\s+)?(--[\\w\\s]+)?\\n",
+			"^\\s+\\w+\\s\\w+(\\s\\w+)*?(\\s+)?(--[\\w\\s]+)?\\n",
+			"TEXT\\s+?(--|\\n)",
+			"DATE\\s+?(--|\\n)",
+			"DATE,\\s+?(--|\\n)",
+			"EXT (--|\\n)",
+			"\\) (--|\\n)",
+			") --",
+			"\\) (--|\\n)",
+			"\\) --",
+			"\\), --",
+			"contract_id",
+			"permission_id",
+			"account_id",
+			"collection_id",
+			"location_id",
+			"organisation_id",
+			"photographer_id",
+			"person_id",
+			"entity_id",
+			"biography_id",
+			"note_id",
+			"photo_id",
+			"note_id",
+			"image_id",
+			"photo_id",
+			"object_id"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"```javascript",
+			"this._map",
+			"add",
+			"args.map(this.chunkMap",
+			"_stash",
+			"locals",
+			"options",
+			"modifiers",
+			"entities",
+			"icons",
+			"parseJson",
+			"../filters/",
+			"$1#$2",
+			"",
+			" ",
+			"",
+			"-",
+			"",
+			",                      -- \\n",
+			"id SERIAL PRIMARY KEY NOT NULL, -- unique identifier for rows",
+			"",
+			"-- table $1:",
+			"\\n$1\\nNOT DEFERRABLE\\nINITIALLY IMMEDIATE\\n",
+			"\\n$1\\nNOT DEFERRABLE\\nINITIALLY IMMEDIATE",
+			"\\n$1",
+			"\\n$1\\n",
+			"\\n$1\\n\\n",
+			"\\n$1\\n",
+			"\\n\\n\\n\\n\\n-- #",
+			"\\n\\n\\n\\n-- #",
+			"_fk",
+			"CONSTRAINT _",
+			"id SERIAL PRIMARY KEY NOT NULL",
+			"FOREIGN KEY ($1) REFERENCES",
+			"DROP TABLE $1 CASCADE;\\nCREATE TABLE $1",
+			"DROP TABLE $1 CASCADE;",
+			"",
+			"DROP TABLE $1 IF EXISTS CASCADE;\\nCREATE TABLE $1",
+			"",
+			"INT",
+			"TEXT",
+			"text",
+			"int",
+			"INHERITS ($1);\\n-- this table inherits all properties from the $1 table\\n",
+			"INHERITS ($1)\\n-- this table inherits all properties from the $1 table",
+			"",
+			"----------------------------------------------------------------------",
+			"  -- unique identifier for rows",
+			"     -- unique identifier for rows",
+			"SERIAL PRIMARY KEY",
+			"unique identifier for rows",
+			"-- table $1: \\nCREATE TABLE $1 (",
+			"-- table $1: \\n$1",
+			"\\n)",
+			"\"id\" integer(32) PRIMARY KEY, -- unique identifier for the table rows",
+			"$1 ",
+			"",
+			"$1",
+			"REFERENCES \"$1\"(id)",
+			"$1,\\n",
+			"$1,",
+			"$1_id\" integer REFERENCES $1(id)",
+			"",
+			"\"id\" integer(32) PRIMARY KEY",
+			"public",
+			"",
+			"$Container.",
+			"cb",
+			"$Container",
+			"cb",
+			"yields",
+			"dataURIs",
+			":",
+			",h('meta',{$1})",
+			"vhost",
+			"urlPipe",
+			"img",
+			"",
+			"dirPath",
+			"styles",
+			"text",
+			"aft",
+			"bef",
+			"\"",
+			"\\n,\\t",
+			"_val",
+			"instanceof",
+			".ShortHand,''",
+			".Unit,'px'",
+			",\\t\"$1\":Nodes.\\n",
+			",\\t\"$1\":Nodes.",
+			".vaseline-no-transforms",
+			".vaseline-supports-transforms",
+			"",
+			"_nextSlide",
+			"_currentSlide",
+			"'landscape'",
+			"'square'",
+			"'portrait'",
+			", $1:",
+			"\\t, $1:",
+			":",
+			"",
+			"boards",
+			"",
+			".shareJSText",
+			"",
+			"\"",
+			"exec \"i3-msg move workspace $1;\"",
+			"$1 \"i3-msg workspace $2; i3-msg scratchpad show\"",
+			"\"i3-msg workspace $1; i3-msg scratchpad show\"",
+			"result",
+			" ",
+			"W",
+			"a('string')",
+			"",
+			"$1($2)",
+			"",
+			"$1($2)",
+			"note",
+			"Notes",
+			"notes",
+			"True"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "package.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"in",
+				"index.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 809.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 269.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

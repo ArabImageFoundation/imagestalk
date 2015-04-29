@@ -16,9 +16,9 @@ mixin title(current,mainTitle)
 mixin text(s)
 	- return s
 
-mixin section(name,title,url,path)
+mixin section(name,title,url,path,noTitle)
 	- path = path || name
-	section
+	section(id=name+"-section")
 		if title
 			h2
 				if url
@@ -26,9 +26,10 @@ mixin section(name,title,url,path)
 				else
 					| title
 		else if !/index\.md/.test(name)
-			h2(id=name+"-section")
-				a(href='./'+name)=formatName(name.split('/').pop())
-		.page!=partial(name)
+			if !noTitle
+				h2.autoTitle(id=name+"-section-title")
+					a(href='./'+name)=formatName(name.split('/').pop())
+		!=partial(name)
 
 - var filter = /(\.html$)/;
 - var replace = /(\.html$)|(^index\.html$)/;
@@ -79,8 +80,28 @@ mixin sidebar(base,basePath,current,home)
 				ul.open
 					+tree(base,basePath,'/'+current.path.join('/'))
 
+mixin timelineItem(startY,startM,startD,endY,endM,endD)
+	- var start = new Date(startY,startM,startD).toISOString().split('T')[0]
+	- var end = endY && endM && endD ? new Date(endY,endM,endD).toISOString().split('T')[0] : false
+	- if(!attributes['data-type']){attributes['data-type'] = end ? 'range' : 'box';}
+	.timeline-item(attributes)
+		.date-start=start
+		if end
+			.date-end=end
+		.timeline-item-content
+			block
 
-mixin listDir(inc,prepend)
+mixin timelinePoint(startY,startM,startD)
+	- if(!attributes['data-type']){attributes['data-type'] = 'point';}
+	+timelineItem(startY,startM,startD,endY,endM,endD)(attributes)
+		block
+
+mixin timelineSpan(startY,startM,startD,endY,endM,endD)
+	- if(!attributes['data-type']){attributes['data-type'] = 'background';}
+	+timelineItem(startY,startM,startD,endY,endM,endD)(attributes)
+		block
+
+mixin listDir(inc,prepend,noTitle)
 	- var head = public
 	- var tail = current.path
 	- tail = (tail[tail.length-1]=='index') ? tail.slice(0,-1) : tail.slice()
@@ -98,4 +119,4 @@ mixin listDir(inc,prepend)
 			a(href="/#{rootPath+basePath+val}")=formatName(val)
 		else
 			- var path = prepend+val
-			+section(val,null,null,path)
+			+section(val,null,null,path,noTitle)

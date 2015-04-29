@@ -1,0 +1,61 @@
+.timeline
+	&.years
+		.month,.week,.day,.hour,.second
+			display none
+	&.months
+		.week,.day,.hour,.second
+			display none
+	&.weeks
+		.day,.hour,.second
+			display none
+	&.days
+		.hour,.second
+			display none
+	&.hours
+		.second
+			display none
+.vis
+	&.timeline
+		.item
+			border-color #fdfdfd
+			color #fdfdfd
+			font-size 15pt
+			box-shadow 5px 5px 20px rgba(0,0,0, 0.5)
+			border-width 3px
+			background #444
+			&.line 
+				border-width 3px
+			&.dot
+				border-width .5em
+				border-radius .5em
+			&.point
+				p
+					margin 0
+			&.selected 
+				border-color green
+				background-color lightgreen
+			&.background
+				color #A8A8A8
+				&.odd
+					background-color rgba(#999,.5)
+				.content
+					box-sizing border-box
+					padding .5em
+					font-size .8em
+				h1,h2,h3
+					text-align left
+		.timeaxis
+			.text
+				padding-top 10px
+				padding-left 10px
+			.text.major
+				font-weight bold
+			.grid
+				&.minor
+					border-width 2px
+				&.major
+					border-width 2px
+					border-color #F991A3
+		&.root
+			border 0 none
+			font-size 12pt

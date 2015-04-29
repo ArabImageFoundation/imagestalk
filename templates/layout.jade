@@ -4,26 +4,34 @@ html
 	head
 		if isDev
 			include debugger
+		block STYLES
+			link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
 		link(rel='stylesheet' href=rootPath+'/style.css')
-		link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
-		link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css")
-		meta(content="width=device-width, initial-scale=1.0" name="viewport")
+		block META
+			meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport")
+			meta(charset="utf8")
 		title=title
-		script(src="https://code.jquery.com/jquery-2.1.3.min.js")
-		script(src=rootPath+'/jquery.tablesorter.min.js')
-		script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js")
-		script(src=rootPath+'/main.js')
+		script!='__rootPath="'+rootPath+'";'
+		block SCRIPTS
+			script(src='//cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js' data-headjs-load=rootPath+'/main.js')
 	body(class=current.path.join(' ')+' '+environment)
-		#Wrapper
-			#Content
-				block SIDEBAR
-				.content
-					block TITLE
-						+title(current,'Images Talk')
-					block BODY
-						+body()
+		script.
+			var b = document.body;
+			b.className = b.className+' loading';
+		block BODY
+			#Wrapper
+				#Content
+					block SIDEBAR
+					.content
+						block TITLE
+							+title(current,'Images Talk')
+						block CONTENT
+							+body()
 			#Footer
 				block FOOTER
 					p images and assets &copy; Arab Image Foundation, knowledge and text &copy; synclop
+		.loading
+			span.loader
+				span.loader-inner
 
 
