@@ -12,7 +12,7 @@
     "start":"NODE_ENV=development harp server ./public",
     "compile":"NODE_ENV=production harp compile ./public ./www",
     "update":"git checkout master && git add -A && git commit && git push && git subtree push --prefix www origin gh-pages",
-    "compileUpdate":"npm compile && npm update",
+    "compileUpdate":"npm run compile && npm run update",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
