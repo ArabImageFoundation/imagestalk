@@ -1,0 +1,170 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><link rel="stylesheet" href="/imagestalk/style.css"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport"><meta charset="utf8"><title>Arab Image Foundation</title><script>__rootPath="/imagestalk";</script><script src="//cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js" data-headjs-load="/imagestalk/main.js"></script></head><body class="preliminary-information documentation technologies-considered storage-options production"><script>var b = document.body;
+b.className = b.className+' loading';</script><div id="Wrapper"><div id="Content"><input id="DrawerToggle" type="checkbox" name="drawer-toggle"/><div class="sidebar"><label for="DrawerToggle" id="drawer-toggle-label"><i class="fa fa-bars"></i></label><ul><li><a href="/imagestalk" class="home"><i class="fa fa-home"></i>Home</a></li><li class="open"><a href="/imagestalk/preliminary-information/">Preliminary Information</a><ul class="open"><li><a href="/imagestalk/preliminary-information/agreement">Agreement</a></li><li><a href="/imagestalk/preliminary-information/documentation">Documentation</a><ul><li><a href="/imagestalk/preliminary-information/documentation/comparison-of-graph-databases">Comparison Of Graph Databases</a></li><li><a href="/imagestalk/preliminary-information/documentation/hierarchical-data-in-SQL">Hierarchical Data In SQL</a></li><li><a href="/imagestalk/preliminary-information/documentation/other-references-of-interest">Other References Of Interest</a></li><li><a href="/imagestalk/preliminary-information/documentation/technologies-considered">Technologies Considered</a><ul><li><a href="/imagestalk/preliminary-information/documentation/technologies-considered/database-systems">Database Systems</a></li><li><a href="/imagestalk/preliminary-information/documentation/technologies-considered/frameworks">Frameworks</a></li><li><a href="/imagestalk/preliminary-information/documentation/technologies-considered/storage-options" class="active">Storage Options</a></li></ul></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions">Vocabulary &amp; Quick Definitions</a><ul><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/databases">Databases</a></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/hosting-platforms">Hosting Platforms</a></li><li><a href="/imagestalk/preliminary-information/documentation/vocabulary-and-quick-definitions/server-side-technologies">Server Side Technologies</a></li></ul></li></ul></li><li><a href="/imagestalk/preliminary-information/planning">Planning</a><ul><li><a href="/imagestalk/preliminary-information/planning/tentative-specification-sheet">Tentative Specification Sheet</a></li><li><a href="/imagestalk/preliminary-information/planning/tentative-team-structure">Tentative Team Structure</a></li><li><a href="/imagestalk/preliminary-information/planning/timeline">Timeline</a></li><li><a href="/imagestalk/preliminary-information/planning/database-design">Database Design</a><ul><li><a href="/imagestalk/preliminary-information/planning/database-design/01-simple-schema">Simple Schema</a></li><li><a href="/imagestalk/preliminary-information/planning/database-design/02-complex-schema">Complex Schema</a></li></ul></li><li><a href="/imagestalk/preliminary-information/planning/tasks">Tasks</a></ul></li></ul></li></ul></div><div class="content"><h1><a href="/preliminary-information/documentation/technologies-considered/storage-options">Storage Options</a></h1><p>Here are the most prevalent options.
+Prices assume a need for 4Tb, and 10 thousand requests per month (which we suppose here amounts to 20Gb of bandwidth per month)</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Storage</th>
+<th>Requests</th>
+<th>Bandwidth</th>
+<th>total</th>
+<th>Server</th>
+<th>Redundancy</th>
+<th>Image Processing </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <a href="http://aws.amazon.com/s3/pricing/">Amazon S3</a></td>
+<td>94$</td>
+<td>0.004$</td>
+<td>1.8$</td>
+<td>96$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="http://aws.amazon.com/glacier/">Amazon Glacier</a></td>
+<td>40$</td>
+<td>000$</td>
+<td>000$</td>
+<td>40$</td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.dropbox.com/business/pricing">Dropbox Business</a></td>
+<td>75$</td>
+<td>000$</td>
+<td>000$</td>
+<td>75$</td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>       </td>
+</tr>
+<tr>
+<td> <a href="https://www.joyent.com/object-storage/pricing">Joyent Manta</a></td>
+<td>144$</td>
+<td>0.004$</td>
+<td>0.120$</td>
+<td>145$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.joyent.com/object-storage/pricing">Joyent Manta+</a></td>
+<td>288$</td>
+<td>0.004$</td>
+<td>0.120$</td>
+<td>289$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.mediafire.com/upgrade/#space">MediaFire</a></td>
+<td>89$</td>
+<td>000$</td>
+<td>000$</td>
+<td>89$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.box.com/pricing/">Google Drive</a></td>
+<td>99$</td>
+<td>000$</td>
+<td>000$</td>
+<td>99$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="http://azure.microsoft.com/en-gb/pricing/details/storage/">Microsoft Azure</a></td>
+<td>94$</td>
+<td>000$</td>
+<td>000$</td>
+<td>94$</td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="http://www.soyoustart.com/us/disk/">So You Start</a>*</td>
+<td>69$</td>
+<td>000$</td>
+<td>000$</td>
+<td>69$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.backblaze.com/">BlackBlaze</a></td>
+<td>5$</td>
+<td>000$</td>
+<td>000$</td>
+<td>5$</td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://robot.your-server.de/order/market/country/OTHER">Your-Server</a>*</td>
+<td>30$</td>
+<td>000$</td>
+<td>000$</td>
+<td>30$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> [Mega][p14]</td>
+<td>30$</td>
+<td>000$</td>
+<td>000$</td>
+<td>30$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.box.com/pricing/">Box</a></td>
+<td>51$</td>
+<td>000$</td>
+<td>000$</td>
+<td>51$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="http://imagefly.io/">ImageFly</a></td>
+<td>000$</td>
+<td>000$</td>
+<td>150$</td>
+<td>150$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i>        </td>
+</tr>
+</tbody>
+</table></div>
+<p><small>* = self managed</small></p>
+<h2>Notes</h2><h4><a href="https://www.dropbox.com/business/pricing">Dropbox for Businesses</a></h4><p>Has a bandwidth hard limit of 200Gb/day</p>
+<h4><a href="https://www.box.com/pricing/">Google Drive</a></h4><p>Has a bandwidth hard limit of 1Gb/day</p>
+<h4><a href="http://imagefly.io/">ImageFly</a></h4><p>Creates versions of the images automatically, has a CDN</p>
+<hr>
+<h2>Honorable mentions:</h2><h4><a href="https://www.joyent.com/object-storage/pricing">DreamHost</a></h4><p>Has a 35$ plan, but limited to 2Tb. Has a 20Tb plan, at 300$.</p>
+<h4><a href="http://cloudinary.com/pricing">Cloudinary</a></h4><p>free for 2Gb storage, 5Gb bandwidth</p>
+<h4><a href="https://shrinkray.io/">ShrinkRay</a></h4><p>Optimizes automatically images in a github repo</p>
+<h4><a href="https://www.dropbox.com/business/pricing">Dropbox Pro</a></h4><p>10$/m, but only 1Tb of space</p>
+<h4><a href="https://www.iriscouch.com/service">Iris Couch</a></h4><p>Bundles a CouchDB database, but 1$/gig. No other fees though</p>
+</div></div></div><div id="Footer"><p>images and assets &copy; Arab Image Foundation, knowledge and text &copy; synclop</p></div><div class="loading"><span class="loader"><span class="loader-inner"></span></span></div></body></html>
