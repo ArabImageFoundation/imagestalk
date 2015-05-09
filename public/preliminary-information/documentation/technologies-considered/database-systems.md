@@ -19,3 +19,9 @@ A database system stores and retrieves pieces of data. On its own, it does nothi
     - (+) Very liberal license 
     - (+) Completely free
     - (-) Not a graph database
+- [CouchDB](couchdb.apache.org/)
+    - (+) Document database
+    - (+) Trades ACID for versioning (keeps track of every change)
+    - (+) Easy replication
+    - (+) [Iris Couch](https://www.iriscouch.com)
+    - (-) Not a graph database

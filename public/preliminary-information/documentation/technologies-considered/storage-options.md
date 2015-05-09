@@ -46,7 +46,9 @@ Optimizes automatically images in a github repo
 
 #### [Dropbox Pro](https://www.dropbox.com/business/pricing)
 10$/m, but only 1Tb of space
- 
+
+#### [Iris Couch](https://www.iriscouch.com/service)
+Bundles a CouchDB database, but 1$/gig. No other fees though
  
 [p1]:http://aws.amazon.com/s3/pricing/ 
 [p2]:https://www.mediafire.com/upgrade/#space
