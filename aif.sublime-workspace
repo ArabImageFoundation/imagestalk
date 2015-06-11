@@ -519,6 +519,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "public/ui/index.jade",
+			"settings":
+			{
+				"buffer_size": 319,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/ui/_layout.jade",
+			"settings":
+			{
+				"buffer_size": 836,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -637,10 +653,15 @@
 	},
 	"expanded_folders":
 	[
-		"/home/xananax/projects/markdown-more/example/public"
+		"/home/xananax/projects/AIF",
+		"/home/xananax/projects/AIF/public",
+		"/home/xananax/projects/AIF/public/ui",
+		"/home/xananax/projects/AIF/templates"
 	],
 	"file_history":
 	[
+		"/home/xananax/projects/AIF/public/ui/_layout.jade",
+		"/home/xananax/projects/AIF/aif.sublime-project",
 		"/home/xananax/chadi.txt",
 		"/media/AswadMaf3ouss/Chadi Videos/chadi",
 		"/home/xananax/projects/markdown-more/README.md",
@@ -766,9 +787,7 @@
 		"/home/xananax/projects/AIF/public/preliminary-information/planning/_index.jade",
 		"/home/xananax/projects/AIF/public/preliminary-information/index.md",
 		"/home/xananax/projects/AIF/public/preliminary-information/index.jade",
-		"/home/xananax/projects/AIF/public/preliminary-information/_data.json",
-		"/home/xananax/projects/AIF/public/_data.json",
-		"/home/xananax/projects/AIF/public/preliminary-information/a_data.json"
+		"/home/xananax/projects/AIF/public/preliminary-information/_data.json"
 	],
 	"find":
 	{
@@ -1073,8 +1092,72 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "public/ui/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								243,
+								243
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "jade",
+							"buffer_scroll_name": "866c105d",
+							"open_with_edit": true,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/ui/_layout.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								836,
+								836
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "jade",
+							"buffer_scroll_name": "e959234c",
+							"spell_check": false,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],

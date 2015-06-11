@@ -145,7 +145,7 @@ head.ready("jQuery",function() {
 		}
 	}
 
-	var $timeline = $('.timeline');
+	var $timeline = $('.timeline-widget');
 	if($timeline.length){
 		load();
 		head.load(['//cdnjs.cloudflare.com/ajax/libs/vis/3.12.0/vis.min.css','//cdnjs.cloudflare.com/ajax/libs/vis/3.12.0/vis.js'],function(){		

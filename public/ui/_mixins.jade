@@ -1,0 +1,25 @@
+- var ids=0
+
+mixin input(type,label,name)
+	- var id = 'control-'+(ids++);
+	label(for=id class="sr-only")
+	input(type=type id=id class="form-control" placeholder=label required autofocus autocomplete="off")
+
+mixin checkbox(label,value)
+	.checkbox
+		label
+			input(type="checkbox" value=value)
+			span.checkbox-label=label
+
+mixin button(label,type)
+	button.btn.btn-lg.btn-primary.btn-block(type=type)=label
+
+mixin form(name)
+	form(name=name id=name)
+		block
+
+mixin set(name,id)
+	- id = id || name
+	fieldset(id=id)
+		legend=name
+		block

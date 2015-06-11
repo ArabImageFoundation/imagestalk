@@ -1,0 +1,8 @@
+include _mixins
+
+.container
+	+form('user')
+		+set('main')
+			+input('email','email')
+			+checkbox('something','something')
+			+button('ok','submit')
