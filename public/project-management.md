@@ -1,3 +1,26 @@
+#Team structure
+ Month | Manager | UX Designer | Web Designer | Programmer |  Workforce
+ :---: | :-----: | :---------: | :----------: | :--------: | :---------: 
+    1  |  (✓)    |             |              |            |    1
+    2  |  (✓)    |             |              |     (✓)    |    2
+    3  |  (✓)    |             |              |     (✓)    |    2
+    4  |  (✓)    |             |     (✓)      |     (✓)    |    3
+    5  |  (✓)    |             |              |     (✓)    |    2
+    6  |  (✓)    |             |              |            |    1
+    7  |  (✓)    |     (✓)     |              |            |    2
+    8  |  (✓)    |     (✓)     |              |            |    2
+    9  |  (✓)    |             |     (✓)      |     (✓)    |    3
+    10 |  (✓)    |             |              |     (✓)    |    2
+    11 |  (✓)    |             |              |     (✓)    |    2
+    12 |  (✓)    |             |              |            |    1
+ Total |   12    |      2      |      2       |      7     |   23
+
+ - 1 Website Designer needed for 2 months
+ - 1 Interface Designer needed for 2 months
+ - 1 Programmer needed for 7 months
+ - 1 Project Manager needed for 11 months
+
+#Timeline
 - ### Month 1
     + **themes**: *Admin, Design, Interface*
     + **deliverables**: Wireframes of the admin interface ([example][ex1])
