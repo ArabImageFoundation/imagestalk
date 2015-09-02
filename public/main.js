@@ -36,6 +36,7 @@ head.ready("jQuery",function() {
 			  return $heading[0].tagName.toLowerCase();
 			}
 			});
+			unload();
 		})
 	}	
 
