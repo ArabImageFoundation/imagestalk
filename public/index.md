@@ -3,8 +3,8 @@
 *Images Talk* is the codename for the three independent yet interconnected modules that will form the online platform for the *Arab Image Foundation* (AIF):
 
 - [Archiving system](archiving-system), or database, or image and knowledge library
-- Public-facing website
-- Blog
+- [Public-facing website](website)
+- [Blog](blog)
 
 This document presents facets of the agreement made between both  parties involved in this project, **Synclop** and the **AIF**. It will be updated as needed.
 
@@ -60,3 +60,4 @@ There are three paths we can take to achieve this project:
     - (-) Need to be documented thoroughly if someone else is to maintain the product after
 
 #Decision
+To be developed.
