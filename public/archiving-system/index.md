@@ -1,5 +1,4 @@
 # Table of contents
-*To be generated automatically if possible.*
 
 - Features
 - Functions
