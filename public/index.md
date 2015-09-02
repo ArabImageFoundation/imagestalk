@@ -1,7 +1,8 @@
 #Agreement
+
 *Images Talk* is the codename for the three independent yet interconnected modules that will form the online platform for the *Arab Image Foundation* (AIF):
 
-- Archiving system, or database, or image and knowledge library
+- [Archiving system](archiving-system), or database, or image and knowledge library
 - Public-facing website
 - Blog
 
