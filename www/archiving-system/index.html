@@ -1,0 +1,874 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><link rel="stylesheet" href="/imagestalk/style.css"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport"><meta charset="utf8"><title>Arab Image Foundation</title><script>__rootPath="/imagestalk";</script><script src="//cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js" data-headjs-load="/imagestalk/main.js"></script></head><body class="archiving-system index production"><script>var b = document.body;
+b.className = b.className+' loading';</script><div id="toc"></div><div id="Wrapper"><div id="Content"><input id="DrawerToggle" type="checkbox" name="drawer-toggle"/><div class="sidebar"><label for="DrawerToggle" id="drawer-toggle-label"><i class="fa fa-bars"></i></label><ul><li><a href="/imagestalk" class="home"><i class="fa fa-home"></i>Home</a></li><li class="open"><a href="/imagestalk/archiving-system/" class="active">Archiving System</a><ul class="open"><li><a href="/imagestalk/archiving-system/seo-markup-systems">Seo Markup Systems</a></li><li><a href="/imagestalk/archiving-system/database-design">Database Design</a><ul><li><a href="/imagestalk/archiving-system/database-design/01-simple-schema">Simple Schema</a></li><li><a href="/imagestalk/archiving-system/database-design/02-complex-schema">Complex Schema</a></li></ul></li></ul></li></ul></div><div class="content"><h1><a href="/archiving-system">Archiving System</a></h1><h1>Features</h1><ul>
+<li>Support for images, videos and audio files</li>
+<li>Different access levels, between administrator, staff/member, registered user and anonymous user</li>
+<li>Bilinguality, both English and Arabic</li>
+</ul>
+<h1>Technologies</h1><h2>Options</h2><h3>1. Server</h3><p>This is the engine that will power the website and AIF interface. The options are too numerous to list even in a book, but the technologies that Synclop is considering are:</p>
+<ul>
+<li><strong>PHP</strong> – one of the oldest, most widely used technologies of the Web. It powers more or less half the websites, if not much more.<ul>
+<li><i class="fa fa-plus-circle"></i> Veteran. Everyone knows how to use it, countless examples for any situation you might think of.</li>
+<li><i class="fa fa-plus-circle"></i> Portable, will work on any platform, including shared hosts.</li>
+</ul>
+</li>
+<li><strong>Node.js</strong> – the rising hip young language. It has been picked up quickly by a huge lot of companies small and big and is spreading like wildfire.<ul>
+<li><i class="fa fa-plus-circle"></i> Unparalleled speed, so very useful for, say, processing images.</li>
+<li><i class="fa fa-plus-circle"></i> Unparalleled ease of use and speed of development.</li>
+<li><i class="fa fa-minus-circle"></i> Doesn&#39;t work on most shared hosts.</li>
+<li><i class="fa fa-minus-circle"></i> Difficult to find programmers that have experience with it.</li>
+</ul>
+</li>
+</ul>
+<h3>2. Hosting platforms</h3><p>This is where the website will reside, and they can be roughly categorized as follows:</p>
+<ul>
+<li><strong>Shared Hosting</strong> – this is the least costly solution. The server is shared between many users. There is a terrible loss in performance, but as most websites don&#39;t require much, in a lot of cases, this is enough. However, special solutions cannot be installed on shared hosts (typically), which means losing quite a good amount of flexibility.</li>
+<li><strong>Private Dedicated Managed Server</strong> - this is the most costly solution, but the most flexible too. As the name implies, a machine is dedicated to your website only.</li>
+<li><strong>Private Dedicated Self-Managed Server</strong> - this is the same as above, but slightly less costly, as you are supposed to manage the server yourself. Any problem that arises is yours to fix (unless it&#39;s a hardware problem). Which means you have to hire your own IT, but having someone on a retainer fee might be enough.</li>
+<li><strong>Private Virtual Managed Server</strong> - this is a mid-way between shared hosting and private servers. It&#39;s a private server, but in the cloud, and distributed over multiple PCs. The cost is also in the middle between a shared host and a private server.</li>
+<li><strong>Private Virtual Self-Managed Server</strong> - as you can guess, this is a virtual private server you manage yourself.</li>
+<li><strong>Cloud Platform</strong> - this is the equivalent of a VPS (Virtual Private Server), but it scales up automatically with your requirements, so it can end up being much stronger than a dedicated server. However, the pricing scheme is often complex, very low as long when your requirements are low, but climbing up exponentially as your requirements grow.</li>
+</ul>
+<h3>3. Database</h3><h4>Types of databases</h4><p>Before going forward, it might be good to define a few words to make the following easier to understand:</p>
+<ul>
+<li><a href="en.wikipedia.org/wiki/Relational_database"><strong>Relational Databases</strong></a> store data in tables. It might help to visualize them as Excel sheets. Data in relational databases is <em>normalized</em> and <em>structured</em>. Relational databases also have developed a set of features that allow them to guarantee writes; in other words, in case of failure, the data stays uncorrupted. This set of features, referred to as <a href="http://en.wikipedia.org/wiki/ACID">ACID</a> (Atomicity, Consistency, Isolation, Durability), guarantees that database transactions are processed reliably.</li>
+<li><a href="http://en.wikipedia.org/wiki/SQL"><strong>SQL</strong></a> stands for &quot;Structured Query Language&quot;. It refers to the language that is used in the earliest databases to instruct the database how to store or retrieve data. By extension, it has become synonymous with &quot;relational databases&quot;.</li>
+<li><a href="en.wikipedia.org/wiki/NoSQL"><strong>NoSQL</strong></a> refers to a new wave of databases that are non-relational. Some of them <em>do</em> use SQL language, so the appellation is often a misnomer, and should be understood as &quot;not relational&quot;, and not as &quot;not using SQL&quot;. NoSQL databases include, but are not limited to:<ul>
+<li><a href="http://en.wikipedia.org/wiki/Document-oriented_database"><strong>Document databases</strong></a> that store information as a tree; a good visualization is a file system (folders containing other folders containing files). Document databases are specially useful for nested data, for speed, and for flexibility (since the data is, by design, not normalized, it&#39;s easy to add properties to any object). They have a reputation of being ACID-adverse, but huge technological improvements have been changing this in the last year.</li>
+<li><a href="http://en.wikipedia.org/wiki/Graph_database"><strong>Graph databases</strong></a> that establish links between things. This is specially useful for arbitrarily linking two objects (&quot;nodes&quot;, in graph parlance) with a link (&quot;edge&quot;) specifying a certain relation. They are widely used in social networks (X is &quot;friends&quot; with Y, A is &quot;going out with&quot; B). The landscape of Graph databases is mostly bare, with only a few dominating ones.</li>
+<li><a href="http://en.wikipedia.org/wiki/Key-value_database"><strong>Key-Value Store</strong></a> – very simple databases that store every piece of data under a key. Imagine an excel sheet with only two columns, one of which is an identity field you can&#39;t fiddle with. The extreme simplification allows for extreme speeds.</li>
+</ul>
+</li>
+</ul>
+<p>In other words;</p>
+<ul>
+<li><strong>Relational databases</strong> express data as &quot;X <em>is</em> made of A, B, and C&quot;, such as &quot;a book <em>is</em> made of title, number of pages, and author&quot;. They have been in use for years and most problems that might arise have been already solved.</li>
+<li><strong>Document databases</strong> express data as &quot;X <em>contains</em> A, B, and C&quot;, such as &quot;Contact <em>has</em> an address, the address <em>has</em> a street, a city, and a state&quot;. They are new, and hard problems are still arising nowadays.</li>
+<li><strong>Graph databases</strong> express data as &quot;X <em>is in relation with</em> A, B, and C <em>and the quality of their relation is Y</em>&quot;, such as &quot;Alice <em>is friends with</em> Bob and Bob <em>is a member of</em> the local chess club&quot;. Graph databases are complex and as a result, very few open-source solutions are available today.</li>
+</ul>
+<p>Finally, to make things a bit more complex, some databases are <em>mixed</em>. <strong>OrientDb</strong> is a graph database that incorporates some relational features. <strong>PostgreSQL</strong> is a relational database, but as of it&#39;s latest version can also store and search &quot;documents&quot;.</p>
+<p>In the case of the highly relational data we are dealing with, a graph database would make a lot of sense (photo X is &quot;in&quot; album Y, and is &quot;defined by&quot; terms A,B,and C), but choosing a graph database would mean doing away with ready-made solutions, as well as sacrificing somewhat future maintainability (most people have not even <em>heard</em> of noSQL databases, let alone graph databases).</p>
+<p>A database system stores and retrieves pieces of data. On its own, it does nothing; an application has to be built around it.</p>
+<h5>Comparison of graph databases</h5><div class="table"><table>
+<thead>
+<tr>
+<th>name</th>
+<th>Company</th>
+<th>Language</th>
+<th>License</th>
+<th>Graph Model</th>
+<th>Backend</th>
+<th>API</th>
+<th>Query Methods</th>
+<th>Consistency</th>
+<th>Visualizer</th>
+<th>Scaling</th>
+<th>Latest Version                            </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>  <a href="https://www.arangodb.com/">ArangoDB</a></td>
+<td>ArangoDB GmbH</td>
+<td>C/C++</td>
+<td>Apache 2</td>
+<td>Property Graph</td>
+<td>native C/C++</td>
+<td>Java, Ruby, JavaScript, Perl, .NET, LINQ, WebServices / REST</td>
+<td>Graph Traversals via JavaScript, Gremlin, AQL</td>
+<td>MVCC/ACID</td>
+<td>Builtin Graph Explorer</td>
+<td></td>
+<td>2.4.4 (2015)                              </td>
+</tr>
+<tr>
+<td>  <a href="http://franz.com/agraph/allegrograph/">AllegroGraph</a></td>
+<td>Franz Inc.</td>
+<td>C++/Lisp</td>
+<td>commercial &amp; Free Edition</td>
+<td>RDF, XML</td>
+<td>native C++/Common Lisp</td>
+<td>Java, Python, Lisp, Ruby, Perl, C#, WebServices / Rest</td>
+<td>SPARQL, Prolog</td>
+<td>ACID</td>
+<td>Gruff</td>
+<td>Benchmarks</td>
+<td>4.13 (Feb 2014)                           </td>
+</tr>
+<tr>
+<td>  <a href="http://giraph.apache.org/">Apache Giraph</a></td>
+<td>Apache</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td>Vertex centric. Supports directed, weighted, multigraph</td>
+<td>Based on Google Pregel&#39;s paper</td>
+<td>Java</td>
+<td>Java with map reduce/hadoop jobs</td>
+<td></td>
+<td></td>
+<td>Distributed. Trillion of nodes possible</td>
+<td></td>
+</tr>
+<tr>
+<td>  <a href="http://www.sparsity-technologies.com/">Sparksee(DEX)</a></td>
+<td>Sparsity Technologies</td>
+<td>Java, Core C++</td>
+<td>commercial &amp; free for Research and development</td>
+<td>Labeled and directed attributed multigraph</td>
+<td>bitmap based highly compressed native graph storage, native C++ query engine</td>
+<td>Java, C++, .NET</td>
+<td>Blueprints, Java, C++, .NET native APIs</td>
+<td>ACID<a href="http://sparsity-technologies.com/dex_releases">g17</a></td>
+<td></td>
+<td>Throughput scaling through Horizontal replication and High Availability</td>
+<td>4.7 (2012)                                </td>
+</tr>
+<tr>
+<td>  <a href="https://github.com/twitter/flockdb">FlockDB</a></td>
+<td>Twitter</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td>adjacency list of a directed graph</td>
+<td></td>
+<td>Java, Ruby via Thrift</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.8.15 (2012) but last commit at 04/2012  </td>
+</tr>
+<tr>
+<td>  <a href="http://graphbase.net/">GraphBase</a></td>
+<td>FactNexus Pty Ltd</td>
+<td>Java</td>
+<td>commercial</td>
+<td>property-graph</td>
+<td></td>
+<td>Java</td>
+<td></td>
+<td></td>
+<td>GraphPad, BoundsPad, ...</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>  <a href="https://code.google.com/p/graphpack/">GraphPack</a></td>
+<td>Amit Portnoy</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td>property-graph</td>
+<td>In-memory, JDO</td>
+<td>Java</td>
+<td>PackCypher (Inspired by Cypher)</td>
+<td></td>
+<td></td>
+<td>Completely decentralized (no central authority- infinite scale- limited functionality)</td>
+<td>Experimental (2012)                       </td>
+</tr>
+<tr>
+<td>  <a href="http://www.hypergraphdb.org/index">HyperGraphDB</a></td>
+<td>kobrix.com</td>
+<td>Java</td>
+<td>LGPL</td>
+<td>Object-oriented multi-relational labeled hypergraph</td>
+<td>custom</td>
+<td>Java</td>
+<td></td>
+<td>MVCC/STM</td>
+<td></td>
+<td></td>
+<td>1.2 (2012)                                </td>
+</tr>
+<tr>
+<td>  <a href="http://www.objectivity.com/infinitegraph">InfiniteGraph</a></td>
+<td>Objectivity Inc.</td>
+<td>Java, Core C++</td>
+<td>commercial</td>
+<td>Labeled and directed multi-property-graph</td>
+<td>Objectivity/DB</td>
+<td>Java</td>
+<td>Java, Blueprints</td>
+<td>ACID. There is also a parallel, loosely synchronized batch loader.</td>
+<td>Graph browser for developers. Plugins to allow use of external libraries.</td>
+<td>Distributed. Petabytes possible</td>
+<td>3.0 (2012?)                              </td>
+</tr>
+<tr>
+<td>  <a href="http://infogrid.org">InfoGrid</a></td>
+<td>NetMesh Inc.</td>
+<td>Java</td>
+<td>AGPL, commercial</td>
+<td>dynamically typed, object-oriented graph. multigraphs, semantic models</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.9.5 (2011)                              </td>
+</tr>
+<tr>
+<td>  <a href="http://neo4j.com/">Neo4j</a></td>
+<td>Neo Technology, Inc</td>
+<td>Java</td>
+<td>GPL, AGPL, commercial</td>
+<td>property-graph</td>
+<td>native graph storage with native graph processing engine</td>
+<td>Java, REST, JavaScript (Node.js), PHP, .NET, Django, Clojure</td>
+<td>Cypher query language, Native Java APIs, Traverser API, REST, Blueprints, Gremlin</td>
+<td>ACID</td>
+<td></td>
+<td>MySQL style master/slave replication</td>
+<td>1.8.2 (2013/02/27)                        </td>
+</tr>
+<tr>
+<td>  <a href="http://www.oracle.com/technetwork/database/options/spatialandgraph/overview/index.html">Oracle Spatial and Graph</a></td>
+<td>Oracle</td>
+<td>Java, PL/SQL</td>
+<td>Oracle</td>
+<td>RDF graph; Network Data Model property graph</td>
+<td>Oracle Database</td>
+<td>Apache  Jena, PL/SQL; Java</td>
+<td>SPARQL, SQL with graph extensions; Java API</td>
+<td>ACID</td>
+<td>all tools which are SPARQL-compliant; Apache Jena-based; XML &amp; JSON-based or SQL-based</td>
+<td>Scales from PC to Oracle Exadata; Supports Oracle Real Application Clusters</td>
+<td>11.2 (2012)                               </td>
+</tr>
+<tr>
+<td>  <a href="http://www.oracle.com/us/products/database/nosql/overview/index.html">Oracle NoSQL Database EE</a></td>
+<td>Oracle</td>
+<td>Java</td>
+<td>Oracle</td>
+<td>RDF graph</td>
+<td>Oracle NoSQL Database</td>
+<td>Java (Apache Jena)</td>
+<td>SPARQL</td>
+<td>ACID; Configurable consistency &amp; durability</td>
+<td>SPARQL-compliant tools; Apache Jena-based tools; XML &amp; JSON-based tools</td>
+<td></td>
+<td>2.0.39 (2013)                             </td>
+</tr>
+<tr>
+<td>  <a href="http://www.orientechnologies.com">OrientDB</a></td>
+<td>NuvolaBase Ltd</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td>multi property-graph</td>
+<td>custom on disk or in memory</td>
+<td>Java, JS, .NET, PHP, REST, Python</td>
+<td>Traverser API, Blueprints, Rexster, Gremlin, Own SQL-like Query Language</td>
+<td>ACID, MVCC</td>
+<td>OrientDB Studio</td>
+<td>Multi Master</td>
+<td>1.3 (2012)                                </td>
+</tr>
+<tr>
+<td>  <a href="http://steffi.io">Steffi DB</a></td>
+<td>EURA NOVA</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td></td>
+<td>In Memory</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>??                                           </td>
+</tr>
+<tr>
+<td>  <a href="http://thinkaurelius.github.io/titan/">Titan</a></td>
+<td>thinkaurelius.com</td>
+<td>Java</td>
+<td>Apache 2</td>
+<td>property-graph</td>
+<td>Cassandra, HBase, Berkeley DB</td>
+<td>Java, Gremlin</td>
+<td>Blueprints, Rexster, Gremlin, SPARQL</td>
+<td>ACID or Eventually Consistent</td>
+<td></td>
+<td>Multi-master</td>
+<td>0.2 (2012)                                </td>
+</tr>
+</tbody>
+</table></div>
+<h5>Hierarchical data in SQL</h5><p>Two main models allow to describe hierarchical data in SQL: </p>
+<ul>
+<li><em>Adjacency Lists</em> – each node keeps a reference to it&#39;s parent, or, more uncommonly, each parent keeps a list of children (or both, but data is then de-normalized and should be maintained at the application level).</li>
+<li><em>Nested Sets</em> – each node sets &quot;left&quot; and &quot;right&quot; value to nodes to describe its &quot;spatial limits&quot; (using the term very liberally here). Thus a node that has &quot;left:1&quot; and &quot;right:20&quot; contains a node that has &quot;left:2&quot; and &quot;right:4&quot;.</li>
+</ul>
+<p>Adjacency lists are more pleasing because more easily readable for a human, however it can become quickly cumbersome if the tree is deep (many requests become necessary to retrieve the tree in full). Special care must be taken at the application level because deleting a root node will not necessarily delete the children, which can lead to orphan nodes and bad references.  </p>
+<div class="table"><table>
+<thead>
+<tr>
+<th></th>
+<th>Adjacency List</th>
+<th>Materialized Path</th>
+<th>Nested Sets</th>
+<th>Closure Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Summary</td>
+<td>parent_id=x</td>
+<td>x/y/z/...</td>
+<td>x&lt; id &lt; y</td>
+<td>x.parent_id,x.child_id references y.id</td>
+</tr>
+<tr>
+<td>Implementation</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Create</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Insert</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-0""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Move</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Delete</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Select one</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Select Parent</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Select Child</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Alter</td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-0""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Node Location</td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Ancestors</td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Descendants</td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Sorting by hierarchy</td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Depth</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>performance</td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-3""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Referential Integrity</td>
+<td><div class="bar bar-4""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-1""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-2""><div class="bar-inner"></div></div></td>
+<td><div class="bar bar-5""><div class="bar-inner"></div></div></td>
+</tr>
+<tr>
+<td>Synonyms</td>
+<td></td>
+<td>Lineage Column</td>
+<td>Modifier Preorder Tree Traversal</td>
+<td>Bridge Table</td>
+</tr>
+<tr>
+<td>Variants</td>
+<td>Recusive queries¹, Flat Table²</td>
+<td>Multiple Columns³</td>
+<td>Nested Intervals⁴</td>
+</tr>
+</tbody>
+</table></div>
+<p>¹ <em>Recursive Queries – allowed by some databases, and may alleviate some limitations of adjacency lists. It becomes more possible to find ancestors/descendants.</em></p>
+<p>² <em>Flat Table – a modification of the Adjacency List that adds a Level and Rank (e.g. ordering) column to each record. Move and Delete become more expensive, but ancestry and descendants become easy.</em></p>
+<p>³ <em>Multiple Lineage Columns – one column for each lineage level, refers to all the parents up to the root. Cheap ancestors, descendants, level, cheap insert, delete, move of the leaves, but expensive insert, delete, move of the internal nodes, and hierarchy becomes extremely limited of course.</em></p>
+<p>⁴ <em>Left/right columns are floating point decimals. Fixes some of the problems, but adds complexity at the application level.</em></p>
+<p>--</p>
+<p>In other words;</p>
+<ul>
+<li><strong>Adjacency List</strong> is good at reads and writes, but not very good at deep hierarchy. Since each node only holds a reference to one parent, in order to traverse the tree in any direction, recursive queries must be used. Thus, it is better used for data sets where only one level retrieval up or down is needed. It&#39;s benefit is the schema simplicity. Usage:<ul>
+<li>Organisation hierarchy</li>
+<li>Threaded discussion</li>
+</ul>
+</li>
+<li><strong>Materialized Path</strong> is better at maintaining hierarchy, but only towards lower levels. It&#39;s very easy to get all the descendants of a node, but very hard to get it&#39;s ancestors. Thus it&#39;s ideal for top-down tree traversal. Usage:<ul>
+<li>File System</li>
+</ul>
+</li>
+<li><strong>Nested Sets</strong> is great at describing everything a parent contains, but not very good at traversing hierarchies, and pretty much sucks ass if it needs to be changed. Thus, Nested Sets are ideal for data that changes very little or never, and when you need to know what children are contained in a parent without necessarily needing the know their exact spot in the descendance. Usage:<ul>
+<li>Nested Tags or categories (if the tags don&#39;t move too much)</li>
+<li>Locations</li>
+</ul>
+</li>
+<li><strong>Closure Table</strong> could be considered a special case of Adjacency list and Materialized path. It is average for everything, and doesn&#39;t have a huge impact performance, wether on reads, writes or deletes. It could potentially be used to create a graph (so hierarchy is not necessarily tree-like). This flexibility comes at the cost of a more complex schema (though not much more complex than Nested Sets). Usage<ul>
+<li>Nested tags or categories</li>
+<li>Graph-type data</li>
+</ul>
+</li>
+</ul>
+<p>However, in the case of the AIF, we probably cannot rely on pure tree structures. It is very likely that relationships can go in multiple ways, and so we probably need a way to model Directed Graphs or Directed Acyclic Graphs (DG and DAG). DG are cumbersome to use, because relationships (&quot;edges&quot;, in graph theory parlance) can &quot;cycle&quot;, and so special care must be taken to not fall into loops. DAG are safe from loops, which means algorithms can be simplified, but care must be taken to not create a loop (since the algorithm wouldn&#39;t cater for it and might run indefinitely). More readings about this in the references below.</p>
+<p>Since manipulating DGs and DAGs by hand would be complex, I&#39;ve been looking for an ORM to help alleviate the problem. An ORM does &quot;Object Relational Mapping&quot;; basically, abstracts complexity and facilitates communication with the database. Unsurprisingly, very few have tree representation, and none has graph representations.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Technology</th>
+<th>Nested Sets</th>
+<th>AG</th>
+<th>DAG</th>
+<th>EAV</th>
+<th>Pure ORM  </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>  <a href="http://propelorm.org/">Propel</a></td>
+<td>PHP</td>
+<td><a href="http://propelorm.org/documentation/behaviors/nested-set.html"><i class="fa fa-check"></i></a></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i>       </td>
+</tr>
+<tr>
+<td>  <a href="http://datamapper.wanwizard.eu/">DataMapper</a></td>
+<td>PHP</td>
+<td><a href="http://datamapper.wanwizard.eu/pages/extensions/nestedsets.html"><i class="fa fa-check"></i></a></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i>      </td>
+</tr>
+<tr>
+<td>  <a href="http://doctrine.readthedocs.org">Doctrine</a></td>
+<td>PHP</td>
+<td><a href="http://doctrine.readthedocs.org/en/latest/en/manual/hierarchical-data.html"><i class="fa fa-check"></i></a></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i>    </td>
+</tr>
+<tr>
+<td>  <a href="http://www.yiiframework.com/">Yii2</a></td>
+<td>PHP</td>
+<td><a href="http://www.yiiframework.com/extensions/?tag=nested+set">Plugin</a></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+</tr>
+<tr>
+<td>  <a href="http://fuelphp.com">FuelPHP</a></td>
+<td>PHP</td>
+<td><a href="http://fuelphp.com/docs/packages/orm/model/nestedset.html"><i class="fa fa-check"></i></a></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><a href="http://fuelphp.com/docs/packages/orm/eav.html"><i class="fa fa-check"></i></a></td>
+<td>no        </td>
+</tr>
+<tr>
+<td>  <a href="http://laravel.com/">Laravel</a></td>
+<td>PHP</td>
+<td><a href="http://etrepat.com/baum/">Plugin</a></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+</tr>
+</tbody>
+</table></div>
+<p>--</p>
+<p>Here are some other references for additional readings:</p>
+<ul>
+<li><a href="http://hansolav.net/sql/graphs.html">Graphs and Graph Algorithms in T-SQL</a></li>
+<li><a href="http://www.codeproject.com/KB/database/Modeling_DAGs_on_SQL_DBs.aspx?msg=3051183">A Model to Represent Directed Acyclic Graphs (DAG) on SQL Databases</a></li>
+<li><a href="http://techportal.inviqa.com/2009/09/07/graphs-in-the-database-sql-meets-social-networks/">Graphs in the database: SQL meets social networks</a></li>
+<li><a href="http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/">The seminal &quot;Modeling Hierarchical Data in SQL&quot; by Mike Hillier</a></li>
+<li><a href="http://explainextended.com/2009/09/25/adjacency-list-vs-nested-sets-sql-server/">Adjacency Lists vs Nested Sets</a> </li>
+<li><a href="http://www.slideshare.net/billkarwin/models-for-hierarchical-data">Models for Hierarchical Data</a> by Bill Karwin, with a lengthy example about closure tables.</li>
+<li><a href="https://bojanz.wordpress.com/2014/04/25/storing-hierarchical-data-materialized-path/">Storing Hierarchical Data Materialized Path</a></li>
+<li><a href="http://www.depesz.com/2008/04/11/my-take-on-trees-in-sql/">My Take on Trees in SQL</a> by Depesz, focuses on Closure Tables</li>
+<li>Frank Martinez proposes a mix of <a href="http://www.ibstaff.net/fmartinez/?p=18">Materialized Path + Nested Sets</a>. It seems like over-engineering to me, but interesting nonetheless.</li>
+<li><a href="http://stackoverflow.com">StackOverflow</a> has a comprehensive list of pros and cos in the questions <a href="http://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database">What Are The Options For Storing Hierarchical Data In A Relational Database?</a></li>
+<li><a href="https://vadimtropashko.files.wordpress.com/2011/07/ch5.pdf">Essay on SQL Trees</a> by Vadim Tropashko</li>
+<li><a href="http://troels.arvin.dk/db/rdbms/links/#hierarchical">Huge List of References</a></li>
+</ul>
+<h4>Database solutions to consider</h4><ul>
+<li><a href="http://neo4j.com/"><strong>Neo4j</strong></a><ul>
+<li><i class="fa fa-plus-circle"></i> Used in production by large companies (eBay, Wallmart...)</li>
+<li><i class="fa fa-plus-circle"></i> Very flexible</li>
+<li><i class="fa fa-minus-circle"></i> No ACID transactions (database is not 100% reliable)</li>
+<li><i class="fa fa-minus-circle"></i> GPL License (might stand in the way of open-sourcing the product)</li>
+<li><i class="fa fa-minus-circle"></i> No clear pricing, and no clustering in the free version (divide the database on several PCs when it&#39;s too big)</li>
+</ul>
+</li>
+<li><a href="http://www.orientechnologies.com/orientdb/"><strong>OrientDb</strong></a><ul>
+<li><i class="fa fa-plus-circle"></i> Reliable and stable</li>
+<li><i class="fa fa-plus-circle"></i> Has ACID transactions (very few noSQL databases have that)</li>
+<li><i class="fa fa-plus-circle"></i> Apache licensing (Open-source friendly license)</li>
+<li><i class="fa fa-plus-circle"></i> Has classical relational features</li>
+<li><i class="fa fa-plus-circle"></i> Free version has all we need</li>
+<li><i class="fa fa-minus-circle"></i> Runs on a java virtual machine (might be taxing on resources)</li>
+</ul>
+</li>
+<li><a href="http://www.postgresql.org/"><strong>PostgreSQL</strong></a><ul>
+<li><i class="fa fa-plus-circle"></i> Relational + document database</li>
+<li><i class="fa fa-plus-circle"></i> Has ACID transactions</li>
+<li><i class="fa fa-plus-circle"></i> Very liberal license </li>
+<li><i class="fa fa-plus-circle"></i> Completely free</li>
+<li><i class="fa fa-minus-circle"></i> Not a graph database</li>
+</ul>
+</li>
+<li><a href="couchdb.apache.org/"><strong>CouchDB</strong></a><ul>
+<li><i class="fa fa-plus-circle"></i> Document database</li>
+<li><i class="fa fa-plus-circle"></i> Trades ACID for versioning (keeps track of every change)</li>
+<li><i class="fa fa-plus-circle"></i> Easy replication</li>
+<li><i class="fa fa-plus-circle"></i> <a href="https://www.iriscouch.com">Iris Couch</a></li>
+<li><i class="fa fa-minus-circle"></i> Not a graph database</li>
+</ul>
+</li>
+</ul>
+<p>For more information, below are some references:</p>
+<ul>
+<li><a href="http://www.joinfu.com/2005/12/managing-many-to-many-relationships-in-mysql-part-1/comment-page-1/">Managing Many to Many Relationships</a> on Join-Fu</li>
+<li><a href="http://weblogs.sqlteam.com/davidm/articles/12117.aspx">Dave&#39;s Guide to EAV</a> (and comments)</li>
+<li><a href="http://dba.stackexchange.com/questions/35305/multiple-parents-and-multiple-children-in-product-categories">Querying Adjacency Lists in PostgreSQL</a></li>
+<li><a href="http://tagging.pui.ch/post/37027745720/tags-database-schemas">Database Schema for Tags</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Resource_Description_Framework">Resource Description Framework</a></li>
+</ul>
+<h3>4. Frameworks</h3><p>A <em>framework</em> bundles back-end and front-end in a single coherent whole. By definition, it is easier to deal with than building from scratch; however, it often limits the customization.</p>
+<ul>
+<li><p><a href="http://www.collectiveaccess.org"><strong>Collective Access</strong></a></p>
+<p>  CollectiveAccess is free open-source software for managing and publishing museum and archival collections.</p>
+<ul>
+<li><i class="fa fa-plus-circle"></i> Allows any sort of collection, adding fields is &quot;easy&quot;.</li>
+<li><i class="fa fa-plus-circle"></i> Runs on standard technology (PHP/MySQL).</li>
+<li><i class="fa fa-plus-circle"></i> Complete solution, ready to work out of the box.</li>
+<li><i class="fa fa-minus-circle"></i> No easy export-import path from the current FAI database to CA.</li>
+<li><i class="fa fa-minus-circle"></i> Website is read-only (no user participation) and likely monolithic; customization is probably difficult.<ul>
+<li><i class="fa fa-minus-circle"></i> User interface (archivists-facing interface) is complex and confusing.</li>
+</ul>
+</li>
+<li><i class="fa fa-minus-circle"></i> Underused; User pool is small, as are examples and test cases. If help is needed, it will likely come in the form of paid consulting or development.</li>
+</ul>
+</li>
+<li><p><a href="http://www.drupal.org"><strong>Drupal</strong></a></p>
+<p>  Drupal is an open-source content management platform powering millions of websites and applications. It is built, used, and supported by an active and diverse community of people around the world.</p>
+<ul>
+<li><i class="fa fa-plus-circle"></i> Allows any sort of object type. Adding fields is easy.</li>
+<li><i class="fa fa-plus-circle"></i> Runs on standard technology (PHP/any database).</li>
+<li><i class="fa fa-plus-circle"></i> A lot of tools are ready-made, and a lot of community-developed plugins exist to add almost any functionality one can think of.</li>
+<li><i class="fa fa-plus-circle"></i> Widely, widely used. Easy to find examples and use cases, easy to find advice. Easy also to hire someone to make changes later. Paid consulting is also available.</li>
+<li><i class="fa fa-minus-circle"></i> A non-negligible effort has to be made to tie the different modules together so they can work as a coherent whole.</li>
+<li><i class="fa fa-minus-circle"></i> A stack of related technologies have to be installed on top of Drupal to keep a reliable performance, so server processing power/storage space has to be slightly above average.</li>
+</ul>
+</li>
+<li><p><a href="https://www.ica-atom.org"><strong>ICA-ATOM</strong></a></p>
+<p>  ICA-AtoM is web-based archival description software that is based on International Council on Archives (&#39;ICA&#39;) standards. &#39;AtoM&#39; is an acronymn for &#39;Access to Memory&#39;.</p>
+<ul>
+<li><i class="fa fa-plus-circle"></i> Adheres to ICA Standards (is this necessary or even desirable?)</li>
+<li><i class="fa fa-plus-circle"></i> AGPL3 License, which would force us to be GPL-licensed. This might or might not be a problem.</li>
+<li><i class="fa fa-plus-circle"></i> Widely used and works well.</li>
+<li><i class="fa fa-plus-circle"></i> Supports translations out of the box.</li>
+<li><i class="fa fa-minus-circle"></i> Not easily customizable, in fact ATOM advises against customization. (See <a href="https://groups.google.com/forum/#!searchin/ica-atom-users/custom$20fields/ica-atom-users/OY7QYtJMyks/-CZ5YlcsLEkJ">this</a>.)</li>
+<li><i class="fa fa-minus-circle"></i> No REST interface (interoperability can be achieved through OAI harvesting, in their own words, <a href="https://groups.google.com/forum/#!msg/ica-atom-users/-Y3rcs56Qvo/MIYpTSpaXl4J">not very well tested or explored</a>.)</li>
+<li><i class="fa fa-minus-circle"></i> Complex to use, even for a standard user. We might end up replacing a too complex solution that was not used because it required training with another too complex solution that will not be used because it requires training.</li>
+</ul>
+</li>
+</ul>
+<h2>Decisions</h2><p>Technological choices have been made keeping the following few variables in mind:</p>
+<ol>
+<li>Well maintained and battle-tested libraries.</li>
+<li>Single-purpose libraries, following the UNIX philosophy. (&quot;Do one thing and do it well.&quot;)</li>
+<li>Flexible architecture that allows for quick (or as quick as possible) iterations.</li>
+<li>Libraries that allow for Isomorphic coding (same code works anywhere). It&#39;s a Graal that is never actually attained, but the libraries chosen accomplish a great deal in accomodate for the possibility of compiling for desktop/mobile later.</li>
+<li>Simplicity: We currently have one maintainer, me, so it is paramount to keep the app maintainable.</li>
+</ol>
+<h3>1. Server</h3><ul>
+<li><p><a href="https://nodejs.org">Node.js</a><br><code>rationale:</code> <em>Node allows for fast iterations due to it&#39;s very flexible nature. Further, the Node ecosystem and cluture has strayed away from monolithic frameworks and embraces micro-modules that can be mixed and matches, allowing us to profit from well-maintained code while opening the door to infinite customization. Lastly, since Node runs javascript, which is the same coding language used in the browser, it is possible to share code between the two, cutting development time (apps that do that are called &quot;isomorphic apps&quot;).</em></p>
+</li>
+<li><p><strong>Routing</strong> Custom server technology based on <a href="expressjs.com">express</a><br><code>rationale:</code> <em>Express is the most widely used router in the Node ecosystem. It is well tested, well maintained, and used in production by a plethora of companies.</em></p>
+</li>
+<li><p><strong>Static Assets Serving</strong> Also express.</p>
+</li>
+<li><p><strong>API</strong> Custom-made server technology<br><code>rationale:</code> <em>There is no module that allows for the type of API that I envision. They&#39;re all either overly complex (iterations are hard) or not enough (not useful).</em></p>
+</li>
+<li><p><strong>Front-End Templating</strong> <a href="https://facebook.github.io/react/">React</a><br><code>rationale:</code> <em>Although React is complex, and documentation is severely crappy, it has many things going on for it. For once, it allows for declarative templating; without going too much into details, it basically means the application logic is much easier to read and reason about. Secondly, it can render on both the server and the browser, allowing for true isomorphism. Third, it&#39;s extremely performant, and Facebook keeps honing it. Fourth, it can compile to native interfaces for mobile devices. Lastly, it is very widely used, and if documentation is lacking right now, I do not doubt that by the time this project complete, it will be complete as well.</em></p>
+</li>
+<li><p><strong>Models</strong> Custom technology<br><code>rationale:</code> <em>Sadly, there are no frameworks that provide models for react, so this will need to be built from scratch.</em></p>
+</li>
+<li><p><strong>Security &amp; Authentication</strong> Through third-party providers with <a href="http://passportjs.org/">passportjs</a>.<br><code>rationale:</code> <em>Not storing user credentials on the server makes security less critical. Passport is a widely used library that allows to use almost all OAUTH providers (Google, Facebook, Twitter, etc.)</em></p>
+</li>
+</ul>
+<h3>2. Browser</h3><ul>
+<li><p><strong>UI</strong>: <a href="https://facebook.github.io/react/">React</a><br><code>rationale:</code> <em>Although React does not support internet explorer under version 8, I&#39;ve decided to use it all the same for the reasons invoked above. Browser support can be achieved later, if desired. Further, it fills all the needs of a basic app (events, dynamic rendering, touch support...), allowing to bypass using jquery/zepto or similar.</em></p>
+</li>
+<li><p><strong>Routing &amp; Ajax Fetching</strong>: Custom technology<br><code>rationale:</code> <em>Many requesters exist, but none really fits with the server API. The few solutions that are flexible enough depend on jQuery, which I do not want to include to my dependencies.</em></p>
+</li>
+</ul>
+<h3>3. Database</h3><ul>
+<li><p><a href="http://couchdb.apache.org/">CouchDb</a><br><code>rationale:</code></p>
+<ul>
+<li><p>Out of all document databases, CouchDb allows for most data consistency. Granted, it&#39;s sort of a hack; in order to never loose anything, couchdb actually never deletes anything. Any change is saved as a new <em>version</em>. Quirky, but works. The interesting side-effect is that all changes are logged, and any document can be rolled back to a previous version.</p>
+</li>
+<li><p>Using a document database allows us to iterate fast, and be flexible in the structure, at least for a start. A migration can be considered later.</p>
+</li>
+<li><p>CouchDb allows for &#39;painless&#39; (sic) replication. It&#39;s not painless, but it&#39;s definitely easier than other databases.</p>
+</li>
+<li><p>CouchDb can be replicated in the browser through <a href="http://pouchdb.com/">PouchDb</a>, which would allow, in theory at least, intermittent connection to go unnoticed as the data is still available in the browser. Since replication is built-in, it is also possible, in theory at least, to sync both databases and get offline editing. PouchDb also works in Phonegap/Cordova, so it can be used as an embedded database for applications.</p>
+</li>
+<li><p>CouchDb allows for binary storage, so images and all other assets can just be tucked there, which gives us one single repository to maintain (as opposed to synchronizing with a filesystem). Couch begins choking when it has to replicate a lot of large files, but we can change the architecture when we get there.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1>Storage</h1><h2>Options</h2><p>Here are the most prevalent options. Prices assume a need for 4 TB, and up to 10,000 requests per month (which we suppose here amounts to 20 GB of bandwidth per month.)</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Storage</th>
+<th>Requests</th>
+<th>Bandwidth</th>
+<th>total</th>
+<th>Server</th>
+<th>Redundancy</th>
+<th>Image Processing </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <a href="http://aws.amazon.com/s3/pricing/">Amazon S3</a></td>
+<td>94$</td>
+<td>0.004$</td>
+<td>1.8$</td>
+<td>96$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="http://aws.amazon.com/glacier/">Amazon Glacier</a></td>
+<td>40$</td>
+<td>000$</td>
+<td>000$</td>
+<td>40$</td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.dropbox.com/business/pricing">Dropbox Business</a></td>
+<td>75$</td>
+<td>000$</td>
+<td>000$</td>
+<td>75$</td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>       </td>
+</tr>
+<tr>
+<td> <a href="https://www.joyent.com/object-storage/pricing">Joyent Manta</a></td>
+<td>144$</td>
+<td>0.004$</td>
+<td>0.120$</td>
+<td>145$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.joyent.com/object-storage/pricing">Joyent Manta+</a></td>
+<td>288$</td>
+<td>0.004$</td>
+<td>0.120$</td>
+<td>289$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.mediafire.com/upgrade/#space">MediaFire</a></td>
+<td>89$</td>
+<td>000$</td>
+<td>000$</td>
+<td>89$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.box.com/pricing/">Google Drive</a></td>
+<td>99$</td>
+<td>000$</td>
+<td>000$</td>
+<td>99$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="http://azure.microsoft.com/en-gb/pricing/details/storage/">Microsoft Azure</a></td>
+<td>94$</td>
+<td>000$</td>
+<td>000$</td>
+<td>94$</td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="http://www.soyoustart.com/us/disk/">So You Start</a>*</td>
+<td>69$</td>
+<td>000$</td>
+<td>000$</td>
+<td>69$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.backblaze.com/">BlackBlaze</a></td>
+<td>5$</td>
+<td>000$</td>
+<td>000$</td>
+<td>5$</td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://robot.your-server.de/order/market/country/OTHER">Your-Server</a>*</td>
+<td>30$</td>
+<td>000$</td>
+<td>000$</td>
+<td>30$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="http://">Mega</a></td>
+<td>30$</td>
+<td>000$</td>
+<td>000$</td>
+<td>30$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="https://www.box.com/pricing/">Box</a></td>
+<td>51$</td>
+<td>000$</td>
+<td>000$</td>
+<td>51$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i>        </td>
+</tr>
+<tr>
+<td> <a href="http://imagefly.io/">ImageFly</a></td>
+<td>000$</td>
+<td>000$</td>
+<td>150$</td>
+<td>150$</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-check"></i>        </td>
+</tr>
+</tbody>
+</table></div>
+<p><small>* = self managed</small></p>
+<ul>
+<li><p><strong>Additional notes</strong>:</p>
+<ul>
+<li><p><a href="https://www.dropbox.com/business/pricing"><strong>Dropbox for Business</strong></a> has a bandwidth hard limit of 200 GB/day.</p>
+</li>
+<li><p><a href="https://www.box.com/pricing/"><strong>Google Drive</strong></a> has a bandwidth hard limit of 1 GB/day.</p>
+</li>
+<li><p><a href="http://imagefly.io/"><strong>ImageFly</strong></a> creates versions of the images automatically, has a CDN.</p>
+</li>
+</ul>
+</li>
+<li><p><strong><strong>Honorable mentions</strong></strong>:</p>
+<ul>
+<li><p><a href="https://www.joyent.com/object-storage/pricing"><strong>DreamHost</strong></a> has a 35$ plan, but limited to 2 TB. It has a 20 TB plan, at 300$.</p>
+</li>
+<li><p><a href="http://cloudinary.com/pricing"><strong>Cloudinary</strong></a> free for 2 GB storage, 5 GB bandwidth.</p>
+</li>
+<li><p><a href="https://shrinkray.io/"><strong>ShrinkRay</strong></a> optimizes automatically images in a GitHub repo.</p>
+</li>
+<li><p><a href="https://www.dropbox.com/business/pricing"><strong>Dropbox Pro</strong></a> at 10$/m, but only 1 TB of space.</p>
+</li>
+<li><p><a href="https://www.iriscouch.com/service"><strong>Iris Couch</strong></a> bundles a CouchDB database, but at 1$/GB. No other fees though.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Decisions</h2><p><em>To be discussed.</em></p>
+</div></div></div><div id="Footer"><p>images and assets &copy; Arab Image Foundation, knowledge and text &copy; synclop</p></div><div class="loading"><span class="loader"><span class="loader-inner"></span></span></div></body></html>
