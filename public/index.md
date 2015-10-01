@@ -6,7 +6,7 @@
 - [Public-facing website](website)
 - [Blog](blog)
 
-This document presents facets of the agreement made between both  parties involved in this project, **Synclop** and the **AIF**. It will be updated as needed.
+This document presents facets of the agreement made between both  parties involved in this project, **Synclop** and the **AIF**. It will be updated as needed. For more information on both timeline and structure of this project, see the [project management page](project-management).
 
 ##Features
 ###Interconnected modules
