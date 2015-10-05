@@ -1,12 +1,12 @@
-#Features
+# Features
 - Support for images, videos and audio files
 - Different access levels, between administrator, staff/member, registered user and anonymous user
 - Bilinguality, both English and Arabic
 
 
-#Technologies
-##Options
-###1. Server
+# Technologies
+## Options
+### 1. Server
 This is the engine that will power the website and AIF interface. The options are too numerous to list even in a book, but the technologies that Synclop is considering are:
 
  - **PHP** – one of the oldest, most widely used technologies of the Web. It powers more or less half the websites, if not much more.
@@ -18,7 +18,7 @@ This is the engine that will power the website and AIF interface. The options ar
      + (-) Doesn't work on most shared hosts.
      + (-) Difficult to find programmers that have experience with it.
 
-###2. Hosting platforms
+### 2. Hosting platforms
 
 This is where the website will reside, and they can be roughly categorized as follows:
  
@@ -29,8 +29,8 @@ This is where the website will reside, and they can be roughly categorized as fo
   - **Private Virtual Self-Managed Server** - as you can guess, this is a virtual private server you manage yourself.
   - **Cloud Platform** - this is the equivalent of a VPS (Virtual Private Server), but it scales up automatically with your requirements, so it can end up being much stronger than a dedicated server. However, the pricing scheme is often complex, very low as long when your requirements are low, but climbing up exponentially as your requirements grow.
 
-###3. Database
-####Types of databases
+### 3. Database
+#### Types of databases
 Before going forward, it might be good to define a few words to make the following easier to understand:
 
  - [**Relational Databases**](en.wikipedia.org/wiki/Relational_database) store data in tables. It might help to visualize them as Excel sheets. Data in relational databases is *normalized* and *structured*. Relational databases also have developed a set of features that allow them to guarantee writes; in other words, in case of failure, the data stays uncorrupted. This set of features, referred to as [ACID](http://en.wikipedia.org/wiki/ACID) (Atomicity, Consistency, Isolation, Durability), guarantees that database transactions are processed reliably.
@@ -52,7 +52,7 @@ In the case of the highly relational data we are dealing with, a graph database 
 
 A database system stores and retrieves pieces of data. On its own, it does nothing; an application has to be built around it.
 
-#####Comparison of graph databases
+##### Comparison of graph databases
 
   name                            | Company                   | Language          | License                                           | Graph Model                                                               | Backend                                                                       | API                                                           | Query Methods                                                                         | Consistency                                                           | Visualizer                                                                                | Scaling                                                                                   | Latest Version                            
   ------------------------------- | -----------------------   | ----------------  | ------------------------------------------------  | ------------------------------------------------------------------------  | ----------------------------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------    | --------------------------------------------------------------------  | ----------------------------------------------------------------------------------------  | ----------------------------------------------------------------------------------------  | ------------------------------------------ 
@@ -91,7 +91,7 @@ A database system stores and retrieves pieces of data. On its own, it does nothi
 [g16]:http://thinkaurelius.github.io/titan/
 [g17]:http://sparsity-technologies.com/dex_releases
 
-#####Hierarchical data in SQL
+##### Hierarchical data in SQL
 Two main models allow to describe hierarchical data in SQL: 
 
  - *Adjacency Lists* – each node keeps a reference to it's parent, or, more uncommonly, each parent keeps a list of children (or both, but data is then de-normalized and should be maintained at the application level).
@@ -201,9 +201,9 @@ Here are some other references for additional readings:
 [ns7]:http://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database
 [ns8]:http://stackoverflow.com
 [ns9]:https://vadimtropashko.files.wordpress.com/2011/07/ch5.pdf
-[ns10]:http://troels.arvin.dk/db/rdbms/links/#hierarchical
+[ns10]:http://troels.arvin.dk/db/rdbms/links/# hierarchical
 
-####Database solutions to consider
+#### Database solutions to consider
 - [**Neo4j**](http://neo4j.com/)
     - (+) Used in production by large companies (eBay, Wallmart...)
     - (+) Very flexible
@@ -245,7 +245,7 @@ For more information, below are some references:
 [o4]:http://tagging.pui.ch/post/37027745720/tags-database-schemas
 [o5]:http://en.wikipedia.org/wiki/Resource_Description_Framework
 
-###4. Frameworks
+### 4. Frameworks
 A *framework* bundles back-end and front-end in a single coherent whole. By definition, it is easier to deal with than building from scratch; however, it often limits the customization.
 
 - [**Collective Access**](http://www.collectiveaccess.org)
@@ -283,7 +283,7 @@ A *framework* bundles back-end and front-end in a single coherent whole. By defi
 	- (-) No REST interface (interoperability can be achieved through OAI harvesting, in their own words, [not very well tested or explored](https://groups.google.com/forum/#!msg/ica-atom-users/-Y3rcs56Qvo/MIYpTSpaXl4J).)
 	- (-) Complex to use, even for a standard user. We might end up replacing a too complex solution that was not used because it required training with another too complex solution that will not be used because it requires training.
 
-##Decisions
+## Decisions
 Technological choices have been made keeping the following few variables in mind:
 
  1. Well maintained and battle-tested libraries.
@@ -292,7 +292,7 @@ Technological choices have been made keeping the following few variables in mind
  4. Libraries that allow for Isomorphic coding (same code works anywhere). It's a Graal that is never actually attained, but the libraries chosen accomplish a great deal in accomodate for the possibility of compiling for desktop/mobile later.
  5. Simplicity: We currently have one maintainer, me, so it is paramount to keep the app maintainable.
 
-###1. Server
+### 1. Server
 - [Node.js](https://nodejs.org)  
 `rationale:` *Node allows for fast iterations due to it's very flexible nature. Further, the Node ecosystem and cluture has strayed away from monolithic frameworks and embraces micro-modules that can be mixed and matches, allowing us to profit from well-maintained code while opening the door to infinite customization. Lastly, since Node runs javascript, which is the same coding language used in the browser, it is possible to share code between the two, cutting development time (apps that do that are called "isomorphic apps").*
 
@@ -313,14 +313,14 @@ Technological choices have been made keeping the following few variables in mind
 - **Security & Authentication** Through third-party providers with [passportjs](http://passportjs.org/).  
 `rationale:` *Not storing user credentials on the server makes security less critical. Passport is a widely used library that allows to use almost all OAUTH providers (Google, Facebook, Twitter, etc.)*
 
-###2. Browser
+### 2. Browser
 - **UI**: [React](https://facebook.github.io/react/)  
 `rationale:` *Although React does not support internet explorer under version 8, I've decided to use it all the same for the reasons invoked above. Browser support can be achieved later, if desired. Further, it fills all the needs of a basic app (events, dynamic rendering, touch support...), allowing to bypass using jquery/zepto or similar.*
 
 - **Routing & Ajax Fetching**: Custom technology  
 `rationale:` *Many requesters exist, but none really fits with the server API. The few solutions that are flexible enough depend on jQuery, which I do not want to include to my dependencies.*
 
-###3. Database
+### 3. Database
 - [CouchDb](http://couchdb.apache.org/)  
 `rationale:`
 
@@ -334,8 +334,8 @@ Technological choices have been made keeping the following few variables in mind
 
   * CouchDb allows for binary storage, so images and all other assets can just be tucked there, which gives us one single repository to maintain (as opposed to synchronizing with a filesystem). Couch begins choking when it has to replicate a lot of large files, but we can change the architecture when we get there.
 
-#Storage
-##Options
+# Storage
+## Options
 Here are the most prevalent options. Prices assume a need for 4 TB, and up to 10,000 requests per month (which we suppose here amounts to 20 GB of bandwidth per month.)
 
  Provider               | Storage | Requests | Bandwidth | total | Server | Redundancy | Image Processing 
@@ -378,7 +378,7 @@ Here are the most prevalent options. Prices assume a need for 4 TB, and up to 10
 	- [**Iris Couch**](https://www.iriscouch.com/service) bundles a CouchDB database, but at 1$/GB. No other fees though.
  
 [p1]:http://aws.amazon.com/s3/pricing/ 
-[p2]:https://www.mediafire.com/upgrade/#space
+[p2]:https://www.mediafire.com/upgrade/# space
 [p3]:http://aws.amazon.com/glacier/
 [p4]:https://www.dropbox.com/business/pricing
 [p5]:https://www.joyent.com/object-storage/pricing
@@ -391,5 +391,5 @@ Here are the most prevalent options. Prices assume a need for 4 TB, and up to 10
 [p12]:http://imagefly.io/
 [p14]:http://
 
-##Decisions
+## Decisions
 *To be discussed.*
