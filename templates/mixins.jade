@@ -1,8 +1,9 @@
-include functions
+include helpers
 
-mixin vertabelo(url)
+- var vertabelo_mixin = function(url){
 	.iframe.vertabello
 		iframe(src="https://my.vertabelo.com/v/"+url frameborder="0" height="300px" width="400px")
+- }
 
 mixin title(current,mainTitle)
 	- if(current.path[current.path.length-1] == 'index'){current.path.pop();}
