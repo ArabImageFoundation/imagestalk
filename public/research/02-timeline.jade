@@ -1,7 +1,7 @@
 include ../../templates/mixins
 
 section(id="/2")
-	:markdown
+	:marked
 		# Research Timeline
 		The research will need approximately four weeks. Each week is a *phase*.
 
@@ -16,48 +16,48 @@ Y = 2015
 M = 5
 timelineOptions = JSON.stringify({end:new Date(Y,M,20)})
 section(id="/2/1")
-	:markdown
+	:marked
 		# Research Timeline
 
 	.timeline-widget(data-options=timelineOptions)
 		+timelinePoint(Y,M,1)
-			:markdown
+			:marked
 				start
 
 		+timelineSpan(Y,M,1,Y,M,7)
-			:markdown
+			:marked
 				## [Gathering Requirements](#/2/2)
 
 				- Discussions with AIF
 				- Internal AIF decision process
 
 		+timelineSpan(Y,M,7,Y,M,14)
-			:markdown
+			:marked
 				## [Computing Requirements](#/2/3)
 
 				- Take high-flight decisions on technical requirements
 
 		+timelineSpan(Y,M,14,Y,M,21)
-			:markdown
+			:marked
 				## [Benchmarking](#/2/4)
 
 				- Testing the different technologies
 
 
 		+timelineSpan(Y,M,21,Y,M,30)
-			:markdown
+			:marked
 				## [Production](#/2/5)
 
 				- Production of the actual document
 
 		+timelinePoint(Y,M,30)
-			:markdown
+			:marked
 				end
 
 	p: small The different phases dates are set tentatively and should not be considered final
 
 section(id="/2/2")
-	:markdown
+	:marked
 		# Phase 1
 		## Gathering Requirements
 
@@ -66,28 +66,28 @@ section(id="/2/2")
 		> All subsequent phases depend on the answers found during this process.
 
 section(id="/2/3")
-	:markdown
+	:marked
 		# Phase 2
 		## Computing Requirements
 
 		In accordance with the findings of phase 1, a research is conducted and solution(s) found and documented
 
 section(id="/2/4")
-	:markdown
+	:marked
 		# Phase 3
 		## Benchmarking
 
 		The different methods to reach our goals are tested for performance and compliance with the requirements.
 
 section(id="/2/5")
-	:markdown
+	:marked
 		# Phase 4
 		## Production
 
 		A document detailing the planning for the production of the AIF archiving system & website is produced.
 
 section(id="#/2/6")
-	:markdown
+	:marked
 		# Communication
 
 		Particularly during phases [1](#/2/1) and [4](#/2/4), it is mandatory, 
